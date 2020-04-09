@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
+        const width = canvas.width;
+        const height = canvas.height;
+
         ctx.font = "bold 16px Arial";
         ctx.fillStyle = '#3bb43e';
 
@@ -15,22 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         function render(cellWidth = 20, cellHeight = 20, speed = 100) {
-            const renderCount = (canvas.width / cellWidth) * (canvas.height / cellHeight);
+            const renderCount = (width / cellWidth) * (height / cellHeight);
             let counter = 0;
+            const positions = [];
 
-            const interval = setInterval(function(){
-                ctx.fillText(
-                    getRandomSymbol(48, 122),
-                    Math.ceil(getRandomRange(0, canvas.width) / cellWidth) * cellWidth,
-                    Math.ceil(getRandomRange(0, canvas.height) / cellHeight) * cellHeight,
-                );
+            const interval = setInterval(() => {
+                const position = {
+                    x: Math.ceil(getRandomRange(0, width) / cellWidth) * cellWidth,
+                    y: Math.ceil(getRandomRange(0, height) / cellHeight) * cellHeight,
+                };
+
+                if (!positions.some(pos => pos.x === position.x && pos.y === position.y)) {
+                    ctx.fillText(getRandomSymbol(65, 122), position.x, position.y);
+                    counter--;
+                }
+                positions.push(position);
+
                 counter++;
-                if(counter === renderCount) {
+                if (counter >= renderCount) {
                     clearInterval(interval);
                 }
             }, speed);
-
-            ctx.fill();
         }
 
         function getRandomSymbol(start, end) {

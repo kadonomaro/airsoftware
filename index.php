@@ -12,6 +12,7 @@
 
 
     <main class="hero">
+        <canvas class="hero__canvas js-hero-canvas"></canvas>
         <header class="page-header">
             <div class="logo">
                 <div class="logo__image">

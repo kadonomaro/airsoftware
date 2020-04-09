@@ -1,17 +1,12 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  background-color: rgba(#000000, 0.7);
-  &::before {
-    content: '';
+  //background-color: rgba(#000000, 0.7);
+  &__canvas {
     position: absolute;
     z-index: -1;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    background-image: url('../../../dist/assets/image/background/code-background.jpg');
-    background-size: cover;
-    opacity: 0.5;
+    background-color: #000000;
   }
 }

@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const height = canvas.height;
 
         ctx.font = "bold 16px Arial";
-        ctx.fillStyle = '#3bb43e';
 
         render(20,20,10);
 
@@ -21,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const renderCount = (width / cellWidth) * (height / cellHeight);
             let counter = 0;
             const positions = [];
+            const colors = ['#3acd3d','#3bb43e', '#349b37', '#38823b'];
 
             const interval = setInterval(() => {
                 const position = {
@@ -29,12 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 if (!positions.some(pos => pos.x === position.x && pos.y === position.y)) {
+                    ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
                     ctx.fillText(getRandomSymbol(65, 122), position.x, position.y);
+                    counter++;
+                } else {
                     counter--;
                 }
                 positions.push(position);
 
-                counter++;
+
                 if (counter >= renderCount) {
                     clearInterval(interval);
                 }

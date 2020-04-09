@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  &__image {
+    width: 120px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__text {
+
+  }
+}

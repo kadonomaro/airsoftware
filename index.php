@@ -9,12 +9,28 @@
     <title>Airsoftware - современные решения для бизнеса</title>
 </head>
 <body>
-    <?php @include_once 'src/partials/header.php'?>
-    <main class="main">
-        <div class="container">
-            <h1 class="main__title">Airsoftware</h1>
-        </div>
+
+
+    <main class="hero">
+        <header class="page-header">
+            <div class="logo">
+                <div class="logo__image">
+                    <img src="../../dist/assets/image/logo.svg" alt="Airsoftware">
+                </div>
+                <span class="logo__text"></span>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">1</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">2</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">3</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">4</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">5</a></li>
+                </ul>
+            </nav>
+        </header>
     </main>
+
 
     <script src="dist/assets/js/main.js"></script>
 </body>

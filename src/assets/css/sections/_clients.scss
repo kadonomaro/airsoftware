@@ -1,6 +1,30 @@
 .clients {
   background-color: #141414;
   &__slider {
+    margin-bottom: 60px;
+  }
+}
+
+
+.clients-slider {
+  &__slide {
+    width: 450px;
+    margin: 0 5px;
+  }
+  &__image {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    &:first-child {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.clients-order {
+  text-align: center;
+  &__button {
 
   }
 }

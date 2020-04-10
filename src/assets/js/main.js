@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     heroCanvasAnimation();
     heroTextAnimation();
-
+    infiniteSliderInit('.js-clients-slider');
 
     function  heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
@@ -61,8 +61,19 @@ document.addEventListener('DOMContentLoaded', () => {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
     }
-    
 
-    
-    
+    function infiniteSliderInit(sliderSelector) {
+        $(sliderSelector).slick({
+            variableWidth: true,
+            focusOnSelect: false,
+            accessibility: false,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 10000,
+            arrows: false,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    }
 });

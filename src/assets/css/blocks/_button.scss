@@ -1,17 +1,17 @@
 .button {
   padding: 20px 50px;
-  color: #141414;
+  color: $color-dark-gray;
   font-family: inherit;
   font-size: 20px;
-  background-color: #ffdf00;
-  border: 2px solid #ffdf00;
+  background-color: $color-accent;
+  border: 2px solid $color-accent;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.1s ease-in, color 0.1s ease-in, border-color 0.1s ease-in;
   &:hover,
   &:focus {
-    color: #ffdf00;
-    background-color: #141414;
-    border-color: #ffdf00;
+    color: $color-accent;
+    background-color: $color-dark-gray;
+    border-color: $color-accent;
   }
 }

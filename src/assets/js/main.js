@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     runHeroAnimation();
 
+    const heroTitle = document.querySelector('.hero__title');
+    const heroSubtitle = document.querySelector('.hero__subtitle');
+
+
+    heroTitle.classList.add('hero__title--fade-in');
+    heroSubtitle.classList.add('hero__subtitle--fade-in');
+
     function runHeroAnimation() {
         const canvas = document.querySelector('.js-hero-canvas');
         const ctx = canvas.getContext('2d');
@@ -20,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const renderCount = (width / cellWidth) * (height / cellHeight);
             let counter = 0;
             const positions = [];
-            const colors = ['#3acd3d','#3bb43e', '#349b37', '#38823b'];
+            // const colors = ['#3acd3d','#3bb43e', '#349b37', '#38823b'];
+            const colors = ['#ffffff','#e6e6e6', '#cdcdcd', '#b4b4b4'];
 
             const interval = setInterval(() => {
                 const position = {

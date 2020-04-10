@@ -50,28 +50,28 @@
             <div class="clients-slider">
                 <div class="clients-slider__wrapper js-clients-slider">
                     <div class="clients-slider__slide">
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/auto-speed.png" alt="auto speed" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/baby-swim.png" alt="baby swim" >
                     </div>
 
                     <div class="clients-slider__slide">
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/beauty-box.png" alt="beauty box" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/fast-banana.png" alt="fast banana" >
                     </div>
 
                     <div class="clients-slider__slide">
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/greens-food-suppliers.png" alt="greens food suppliers" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/james-and-sons.png" alt="james and sons" >
                     </div>
 
                     <div class="clients-slider__slide">
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/space-cube.png" alt="space cube" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/the-dance-studio.png" alt="the dance studio" >
                     </div>
 
                     <div class="clients-slider__slide">
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
-                        <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/the-web-works.png" alt="the web works" >
+                        <img class="clients-slider__image" src="dist/assets/image/clients/yoga-baby.png" alt="yoga baby" >
                     </div>
                 </div><!--clients-slider__wrapper-->
             </div>

@@ -39,6 +39,73 @@
     </main>
 
 
+    <section class="clients section">
+        <header class="section__header">
+            <h2 class="section__title">Уже воспользовались нашими продуктами</h2>
+            <span class="section__subtitle">Десятки довольных клиентов по всему миру</span>
+        </header>
+
+        <div class="clients__slider">
+            <div class="clients-slider">
+                <div class="clients-slider__wrapper">
+                    <div class="clients-slider__track">
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+
+                        <div class="clients-slider__slide">
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                            <img class="clients-slider__image" src="https://via.placeholder.com/450x250" alt="" >
+                        </div>
+                    </div><!--clients-slider__track-->
+                </div><!--clients-slider__wrapper-->
+            </div>
+        </div>
+
+    </section>
+
+
     <script src="dist/assets/js/main.js"></script>
 </body>
 </html>

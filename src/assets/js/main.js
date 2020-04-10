@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    runHeroAnimation();
+    heroCanvasAnimation();
+    heroTextAnimation();
 
-    const heroTitle = document.querySelector('.hero__title');
-    const heroSubtitle = document.querySelector('.hero__subtitle');
 
-    heroTitle.classList.add('hero__title--fade-in');
-    heroSubtitle.classList.add('hero__subtitle--fade-in');
+    function  heroTextAnimation() {
+        const heroTitle = document.querySelector('.hero__title');
+        const heroSubtitle = document.querySelector('.hero__subtitle');
 
-    function runHeroAnimation() {
+        heroTitle.classList.add('hero__title--fade-in');
+        heroSubtitle.classList.add('hero__subtitle--fade-in');
+    }
+
+
+    function heroCanvasAnimation() {
         const canvas = document.querySelector('.js-hero-canvas');
         const ctx = canvas.getContext('2d');
 
@@ -56,4 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
     }
+    
+
+    
+    
 });

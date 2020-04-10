@@ -1,0 +1,21 @@
+.clients-slider {
+  &__wrapper {
+    overflow: hidden;
+  }
+  &__track {
+    display: flex;
+    margin: 0 -5px 10px;
+  }
+  &__slide {
+    width: 450px;
+    margin: 0 5px;
+  }
+  &__image {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    &:first-child {
+      transform: translateX(-50%);
+    }
+  }
+}

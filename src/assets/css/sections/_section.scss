@@ -1,0 +1,17 @@
+.section {
+  padding: 60px 0;
+  &__header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 48px;
+  }
+  &__subtitle {
+    display: block;
+    color: #a0a0a0;
+    font-size: 28px;
+  }
+}

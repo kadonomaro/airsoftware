@@ -11,15 +11,16 @@
 </head>
 <body>
 
-
     <main class="hero">
         <canvas class="hero__canvas js-hero-canvas"></canvas>
         <header class="page-header">
-            <div class="logo">
-                <div class="logo__image">
-                    <img src="../../dist/assets/image/logo.svg" alt="Airsoftware">
+            <div class="page-header__logo">
+                <div class="logo">
+                    <div class="logo__image">
+                        <img src="dist/assets/image/logo.svg" alt="Airsoftware">
+                    </div>
+                    <span class="logo__text"></span>
                 </div>
-                <span class="logo__text"></span>
             </div>
             <div class="page-header__nav">
                 <nav class="main-nav">
@@ -33,11 +34,16 @@
                     </ul>
                 </nav>
             </div>
+            <div class="page-header__order">
+                <form action="" class="order">
+                    <button class="order__button button">Присоединиться</button>
+                </form>
+            </div>
         </header>
 
         <h1 class="hero__title">Airsoftware</h1>
         <span class="hero__subtitle">Современные решения для бизнеса</span>
-    </main>
+    </main><!--hero-->
 
 
     <section class="clients section">
@@ -78,10 +84,15 @@
         </div>
 
         <div class="clients__order">
-            <form action="" class="clients-order">
-                <button class="clients-order-button button">Присоединиться</button>
+            <form action="" class="order">
+                <button class="order__button button">Присоединиться</button>
             </form>
         </div>
+
+    </section><!--clients-->
+
+
+    <section>
 
     </section>
 

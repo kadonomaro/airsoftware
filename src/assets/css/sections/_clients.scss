@@ -3,6 +3,9 @@
   &__slider {
     margin-bottom: 60px;
   }
+  &__order {
+    text-align: center;
+  }
 }
 
 
@@ -19,13 +22,5 @@
     &:first-child {
       transform: translateX(-50%);
     }
-  }
-}
-
-
-.clients-order {
-  text-align: center;
-  &__button {
-
   }
 }

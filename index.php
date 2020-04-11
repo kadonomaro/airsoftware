@@ -103,8 +103,8 @@
             <div class="about__side">
                 <div class="about__image">
                     <picture>
-                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
-                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                        <source type="image/webp" srcset="dist/assets/image/about/company.webp">
+                        <img class="about__image-img" src="dist/assets/image/about/company.jpg" alt="офис Airsoftware" >
                     </picture>
                 </div>
             </div>
@@ -127,8 +127,8 @@
             <div class="about__side about__side--ordered">
                 <div class="about__image">
                     <picture>
-                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
-                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                        <source type="image/webp" srcset="dist/assets/image/about/development.webp">
+                        <img class="about__image-img" src="dist/assets/image/about/development.jpg" alt="разработка программного обеспечения" >
                     </picture>
                 </div>
             </div>
@@ -142,6 +142,13 @@
                         Среди наших продуктов есть как полностью бесплатные, но полноценные программы без ограничения функционала,
                         так и их платные аналоги с круглосуточной техподдержкой.
                     </p>
+                    <p>Сюда входит:</p>
+                    <Ul>
+                        <li>Помощь в установке и настройке</li>
+                        <li>Онлайн консультант</li>
+                        <li>Подробная документация по продуктам</li>
+                        <li>Выезд специалиста для устранения проблем</li>
+                    </Ul>
                 </div>
             </div>
         </div><!--about__inner-->
@@ -151,8 +158,8 @@
             <div class="about__side">
                 <div class="about__image">
                     <picture>
-                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
-                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                        <source type="image/webp" srcset="dist/assets/image/about/internship.webp">
+                        <img class="about__image-img" src="dist/assets/image/about/internship.jpg" alt="ежегодная стажировка" >
                     </picture>
                 </div>
             </div>

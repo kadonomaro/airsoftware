@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     heroCanvasAnimation();
     heroTextAnimation();
     infiniteSliderInit('.js-clients-slider');
+    tabsInit('.js-tabs');
+
 
     function  heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     function infiniteSliderInit(sliderSelector) {
         $(sliderSelector).slick({
             variableWidth: true,
@@ -74,6 +77,25 @@ document.addEventListener('DOMContentLoaded', () => {
             cssEase: 'linear',
             slidesToShow: 1,
             slidesToScroll: 1
+        });
+    }
+
+
+    function tabsInit(selector) {
+        const tabs = document.querySelector(selector);
+        const tabLinks = [...tabs.querySelectorAll('[data-target]')];
+        const tabLinkTargets = [...tabs.querySelectorAll('[data-content]')];
+
+        tabLinks.forEach((link) => {
+            link.addEventListener('click', function (evt) {
+                evt.preventDefault();
+                tabLinks.forEach(link => link.classList.remove('tabs__link--active'));
+                this.classList.add('tabs__link--active');
+
+                const linkTarget = tabs.querySelector(`[data-content="${this.dataset.target}"]`);
+                tabLinkTargets.forEach(target => target.classList.remove('tabs__content--visible'));
+                linkTarget.classList.add('tabs__content--visible');
+            });
         });
     }
 });

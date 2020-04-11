@@ -10,6 +10,9 @@
     color: #ffffff;
     font-size: 48px;
   }
+  &__title--dark {
+    color: $color-dark-gray;
+  }
   &__subtitle {
     display: block;
     color: #a0a0a0;

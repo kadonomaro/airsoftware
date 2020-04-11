@@ -137,6 +137,7 @@
                 <div class="about__text">
                     <p>
                         Основным направлением нашей деятельности является создание современного, удобного и функционального программного обеспечения.
+                        Своей продукцией мы покрываем все возникающие потребности для осуществления непрерывной работы предприятий.
                     </p>
                     <p>
                         Среди наших продуктов есть как полностью бесплатные, но полноценные программы без ограничения функционала,
@@ -182,6 +183,40 @@
             </div>
         </div><!--about__inner-->
 
+    </section>
+
+
+    <section class="products section">
+        <header class="section__header">
+            <h2 class="section__title section__title--dark">Основные продукты</h2>
+            <span class="section__subtitle">Прежде чем выбрать, нужно сравнить</span>
+        </header>
+
+        <div class="products__inner">
+            <div class="products__tabs">
+                <div class="tabs js-tabs">
+                    <div class="tabs__header">
+                        <ul class="tabs__list">
+                            <li class="tabs__item">
+                                <a href="" class="tabs__link tabs__link--active" data-target="1">Вкладка 1</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="" class="tabs__link" data-target="2">Вкладка 2</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="" class="tabs__link" data-target="3">Вкладка 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__body">
+                        <div class="tabs__content tabs__content--visible" data-content="1">111111</div>
+                        <div class="tabs__content" data-content="2">222222</div>
+                        <div class="tabs__content" data-content="3">333333</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

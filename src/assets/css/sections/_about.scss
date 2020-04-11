@@ -52,3 +52,31 @@
     }
   }
 }
+
+
+@media (max-width: $tablet-small) {
+  .about {
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .about {
+    &__inner {
+      display: block;
+    }
+    &__main,
+    &__side {
+      max-width: 100%;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}

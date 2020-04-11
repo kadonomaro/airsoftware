@@ -15,3 +15,18 @@
     border-color: $color-accent;
   }
 }
+
+
+@media (max-width: $tablet-small) {
+  .button {
+    padding: 15px 25px;
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

@@ -17,3 +17,15 @@
     text-align: right;
   }
 }
+
+
+@media (max-width: $mobile-large) {
+  .page-header {
+    &__logo {
+      max-width: 80px;
+    }
+    &__nav {
+      position: absolute;
+    }
+  }
+}

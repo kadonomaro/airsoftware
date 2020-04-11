@@ -64,3 +64,22 @@
     }
   }
 }
+
+
+
+@media (max-width: $mobile-large) {
+  .page-footer {
+    padding: 5px 10px;
+    &__bottom {
+      flex-wrap: wrap;
+    }
+    &__nav {
+      margin-bottom: 10px;
+    }
+    &__year {
+      order: 2;
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+}

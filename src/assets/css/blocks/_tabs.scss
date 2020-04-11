@@ -44,3 +44,19 @@
     display: block;
   }
 }
+
+
+
+@media (max-width: $mobile-large) {
+  .tabs {
+    &__list {
+      display: block;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
+}

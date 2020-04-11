@@ -33,11 +33,31 @@
     }
   }
 
-
   .clients-slider {
     &__slide {
       max-width: 300px;
     }
   }
+}
 
+
+@media (max-width: $tablet-small) {
+  .clients {
+    &__slider {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .clients-slider {
+    &__slide {
+      max-width: 200px;
+      margin: 0 5px;
+    }
+    &__image {
+      margin-bottom: 10px;
+    }
+  }
 }

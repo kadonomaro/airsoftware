@@ -37,3 +37,26 @@
     color: inherit;
   }
 }
+
+
+
+@media (max-width: $mobile-large) {
+  .products {
+    &__tabs {
+      margin-bottom: 10px;
+    }
+    &__resume {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .products-item {
+    &__link {
+      font-size: 18px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}

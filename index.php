@@ -444,6 +444,106 @@
         </div><!--products--inner-->
     </section>
 
+
+    <section class="team section">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">Наша команда</h2>
+                <span class="section__subtitle">Поможем воплотить ваши самые смелые желания в реальность</span>
+            </header>
+
+            <div class="team__inner">
+                <div class="team__card">
+                    <h3 class="team__title">Основатели</h3>
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/oleg-komarov.jpg">
+                                <img class="team-card__image-img" src="dist/assets/image/team/oleg-komarov.jpg" alt="Олег Комаров" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Олег Комаров</span>
+                            <span class="team-card__role">Основатель, президент</span>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/david-denisov.webp">
+                                <img class="team-card__image-img" src="dist/assets/image/team/david-denisov.jpg" alt="Давид Денисов" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Давид Денисов</span>
+                            <span class="team-card__role">Основатель, президент</span>
+                        </div>
+                    </article>
+                </div><!-- /.team__card -->
+
+                <div class="team__card">
+                    <h3 class="team__title">Руководители</h3>
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/joe-noname.webp">
+                                <img class="team-card__image-img" src="dist/assets/image/team/joe-noname.jpg" alt="Джо Ноунейм" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Джо Ноунейм</span>
+                            <span class="team-card__role">Генеральный директор</span>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/anna-orehova.webp">
+                                <img class="team-card__image-img" src="dist/assets/image/team/anna-orehova.jpg" alt="Анна Орехова" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Анна Орехова</span>
+                            <span class="team-card__role">Финансовый директор</span>
+                        </div>
+                    </article>
+                </div><!-- /.team__card -->
+
+                <div class="team__card">
+                    <h3 class="team__title">Разработчики</h3>
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/maxim-mohov.webp">
+                                <img class="team-card__image-img" src="dist/assets/image/team/maxim-mohov.jpg" alt="Максим Мохов" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Максим Мохов</span>
+                            <span class="team-card__role">Руководитель департамента разработки</span>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="dist/assets/image/team/anton-ivanov.webp">
+                                <img class="team-card__image-img" src="dist/assets/image/team/anton-ivanov.jpg" alt="Антон Иванов" >
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Антон Иванов</span>
+                            <span class="team-card__role">Ведущий инженер</span>
+                        </div>
+                    </article>
+                </div><!-- /.team__card -->
+            </div><!-- /.team__inner -->
+
+        </div><!-- /.container -->
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="dist/assets/js/main.js"></script>

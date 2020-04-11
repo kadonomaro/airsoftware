@@ -43,3 +43,12 @@
     }
   }
 }
+
+
+@media (max-width: $desktop-small) {
+  .about {
+    &__main {
+      padding: 10px 10px 10px 20px;
+    }
+  }
+}

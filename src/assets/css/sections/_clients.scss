@@ -24,3 +24,20 @@
     }
   }
 }
+
+
+@media (max-width: $desktop-small) {
+  .clients {
+    &__slider {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  .clients-slider {
+    &__slide {
+      max-width: 300px;
+    }
+  }
+
+}

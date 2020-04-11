@@ -25,7 +25,7 @@
   &__text {
     flex-basis: 65%;
     max-width: 65%;
-    padding: 10px 15px 10px 30px;
+    padding: 10px 10px 10px 20px;
   }
   &__name,
   &__role {
@@ -39,8 +39,4 @@
     color: $color-medium-gray;
     font-size: 18px;
   }
-  &__info {
-
-  }
-
 }

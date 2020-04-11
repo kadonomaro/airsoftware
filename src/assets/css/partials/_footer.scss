@@ -1,8 +1,66 @@
 .page-footer {
-  padding: 15px 10px;
-  color: #ffffff;
+  padding: 10px 30px;
+  color: $color-medium-gray;
+  font-size: 18px;
   background-color: #303030;
-  &__date {
+  &__top {
+    padding: 10px 0;
+    border-bottom: 2px solid $color-medium-gray;
+    text-align: center;
+  }
+  &__text {
+    display: block;
+    margin-bottom: 5px;
     font-size: 18px;
+    line-height: 1;
+  }
+  &__phone {
+    font-size: 20px;
+    color: $color-light-gray;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+    &:hover,
+    &:focus {
+      color: darken($color-light-gray, 10%);
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+  &__year {
+    margin-right: 25px;
+  }
+  &__nav {
+    margin-right: auto;
+  }
+  &__logo {
+    max-width: 60px;
+    padding: 5px;
+    background-color: $color-dark-gray;
+  }
+}
+
+
+.footer-nav {
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    color: inherit;
+    transition: color 0.1s ease-in;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
   }
 }

@@ -1,6 +1,7 @@
 .main-nav {
   &__list {
     display: flex;
+    margin: 0;
     list-style: none;
   }
   &__item {
@@ -9,6 +10,7 @@
     }
   }
   &__link {
+    display: block;
     padding-bottom: 15px;
     color: inherit;
     font-family: 'Roboto Mono', monospace;

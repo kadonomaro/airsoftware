@@ -2,13 +2,18 @@
   &__tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  &__order {
+    text-align: center;
   }
   &__footer {
     padding: 0 10px;
     text-align: center;
   }
   &__resume {
+    display: block;
+    margin-bottom: 40px;
     color: $color-medium-gray;
     font-size: 20px;
   }

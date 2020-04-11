@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="dist/assets/css/style.css">
     <title>Airsoftware - современные решения для бизнеса</title>
+    <meta name="description" content="Компания Airsoftware – это разработчик программного обеспечения для малого и среднего бизнеса.">
 </head>
 <body>
 
@@ -92,7 +93,87 @@
     </section><!--clients-->
 
 
-    <section>
+    <section class="about section">
+        <header class="section__header">
+            <h2 class="section__title">История успеха</h2>
+            <span class="section__subtitle">Мы проделали путь длиною в жизнь</span>
+        </header>
+
+        <div class="about__inner">
+            <div class="about__side">
+                <div class="about__image">
+                    <picture>
+                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
+                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                    </picture>
+                </div>
+            </div>
+            <div class="about__main">
+                <h3 class="about__title">Коротко о компании</h3>
+                <div class="about__text">
+                    <p>
+                        Компания Airsoftware основана в 1998 году Олегом Комаровым и Давидом Денисовым.
+                    </p>
+                    <p>
+                        В данный момент мы занимаем лидирующие позиции на рынке для малого и среднего бизнеса.
+                        В нашем штате сотни сотрудников со всего мира, профессионалы с большим опытом работы в сфере разработки программного обеспечения.
+                        Мы проделали большой путь и продолжаем расти, чтобы помогать другим людям организовывать свой бизнес.
+                    </p>
+                </div>
+            </div>
+        </div><!--about__inner-->
+
+        <div class="about__inner">
+            <div class="about__side about__side--ordered">
+                <div class="about__image">
+                    <picture>
+                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
+                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                    </picture>
+                </div>
+            </div>
+            <div class="about__main">
+                <h3 class="about__title">Основное направление</h3>
+                <div class="about__text">
+                    <p>
+                        Основным направлением нашей деятельности является создание современного, удобного и функционального программного обеспечения.
+                    </p>
+                    <p>
+                        Среди наших продуктов есть как полностью бесплатные, но полноценные программы без ограничения функционала,
+                        так и их платные аналоги с круглосуточной техподдержкой.
+                    </p>
+                </div>
+            </div>
+        </div><!--about__inner-->
+
+
+        <div class="about__inner">
+            <div class="about__side">
+                <div class="about__image">
+                    <picture>
+                        <source type="image/webp" srcset="https://via.placeholder.com/900x400">
+                        <img class="about__image-img" src="https://via.placeholder.com/900x400" alt="" >
+                    </picture>
+                </div>
+            </div>
+            <div class="about__main">
+                <h3 class="about__title">Рост вместе с нами</h3>
+                <div class="about__text">
+                    <p>
+                        Ежегодно мы проводим стажировки для всех желающих.
+                    </p>
+                    <p>Требования: </p>
+                    <ul>
+                        <li>Студент последнего курса по соотвествующему направлению</li>
+                        <li>Базовые знания в той сфере, в которой вы хотите стажироваться</li>
+                        <li>Проживание в городе проведения стажировки или готовность к переезду</li>
+                        <li>Огонь в глазах</li>
+                        <li>Тяга к познанию всего неизведанного</li>
+                    </ul>
+                    <a href="/internship">Подробнее</a>
+                </div>
+            </div>
+        </div><!--about__inner-->
 
     </section>
 

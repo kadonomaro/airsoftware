@@ -25,7 +25,16 @@
             </div>
             <div class="page-header__nav">
                 <nav class="main-nav">
-                    <ul class="main-nav__list">
+                    <button class="main-nav__toggle js-menu-toggle" aria-label="menu">
+                        <svg width="8" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="8" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="main-nav__toggle-icon" cx="4" cy="4" r="3" stroke="#ffffff" stroke-width="2"/>
+                                <circle class="main-nav__toggle-icon" cx="4" cy="15" r="3" stroke="#ffffff" stroke-width="2"/>
+                                <circle class="main-nav__toggle-icon" cx="4" cy="26" r="3" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                        </svg>
+                    </button>
+                    <ul class="main-nav__list js-menu-navigation">
                         <li class="main-nav__item">
                             <a href="/" class="main-nav__link main-nav__link--active">Главная</a>
                         </li>

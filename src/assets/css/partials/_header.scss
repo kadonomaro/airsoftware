@@ -21,11 +21,20 @@
 
 @media (max-width: $mobile-large) {
   .page-header {
-    &__logo {
-      max-width: 80px;
-    }
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
     &__nav {
-      position: absolute;
+      margin: 0;
+    }
+    &__logo {
+      max-width: 60px;
+    }
+    &__order {
+      display: none;
     }
   }
 }

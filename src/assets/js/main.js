@@ -1,8 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+    navigation();
     heroCanvasAnimation();
     heroTextAnimation();
     infiniteSliderInit('.js-clients-slider');
     tabsInit('.js-tabs');
+
+
+    function navigation() {
+        const navToggle = document.querySelector('.js-menu-toggle');
+        const navMenu = document.querySelector('.js-menu-navigation')
+        navToggle.addEventListener('click', function (evt) {
+            evt.preventDefault();
+            navMenu.classList.toggle('main-nav__list--opened');
+        })
+    }
 
 
     function  heroTextAnimation() {

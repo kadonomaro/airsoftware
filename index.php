@@ -198,7 +198,7 @@
                     <div class="tabs__header">
                         <ul class="tabs__list">
                             <li class="tabs__item">
-                                <a href="" class="tabs__link tabs__link--active" data-target="1">Вкладка 1</a>
+                                <a href="" class="tabs__link tabs__link--active" data-target="1">Address Book</a>
                             </li>
                             <li class="tabs__item">
                                 <a href="" class="tabs__link" data-target="2">Вкладка 2</a>
@@ -209,14 +209,89 @@
                         </ul>
                     </div>
                     <div class="tabs__body">
-                        <div class="tabs__content tabs__content--visible" data-content="1">111111</div>
+                        <div class="tabs__content tabs__content--visible" data-content="1">
+                            <div class="products-item">
+                                <span class="products-item__title">Address Book</span>
+                                <span class="products-item__subtitle">Веб-приложение для управления контактами</span>
+                                <div class="products-item__info">
+                                    <div class="table-wrapper">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Наше приложение</td>
+                                                    <td>Многие другие приложения</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Удобный интерфейс</td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#a0a0a0" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Высокая производительность</td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        </svg>
+                                                    </td>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#a0a0a0" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Большой встроенный функционал</td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#a0a0a0" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Бесплатное использование</td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tabs__content" data-content="2">222222</div>
                         <div class="tabs__content" data-content="3">333333</div>
 
                     </div>
                 </div>
             </div>
-        </div>
+
+            <footer class="products__footer">
+                <span class="products__resume">Выбор всегда остается за вами</span>
+            </footer>
+        </div><!--products--inner-->
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

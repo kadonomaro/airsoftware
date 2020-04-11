@@ -3,5 +3,30 @@
   &__tabs {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__footer {
+    padding: 0 10px;
+    text-align: center;
+  }
+  &__resume {
+    color: $color-light-gray;
+    font-size: 20px;
+  }
+}
+
+
+.products-item {
+  &__title,
+  &__subtitle {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__subtitle {
+    font-size: 20px;
   }
 }

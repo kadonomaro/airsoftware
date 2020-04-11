@@ -17,7 +17,7 @@
   }
   &__link {
     display: block;
-    padding: 7px 12px;
+    padding: 7px 15px;
     color: $color-dark-gray;
     font-size: 18px;
     text-decoration: none;
@@ -25,20 +25,17 @@
     transition: color 0.1s ease-in, background-color 0.1s ease-in;
     &:hover,
     &:focus {
-      background-color: lighten($color-light-gray, 30%);
+      background-color: lighten($color-medium-gray, 30%);
     }
   }
   &__link--active {
     color: #ffffff;
-    background-color: $color-light-gray;
+    background-color: $color-medium-gray;
     &:hover,
     &:focus {
       color: #ffffff;
-      background-color: $color-light-gray;
+      background-color: $color-medium-gray;
     }
-  }
-  &__body {
-
   }
   &__content {
     display: none;

@@ -7,13 +7,18 @@
   width: 100%;
   border-collapse: collapse;
   tr {
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: 2px solid $color-light-gray;
   }
   td {
-    padding: 10px 15px;
+    padding: 15px 20px;
     text-align: center;
     &:first-child {
+      width: 350px;
+      padding: 15px 20px 15px 5px;
       text-align: left;
     }
+  }
+  svg {
+    vertical-align: middle;
   }
 }

@@ -14,44 +14,7 @@
 
     <main class="hero">
         <canvas class="hero__canvas js-hero-canvas"></canvas>
-        <header class="page-header">
-            <div class="page-header__logo">
-                <div class="logo">
-                    <div class="logo__image">
-                        <img src="dist/assets/image/logo.svg" alt="Airsoftware">
-                    </div>
-                    <span class="logo__text"></span>
-                </div>
-            </div>
-            <div class="page-header__nav">
-                <nav class="main-nav">
-                    <button class="main-nav__toggle js-menu-toggle" aria-label="menu">
-                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="4" r="3" stroke="#fff" stroke-width="2"/>
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="15" r="3" stroke="#fff" stroke-width="2"/>
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="26" r="3" stroke="#fff" stroke-width="2"/>
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="4" r="3" stroke="#fff" stroke-width="2"/>
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="15" r="3" stroke="#fff" stroke-width="2"/>
-                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="26" r="3" stroke="#fff" stroke-width="2"/>
-                        </svg>
-                    </button>
-                    <ul class="main-nav__list js-menu-navigation">
-                        <li class="main-nav__item">
-                            <a href="/" class="main-nav__link main-nav__link--active">Главная</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="/products" class="main-nav__link">Продукты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="page-header__order">
-                <form action="" class="order">
-                    <button class="order__button button">Присоединиться</button>
-                </form>
-            </div>
-        </header>
-
+        <?php include_once 'partials/page-header.php'?>
         <div class="hero__body">
             <h1 class="hero__title">Airsoftware</h1>
             <span class="hero__subtitle">Современные решения для бизнеса</span>
@@ -572,36 +535,7 @@
     </section><!-- /.team -->
 
 
-    <footer class="page-footer">
-        <div class="page-footer__top">
-            <span class="page-footer__text">Мы всегда готовы к сотрудничеству</span>
-            <a class="page-footer__phone" href="tel:88006001212">8-800-600-12-12</a>
-            <a class="page-footer__email" href="mailto:info@airsoftware.ru.com">info@airsoftware.ru.com</a>
-        </div>
-        <div class="page-footer__bottom">
-            <span class="page-footer__year">© 1998 - <?php echo date('Y')?></span>
-            <div class="page-footer__nav">
-                <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">
-                            <a href="/" class="footer-nav__link">Главная</a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="/products" class="footer-nav__link">Продукты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="page-footer__logo">
-                <div class="logo">
-                    <div class="logo__image">
-                        <img src="dist/assets/image/logo.svg" alt="Airsoftware">
-                    </div>
-                    <span class="logo__text"></span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include_once 'partials/page-footer.php'?>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

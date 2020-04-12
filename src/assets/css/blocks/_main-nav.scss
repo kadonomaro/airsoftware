@@ -52,9 +52,19 @@
       &:focus {
         outline: none;
       }
-      &:focus .main-nav__toggle-icon {
-        stroke: $color-accent;
-      }
+    }
+    &__toggle-icon {
+      transition: fill 0.1s ease-in, transform 0.1s ease-in;
+      transform-origin: center;
+    }
+    &__toggle--opened .main-nav__toggle-icon {
+      stroke: $color-accent;
+    }
+    &__toggle--opened .main-nav__toggle-icon--left {
+      transform: rotate(-45deg);
+    }
+    &__toggle--opened .main-nav__toggle-icon--right {
+      transform: rotate(45deg);
     }
     &__list {
       position: fixed;

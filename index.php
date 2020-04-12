@@ -26,12 +26,13 @@
             <div class="page-header__nav">
                 <nav class="main-nav">
                     <button class="main-nav__toggle js-menu-toggle" aria-label="menu">
-                        <svg width="8" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <svg width="8" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="main-nav__toggle-icon" cx="4" cy="4" r="3" stroke="#ffffff" stroke-width="2"/>
-                                <circle class="main-nav__toggle-icon" cx="4" cy="15" r="3" stroke="#ffffff" stroke-width="2"/>
-                                <circle class="main-nav__toggle-icon" cx="4" cy="26" r="3" stroke="#ffffff" stroke-width="2"/>
-                            </svg>
+                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="4" r="3" stroke="#fff" stroke-width="2"/>
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="15" r="3" stroke="#fff" stroke-width="2"/>
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--left" cx="15" cy="26" r="3" stroke="#fff" stroke-width="2"/>
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="4" r="3" stroke="#fff" stroke-width="2"/>
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="15" r="3" stroke="#fff" stroke-width="2"/>
+                            <circle class="main-nav__toggle-icon main-nav__toggle-icon--right" cx="15" cy="26" r="3" stroke="#fff" stroke-width="2"/>
                         </svg>
                     </button>
                     <ul class="main-nav__list js-menu-navigation">

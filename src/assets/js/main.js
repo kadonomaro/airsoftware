@@ -39,13 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const width = canvas.width;
         const height = canvas.height;
+        let delay = 10;
+
+        if (window.innerWidth <= 767) {
+            delay = 50;
+        }
 
         ctx.font = "bold 16px Roboto";
 
-        render(20,20,10);
+        render(20,20, delay);
 
 
-        function render(cellWidth = 20, cellHeight = 20, speed = 100) {
+        function render(cellWidth = 20, cellHeight = 20, delay = 100) {
             const renderCount = (width / cellWidth) * (height / cellHeight);
             const renderLimit = renderCount - renderCount * 0.5;
             let counter = 0;
@@ -68,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (counter >= renderLimit) {
                     clearInterval(interval);
                 }
-            }, speed);
+            }, delay);
         }
 
         function getRandomSymbol(start, end) {

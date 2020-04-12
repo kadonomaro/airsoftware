@@ -15,8 +15,11 @@
   }
   &__subtitle {
     display: block;
-    color: #a0a0a0;
+    color: $color-medium-gray;
     font-size: 28px;
+  }
+  &__subtitle--dark {
+    color: $color-medium-dark-gray;
   }
 }
 

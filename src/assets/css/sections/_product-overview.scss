@@ -1,0 +1,40 @@
+.product-overview {
+  background-color: $color-light-gray;
+  &__inner {
+    display: flex;
+  }
+  &__main {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+  &__side {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  &__text {
+    padding: 20px 20px 10px 30%;
+    color: $color-dark-gray;
+    p {
+      margin: 0 0 20px;
+    }
+  }
+  &__name {
+    margin: 0 0 5px;
+    font-size: 28px;
+  }
+  &__desc {
+    display: block;
+    margin-bottom: 25px;
+    color: $color-medium-dark-gray;
+    font-size: 20px;
+  }
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__image {
+
+  }
+}

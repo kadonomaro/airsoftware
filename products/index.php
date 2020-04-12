@@ -13,7 +13,94 @@
 <body>
     <?php include_once '../partials/page-header.php'?>
 
+
+    <section class="product-overview section">
+        <header class="section__header">
+            <h2 class="section__title section__title--dark">Обзор основных продуктов нашей компании</h2>
+            <span class="section__subtitle section__subtitle--dark">Выберите нужное решение под свой бизнес</span>
+        </header>
+
+        <div class="product-overview__inner">
+            <div class="product-overview__main">
+                <div class="product-overview__text">
+                    <h3 class="product-overview__name">Address Book</h3>
+                    <span class="product-overview__desc">Управление контактами еще никогда не было таким удобным</span>
+                    <span class="product-overview__title">Заголовок</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
+                        inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
+                        Dolore earum esse est impedit nobis odit saepe voluptate!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <span class="product-overview__title">Заголовок</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <span class="product-overview__title">Заголовок</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <span class="product-overview__title">Заголовок</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                    </p>
+                </div>
+            </div>
+            <div class="product-overview__side">
+                <div class="product-overview__image">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-1.webp">
+                        <source media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-1.png">
+                        <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
+                        <img class="product-overview__image-img" src="/dist/assets/image/product-overview/address-book-1.png" alt="" >
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <?php include_once '../partials/page-footer.php'?>
+
 
     <div class="modal-overlay">
         <div class="modal" id="order-modal">

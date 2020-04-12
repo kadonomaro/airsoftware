@@ -173,7 +173,7 @@
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title section__title--dark">Основные продукты</h2>
-                <span class="section__subtitle">Прежде чем выбрать, нужно сравнить</span>
+                <span class="section__subtitle section__subtitle--dark">Прежде чем выбрать, нужно сравнить</span>
             </header>
 
             <div class="products__inner">
@@ -198,7 +198,7 @@
                             <div class="tabs__content tabs__content--visible" data-content="1">
                                 <div class="products-item">
                                 <span class="products-item__title">
-                                    <a class="products-item__link" href="https://address-book-2020.web.app/" target="_blank">Address Book</a>
+                                    <a class="products-item__link" href="https://address-book-2020.web.app/" target="_blank" rel="noreferrer">Address Book</a>
                                 </span>
                                     <span class="products-item__subtitle">Веб-приложение для управления контактами</span>
                                     <div class="products-item__info">
@@ -272,7 +272,7 @@
                             <div class="tabs__content" data-content="2">
                                 <div class="products-item">
                                 <span class="products-item__title">
-                                    <a class="products-item__link" href="https://kadonomaro.github.io/todo-app/" target="_blank">To-do Application</a>
+                                    <a class="products-item__link" href="https://kadonomaro.github.io/todo-app/" target="_blank" rel="noreferrer">To-do Application</a>
                                 </span>
                                     <span class="products-item__subtitle">Веб-приложение «Список дел»</span>
                                     <div class="products-item__info">
@@ -449,7 +449,7 @@
                     <article class="team-card">
                         <div class="team-card__image">
                             <picture>
-                                <source type="image/webp" srcset="dist/assets/image/team/oleg-komarov.jpg">
+                                <source type="image/webp" srcset="dist/assets/image/team/oleg-komarov.webp">
                                 <img class="team-card__image-img" src="dist/assets/image/team/oleg-komarov.jpg" alt="Олег Комаров" >
                             </picture>
                         </div>

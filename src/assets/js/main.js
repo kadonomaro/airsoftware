@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    if (document.body.classList.contains('main-page')) {
+        heroCanvasAnimation();
+        heroTextAnimation();
+        infiniteSliderInit('.js-clients-slider');
+        tabsInit('.js-tabs');
+    }
     navigation();
-    heroCanvasAnimation();
-    heroTextAnimation();
-    infiniteSliderInit('.js-clients-slider');
-    tabsInit('.js-tabs');
     modal();
 
 

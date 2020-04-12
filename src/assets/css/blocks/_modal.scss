@@ -33,13 +33,13 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: fill 0.1s ease-in;
     &:hover .modal__close-icon,
     &:focus .modal__close-icon {
       fill: $color-accent;
     }
   }
   &__close-icon {
+    transition: fill 0.1s ease-in;
     pointer-events: none;
   }
   &__title {

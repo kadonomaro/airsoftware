@@ -14,8 +14,10 @@
   &__text {
     padding: 20px 20px 10px 30%;
     color: $color-dark-gray;
+    font-size: 18px;
+    line-height: 1.4;
     p {
-      margin: 0 0 20px;
+      margin: 0 0 50px;
     }
   }
   &__name {
@@ -24,17 +26,34 @@
   }
   &__desc {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     color: $color-medium-dark-gray;
     font-size: 20px;
   }
   &__title {
     display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: bold;
   }
+  &__screen {
+    position: relative;
+  }
   &__image {
-
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  &__image--fixed {
+    position: fixed;
+    top: 30%;
+    left: auto;
+    right: auto;
+  }
+  &__image--hidden {
+    opacity: 0;
   }
 }

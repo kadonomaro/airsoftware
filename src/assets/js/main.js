@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         infiniteSliderInit('.js-clients-slider');
         tabsInit('.js-tabs');
     }
+    if (document.body.classList.contains('product-page')) {
+        imageScroll();
+    }
     navigation();
     modal();
 
@@ -159,6 +162,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
             document.body.classList.remove('modal-is-open');
         }
+    }
 
+
+    function imageScroll() {
+        const triggers = document.querySelectorAll('.js-product-overview-trigger');
+        const overviewScreen = document.querySelector('.js-overview-screen');
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 1
+        };
+
+        function callback(entries) {
+            entries.forEach((entry ) => {
+                const imageTarget = overviewScreen.querySelector(`[data-image="${entry.target.dataset.target}"]`);
+                if (entry.intersectionRatio === 1) {
+                    console.log(entry.intersectionRatio);
+                    imageTarget.classList.remove('product-overview__image--hidden');
+                    imageTarget.classList.add('product-overview__image--fixed');
+                } else if (entry.intersectionRatio < 1) {
+                    imageTarget.classList.add('product-overview__image--hidden');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(callback, options);
+
+        triggers.forEach((trigger) => {
+            observer.observe(trigger);
+        })
     }
 });

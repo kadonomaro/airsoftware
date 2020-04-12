@@ -116,6 +116,8 @@
             <div class="about__side">
                 <div class="about__image">
                     <picture>
+                        <source type="image/webp" media="(max-width: 450px)" srcset="dist/assets/image/about/company450w.webp">
+                        <source media="(max-width: 450px)" srcset="dist/assets/image/about/company450w.jpg">
                         <source type="image/webp" srcset="dist/assets/image/about/company.webp">
                         <img class="about__image-img" src="dist/assets/image/about/company.jpg" alt="офис Airsoftware" >
                     </picture>
@@ -140,6 +142,8 @@
             <div class="about__side about__side--ordered">
                 <div class="about__image">
                     <picture>
+                        <source type="image/webp" media="(max-width: 450px)" srcset="dist/assets/image/about/development450w.webp">
+                        <source media="(max-width: 450px)" srcset="dist/assets/image/about/development450w.jpg">
                         <source type="image/webp" srcset="dist/assets/image/about/development.webp">
                         <img class="about__image-img" src="dist/assets/image/about/development.jpg" alt="разработка программного обеспечения" >
                     </picture>
@@ -172,6 +176,8 @@
             <div class="about__side">
                 <div class="about__image">
                     <picture>
+                        <source type="image/webp" media="(max-width: 450px)" srcset="dist/assets/image/about/internship450w.webp">
+                        <source media="(max-width: 450px)" srcset="dist/assets/image/about/internship450w.jpg">
                         <source type="image/webp" srcset="dist/assets/image/about/internship.webp">
                         <img class="about__image-img" src="dist/assets/image/about/internship.jpg" alt="ежегодная стажировка" >
                     </picture>
@@ -196,7 +202,7 @@
             </div>
         </div><!--about__inner-->
 
-    </section>
+    </section><!-- /.about -->
 
 
     <section class="products section">
@@ -243,7 +249,7 @@
                                                 <tr>
                                                     <td>Удобный интерфейс</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -256,7 +262,7 @@
                                                 <tr>
                                                     <td>Высокая производительность</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -270,7 +276,7 @@
                                                 <tr>
                                                     <td>Большой встроенный функционал</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -283,12 +289,12 @@
                                                 <tr>
                                                     <td>Бесплатное использование</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -317,7 +323,7 @@
                                                 <tr>
                                                     <td>Удобство использования</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -330,7 +336,7 @@
                                                 <tr>
                                                     <td>Адаптировано под мобильные устройства</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -344,7 +350,7 @@
                                                 <tr>
                                                     <td>Подробная документация</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -357,12 +363,12 @@
                                                 <tr>
                                                     <td>Бесплатное использование</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -391,7 +397,7 @@
                                                 <tr>
                                                     <td>Современный интерфейс</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -404,7 +410,7 @@
                                                 <tr>
                                                     <td>Интеграция с существующими системами</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -418,7 +424,7 @@
                                                 <tr>
                                                     <td>Круглосуточная техподдержка</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -431,7 +437,7 @@
                                                 <tr>
                                                     <td>Доступная цена</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 -2 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
@@ -463,7 +469,7 @@
             </div><!--products--inner-->
 
         </div>
-    </section>
+    </section><!-- /.products -->
 
 
     <section class="team section">
@@ -563,7 +569,7 @@
             </div><!-- /.team__inner -->
 
         </div><!-- /.container -->
-    </section>
+    </section><!-- /.team -->
 
 
     <footer class="page-footer">

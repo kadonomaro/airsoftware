@@ -14,7 +14,10 @@
     font-size: 18px;
     line-height: 1;
   }
-  &__phone {
+  &__phone,
+  &__email {
+    display: inline-block;
+    margin: 0 5px;
     font-size: 20px;
     color: $color-light-gray;
     text-decoration: none;
@@ -76,7 +79,8 @@
     &__text {
       font-size: 16px;
     }
-    &__phone {
+    &__phone,
+    &__email {
       font-size: 18px;
     }
     &__nav {

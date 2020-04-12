@@ -219,13 +219,13 @@
                         <div class="tabs__header">
                             <ul class="tabs__list">
                                 <li class="tabs__item">
-                                    <a href="" class="tabs__link tabs__link--active" data-target="1">Address Book</a>
+                                    <button class="tabs__button tabs__button--active" data-target="1">Address Book</button>
                                 </li>
                                 <li class="tabs__item">
-                                    <a href="" class="tabs__link" data-target="2">To-do Application</a>
+                                    <button class="tabs__button" data-target="2">To-do Application</button>
                                 </li>
                                 <li class="tabs__item">
-                                    <a href="" class="tabs__link" data-target="3">Transport Control</a>
+                                    <button class="tabs__button" data-target="3">Transport Control</button>
                                 </li>
                             </ul>
                         </div>
@@ -575,7 +575,8 @@
     <footer class="page-footer">
         <div class="page-footer__top">
             <span class="page-footer__text">Мы всегда готовы к сотрудничеству</span>
-            <a href="tel:88006001212" class="page-footer__phone">8-800-600-12-12</a>
+            <a class="page-footer__phone" href="tel:88006001212">8-800-600-12-12</a>
+            <a class="page-footer__email" href="mailto:info@airsoftware.ru.com">info@airsoftware.ru.com</a>
         </div>
         <div class="page-footer__bottom">
             <span class="page-footer__year">© 1998 - <?php echo date('Y')?></span>

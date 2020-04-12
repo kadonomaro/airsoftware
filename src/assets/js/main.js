@@ -101,8 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tabLinks.forEach((link) => {
             link.addEventListener('click', function (evt) {
                 evt.preventDefault();
-                tabLinks.forEach(link => link.classList.remove('tabs__link--active'));
-                this.classList.add('tabs__link--active');
+                tabLinks.forEach(link => link.classList.remove('tabs__button--active'));
+                this.classList.add('tabs__button--active');
 
                 const linkTarget = tabs.querySelector(`[data-content="${this.dataset.target}"]`);
                 tabLinkTargets.forEach(target => target.classList.remove('tabs__content--visible'));

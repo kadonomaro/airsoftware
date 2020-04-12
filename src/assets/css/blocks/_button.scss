@@ -8,6 +8,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.1s ease-in, color 0.1s ease-in, border-color 0.1s ease-in;
+  outline: none;
   &:hover,
   &:focus {
     color: $color-accent;

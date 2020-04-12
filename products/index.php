@@ -13,5 +13,7 @@
     <?php include_once '../partials/page-header.php'?>
 
     <?php include_once '../partials/page-footer.php'?>
+
+    <script src="../dist/assets/js/main.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@
     </div>
     <div class="page-header__order">
         <form action="" class="order">
-            <button class="order__button button">Присоединиться</button>
+            <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
         </form>
     </div>
 </header>

@@ -4,6 +4,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.modal-is-open {
+  padding-right: 17px;
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;

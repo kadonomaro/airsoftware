@@ -62,7 +62,7 @@
 
         <div class="clients__order">
             <form action="" class="order">
-                <button class="order__button button">Присоединиться</button>
+                <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
             </form>
         </div>
 
@@ -425,7 +425,7 @@
                     <span class="products__resume">Выбор всегда остается за вами</span>
                     <div class="products__order">
                         <form action="" class="order">
-                            <button class="order__button button">Присоединиться</button>
+                            <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
                         </form>
                     </div>
                 </footer>
@@ -536,6 +536,21 @@
 
 
     <?php include_once 'partials/page-footer.php'?>
+
+    <div class="modal-overlay">
+        <div class="modal" id="order-modal">
+            <button class="modal__close js-close-modal" aria-label="close modal">
+                <svg class="modal__close-icon" width="100%" height="100%" fill="#141414">
+                    <path d="M20.13 8.11l-5.61 5.61-5.6-5.61-.81.8 5.61 5.61-5.61 5.61.8.8 5.61-5.6 5.61 5.6.8-.8-5.6-5.6 5.6-5.62" fill-rule="evenodd"></path>
+                </svg>
+            </button>
+            <span class="modal__title">Оставьте заявку прямо сейчас</span>
+            <span class="modal__subtitle">Будь в курсе последних новостей</span>
+            <form action="" class="order">
+                <button class="order__button button">Присоединиться</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

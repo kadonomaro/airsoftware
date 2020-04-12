@@ -154,5 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
             document.body.classList.remove('modal-is-open');
         }
+
     }
 });

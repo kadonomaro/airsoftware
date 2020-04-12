@@ -172,17 +172,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 1
+            threshold: 0.75
         };
 
         function callback(entries) {
             entries.forEach((entry ) => {
+                console.log(entry.intersectionRatio);
                 const imageTarget = overviewScreen.querySelector(`[data-image="${entry.target.dataset.target}"]`);
-                if (entry.intersectionRatio === 1) {
+                if (entry.intersectionRatio > options.threshold) {
                     console.log(entry.intersectionRatio);
                     imageTarget.classList.remove('product-overview__image--hidden');
                     imageTarget.classList.add('product-overview__image--fixed');
-                } else if (entry.intersectionRatio < 1) {
+                } else {
                     imageTarget.classList.add('product-overview__image--hidden');
                 }
             });

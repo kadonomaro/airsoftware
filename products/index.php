@@ -25,67 +25,71 @@
                 <div class="product-overview__text">
                     <h3 class="product-overview__name">Address Book</h3>
                     <span class="product-overview__desc">Управление контактами еще никогда не было таким удобным</span>
-                    <span class="product-overview__title js-product-overview-trigger" data-target="1">Заголовок</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
-                        inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
-                        Dolore earum esse est impedit nobis odit saepe voluptate!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <span class="product-overview__title js-product-overview-trigger" data-target="2">Заголовок</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <span class="product-overview__title js-product-overview-trigger" data-target="3">Заголовок</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                        Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                        maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                        Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
-                    </p>
+
+                    <div class="product-overview__item js-product-overview-trigger" data-target="1">
+                        <span class="product-overview__title">Заголовок 1</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
+                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
+                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                    </div>
+
+                    <div class="product-overview__item js-product-overview-trigger" data-target="2">
+                        <span class="product-overview__title">Заголовок 2</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
+                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
+                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                    </div>
+                    <div class="product-overview__item js-product-overview-trigger" data-target="3">
+                        <span class="product-overview__title">Заголовок 3</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
+                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
+                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
+                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
+                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
+                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                        </p>
+                    </div>
 
                 </div>
             </div>

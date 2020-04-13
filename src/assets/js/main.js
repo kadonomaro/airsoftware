@@ -208,33 +208,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const width = canvas.width;
         const height = canvas.height;
 
-        const image1 = new Image();
-        image1.src = '../dist/assets/image/product-overview/address-book-1.png';
-
-        image1.addEventListener('load', function () {
-            ctx.drawImage(this, 50,50, (width * 0.5), (width * 0.5) * 0.5);
-        });
 
         // ctx.transform(1, 0.5, -0.5, 1, 30, 10);
 
-        drawImage({
-            image: image1,
-            position: {
-                x: 50,
-                y: 50
-            },
+        class CanvasImage {
+            constructor({ imageSource, size = {width: 0, height: 0} }) {
+                this.image = new Image();
+                this.image.src = imageSource;
+                this.size = size;
+            }
+
+            draw(x, y) {
+                this.image.addEventListener('load', () => {
+                    ctx.drawImage(this.image, x, y, this.size.width, this.size.height);
+                });
+            }
+        }
+
+        const image2 = new CanvasImage({
+            imageSource: '../dist/assets/image/product-overview/address-book-2.png',
             size: {
-                w: width * 0.5,
-                h: (width * 0.5) * 0.5
+                width: width * 0.5,
+                height: (width * 0.5) * 0.5
             }
         });
 
-        function drawImage({ image, position = {x: 0, y: 0}, size= {w: 0, h: 0} }) {
-            image.addEventListener('load', function () {
-               ctx.drawImage(image, position.x, position.y, size.w, size.h);
-            });
-        }
-
+        image2.draw(800, 400);
 
     }
 });

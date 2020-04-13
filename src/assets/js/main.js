@@ -168,23 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function imageScroll() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');
         const overviewScreen = document.querySelector('.js-overview-screen');
+        const images = overviewScreen.querySelectorAll('.js-product-overview-target');
 
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.75
+            threshold: 0.50
         };
 
         function callback(entries) {
-            entries.forEach((entry ) => {
-                console.log(entry.intersectionRatio);
+            entries.forEach((entry) => {
                 const imageTarget = overviewScreen.querySelector(`[data-image="${entry.target.dataset.target}"]`);
                 if (entry.intersectionRatio > options.threshold) {
-                    console.log(entry.intersectionRatio);
+                    images.forEach((image) => {
+                        image.classList.add('product-overview__image--hidden');
+                    });
                     imageTarget.classList.remove('product-overview__image--hidden');
                     imageTarget.classList.add('product-overview__image--fixed');
-                } else {
-                    imageTarget.classList.add('product-overview__image--hidden');
                 }
             });
         }

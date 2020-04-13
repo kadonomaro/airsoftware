@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tabsInit('.js-tabs');
     }
     if (document.body.classList.contains('product-page')) {
+        productCanvasAnimation();
         imageScroll();
     }
     navigation();
@@ -194,5 +195,46 @@ document.addEventListener('DOMContentLoaded', () => {
         triggers.forEach((trigger) => {
             observer.observe(trigger);
         })
+    }
+    
+    
+    function productCanvasAnimation() {
+        const canvas = document.querySelector('.js-product-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const width = canvas.width;
+        const height = canvas.height;
+
+        const image1 = new Image();
+        image1.src = '../dist/assets/image/product-overview/address-book-1.png';
+
+        image1.addEventListener('load', function () {
+            ctx.drawImage(this, 50,50, (width * 0.5), (width * 0.5) * 0.5);
+        });
+
+        // ctx.transform(1, 0.5, -0.5, 1, 30, 10);
+
+        drawImage({
+            image: image1,
+            position: {
+                x: 50,
+                y: 50
+            },
+            size: {
+                w: width * 0.5,
+                h: (width * 0.5) * 0.5
+            }
+        });
+
+        function drawImage({ image, position = {x: 0, y: 0}, size= {w: 0, h: 0} }) {
+            image.addEventListener('load', function () {
+               ctx.drawImage(image, position.x, position.y, size.w, size.h);
+            });
+        }
+
+
     }
 });

@@ -11,7 +11,18 @@
     <title>Наша продукция - Airsoftware</title>
 </head>
 <body class="product-page">
-    <?php include_once '../partials/page-header.php'?>
+<!--    --><?php //include_once '../partials/page-header.php'?>
+
+
+    <main class="hero">
+        <canvas class="hero__canvas js-product-canvas"></canvas>
+        <?php include_once '../partials/page-header.php'?>
+        <div class="hero__body">
+            <h1 class="hero__title">Airsoftware</h1>
+            <span class="hero__subtitle">Современные решения для бизнеса</span>
+        </div>
+
+    </main><!--hero-->
 
 
     <section class="product-overview section">

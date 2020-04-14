@@ -151,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 modalOverlay.classList.add('modal-overlay--active');
                 modalOverlay.querySelector(`#${id}`).classList.add('modal--active');
+                modalOverlay.querySelector('.js-close-modal').focus();
             }, 10);
             document.body.classList.add('modal-is-open');
         }

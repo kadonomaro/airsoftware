@@ -34,7 +34,15 @@
                             <input type="text" name="order-name" class="order__input" placeholder="Ваше имя">
                         </label>
                         <label class="order__label">
+                            <input type="tel" name="order-phone" class="order__input" placeholder="Ваш телефон">
+                        </label>
+                        <label class="order__label">
                             <input type="email" name="order-email" class="order__input" placeholder="Ваш email">
+                        </label>
+                        <label class="order__label">
+                            <input type="checkbox" name="order-agree" class="checkbox visually-hidden">
+                            <span class="checkbox-custom"></span>
+                            <span class="order__policy">Я согласен на <a class="link" href="/policy">обработку персональных данных</a></span>
                         </label>
                         <button type="submit" class="order__button button">Оставить заявку</button>
                     </form>

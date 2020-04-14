@@ -1,8 +1,18 @@
 .link {
-  color: $color-text-link;
+  color: $color-text-link-dark;
   transition: color 0.1s ease-in;
   &:hover,
   &:focus {
-    color: darken($color-text-link, 10%);
+    color: darken($color-text-link-dark, 10%);
+  }
+  &:visited {
+    color: inherit;
+  }
+}
+.link--light {
+  color: $color-text-link-light;
+  &:hover,
+  &:focus {
+    color: darken($color-text-link-light, 10%);
   }
 }

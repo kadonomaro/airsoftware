@@ -26,8 +26,9 @@
   &__image {
     position: absolute;
     top: 20%;
-    transition: transform 1.7s ease-in, opacity 1.5s ease-in;
+    transition: transform 1.7s ease-in, opacity 1.2s ease-in;
     opacity: 0;
+    pointer-events: none;
     &:nth-child(1) {
       left: 5%;
       transform: rotateY(45deg) translateX(-100vw);

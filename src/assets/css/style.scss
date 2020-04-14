@@ -4,17 +4,21 @@
 @import "partials/header";
 @import "partials/footer";
 
-@import "sections/section";
+/*Main page*/
 @import "sections/hero";
 @import "sections/clients";
 @import "sections/about";
 @import "sections/products";
 @import "sections/team";
 
+/*Product page*/
 @import "sections/product-hero";
 @import "sections/product-overview";
 
+/*Policy page*/
+@import "sections/policy";
 
+@import "blocks/section";
 @import "blocks/main-nav";
 @import "blocks/logo";
 @import "blocks/button";

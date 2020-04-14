@@ -17,6 +17,29 @@
     <main class="product-hero">
         <?php include_once '../partials/page-header.php'?>
         <div class="product-hero__content">
+            <div class="product-hero__order">
+                <div class="order">
+                    <span class="order__title">Трудно выбрать, легко купить</span>
+                    <span class="order__subtitle">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</span>
+                    <form action="" class="order__form">
+                        <label class="order__label">
+                            <select name="order-product" class="order__select">
+                                <option value="">Выберите продукт</option>
+                                <option value="address-book">Address Book</option>
+                                <option value="todo">Todo Application</option>
+                                <option value="transport-control">Transport Control</option>
+                            </select>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" name="order-name" class="order__input" placeholder="Ваше имя">
+                        </label>
+                        <label class="order__label">
+                            <input type="email" name="order-email" class="order__input" placeholder="Ваш email">
+                        </label>
+                        <button type="submit" class="order__button button">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
             <div class="product-hero__image js-product-hero-image">
                 <picture>
                     <source type="image/webp" srcset="/dist/assets/image/product-hero/address-book.png">

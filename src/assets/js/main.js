@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tabsInit('.js-tabs');
     }
     if (document.body.classList.contains('product-page')) {
-        productCanvasAnimation();
         imageScroll();
+        imageTransform(1500);
     }
     navigation();
     modal();
@@ -194,46 +194,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         triggers.forEach((trigger) => {
             observer.observe(trigger);
-        })
-    }
-    
-    
-    function productCanvasAnimation() {
-        const canvas = document.querySelector('.js-product-canvas');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const width = canvas.width;
-        const height = canvas.height;
-
-
-        // ctx.transform(1, 0.5, -0.5, 1, 30, 10);
-
-        class CanvasImage {
-            constructor({ imageSource, size = {width: 0, height: 0} }) {
-                this.image = new Image();
-                this.image.src = imageSource;
-                this.size = size;
-            }
-
-            draw(x, y) {
-                this.image.addEventListener('load', () => {
-                    ctx.drawImage(this.image, x, y, this.size.width, this.size.height);
-                });
-            }
-        }
-
-        const image2 = new CanvasImage({
-            imageSource: '../dist/assets/image/product-overview/address-book-2.png',
-            size: {
-                width: width * 0.5,
-                height: (width * 0.5) * 0.5
-            }
         });
-
-        image2.draw(800, 400);
-
     }
+
+    
+    function imageTransform(delay) {
+        const images = document.querySelectorAll('.js-product-hero-image');
+
+        setTimeout(()=>{
+            images.forEach((image) => {
+                image.classList.add('product-hero__image--transformed');
+            });
+        }, delay)
+    }
+    
+
 });

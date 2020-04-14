@@ -14,15 +14,27 @@
 <!--    --><?php //include_once '../partials/page-header.php'?>
 
 
-    <main class="hero">
-        <canvas class="hero__canvas js-product-canvas"></canvas>
+    <main class="product-hero">
         <?php include_once '../partials/page-header.php'?>
-        <div class="hero__body">
-            <h1 class="hero__title">Airsoftware</h1>
-            <span class="hero__subtitle">Современные решения для бизнеса</span>
+        <div class="product-hero__content">
+            <div class="product-hero__image js-product-hero-image">
+                <picture>
+                    <source type="image/webp" srcset="/dist/assets/image/product-hero/address-book.png">
+                    <img class="product-hero__image-img" src="/dist/assets/image/product-hero/address-book.png" alt="Address Book" >
+                </picture>
+            </div>
+            <div class="product-hero__image js-product-hero-image">
+
+            </div>
+            <div class="product-hero__image js-product-hero-image">
+                <picture>
+                    <source type="image/webp" srcset="/dist/assets/image/product-hero/todo.png">
+                    <img class="product-hero__image-img" src="/dist/assets/image/product-hero/todo.png" alt="To-do application" >
+                </picture>
+            </div>
         </div>
 
-    </main><!--hero-->
+    </main><!-- ./product-hero -->
 
 
     <section class="product-overview section">

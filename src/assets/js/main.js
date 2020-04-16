@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.body.classList.contains('product-page')) {
         imageScroll();
+        gridImageHighlight(3500);
     }
     navigation();
     modal();
@@ -83,9 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return String.fromCharCode(getRandomRange(start, end));
         }
 
-        function getRandomRange(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
     }
 
 
@@ -197,4 +195,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    function gridImageHighlight(delay) {
+        const images = document.querySelectorAll('.js-product-hero-image');
+        const maxLength = images.length - 1;
+        const highlightAmount = 2;
+
+        const interval = setInterval(() => {
+            for (let i = 0; i < highlightAmount; i++) {
+                const currentImage = images[getRandomRange(0, maxLength)];
+                currentImage.classList.add('product-hero-grid__image--highlighted');
+
+                setTimeout(() => {
+                    const prevImage = currentImage;
+                    prevImage.classList.remove('product-hero-grid__image--highlighted');
+                }, delay);
+            }
+
+        },delay);
+
+    }
+
 });
+
+
+function getRandomRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

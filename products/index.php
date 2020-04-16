@@ -22,64 +22,64 @@
         <div class="product-hero__content">
             <div class="product-hero__grid">
                 <div class="product-hero-grid">
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x1">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x1 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--1x1">
+                    <div class="product-hero-grid__image product-hero-grid__image--1x1 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x1">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x1 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--1x1">
+                    <div class="product-hero-grid__image product-hero-grid__image--1x1 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x1">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x1 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
                         <img src="https://via.placeholder.com/300x150" alt="" class="product-hero-grid__image-img">
                     </div>
                 </div>

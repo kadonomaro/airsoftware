@@ -51,7 +51,11 @@
     object-fit: cover;
   }
   &__image {
-
+    transition: opacity 0.2s ease-in;
+    opacity: 0.3;
+  }
+  &__image--highlighted {
+    opacity: 1;
   }
   &__image--1x1 {
     grid-column-end: span 1;

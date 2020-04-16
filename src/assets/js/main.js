@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.body.classList.contains('product-page')) {
         imageScroll();
-        imageTransform(1500);
     }
     navigation();
     modal();
@@ -197,17 +196,5 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(trigger);
         });
     }
-
-    
-    function imageTransform(delay) {
-        const images = document.querySelectorAll('.js-product-hero-image');
-
-        setTimeout(()=>{
-            images.forEach((image) => {
-                image.classList.add('product-hero__image--transformed');
-            });
-        }, delay)
-    }
-    
 
 });

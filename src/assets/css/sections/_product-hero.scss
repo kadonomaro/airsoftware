@@ -20,35 +20,8 @@
     z-index: 10;
     max-width: 400px;
     padding: 25px;
-    background-color: $color-light-gray;
+    background-color: #ffffff;
     color: $color-dark-gray;
     box-shadow: 0 0 7px rgba($color-dark-gray, 0.5);
-  }
-  &__image {
-    position: absolute;
-    top: 20%;
-    transition: transform 1.7s ease-in, opacity 1.2s ease-in;
-    opacity: 0;
-    pointer-events: none;
-    &:nth-child(1) {
-      left: 5%;
-      transform: rotateY(45deg) translateX(-100vw);
-      transition-delay: 1s;
-    }
-    &:nth-child(2) {
-      left: 15%;
-      transform: rotateY(55deg) translateX(-100vw);
-      transition-delay: 0.5s;
-    }
-    &:nth-child(3) {
-      left: 25%;
-      transform: rotateY(65deg) translateX(-100vw);
-    }
-  }
-  &__image--transformed {
-    &:nth-child(n) {
-      transform: translate(0) rotateY(0);
-      opacity: 1;
-    }
   }
 }

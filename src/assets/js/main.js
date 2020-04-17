@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tabsInit('.js-tabs');
     }
     if (document.body.classList.contains('product-page')) {
-        imageScroll();
+        scrollObservers();
         gridImageHighlight(3500);
     }
     navigation();
@@ -164,35 +164,78 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function imageScroll() {
+    function scrollObservers() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');
         const overviewScreen = document.querySelector('.js-overview-screen');
         const images = overviewScreen.querySelectorAll('.js-product-overview-target');
 
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.50
-        };
+        startTextObserver();
+        startImageObserver();
 
-        function callback(entries) {
-            entries.forEach((entry) => {
-                const imageTarget = overviewScreen.querySelector(`[data-image="${entry.target.dataset.target}"]`);
-                if (entry.intersectionRatio > options.threshold) {
+        function startTextObserver() {
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.50
+            };
+
+            function callback(entries) {
+                entries.forEach((entry) => {
+                    const imageTarget = overviewScreen.querySelector(`[data-image="${entry.target.dataset.target}"]`);
+                    if (entry.intersectionRatio > options.threshold) {
+                        images.forEach((image) => {
+                            image.classList.add('product-overview__image--hidden');
+                        });
+                        imageTarget.classList.remove('product-overview__image--hidden');
+                    }
+                });
+            }
+
+            const observer = new IntersectionObserver(callback, options);
+
+            triggers.forEach((trigger) => {
+                observer.observe(trigger);
+            });
+        }
+
+        
+        function startImageObserver() {
+            const scrollTopLimit = window.innerHeight / 3;
+            let isSticky = false;
+
+            window.addEventListener('scroll', () => {
+
+                console.log('screen: ', overviewScreen.getBoundingClientRect().bottom);
+                console.log('image: ', images[0].getBoundingClientRect().bottom);
+
+                if ( !isSticky && (overviewScreen.getBoundingClientRect().top <= scrollTopLimit) ) {
+                    isSticky = true;
+                    console.log(isSticky);
                     images.forEach((image) => {
-                        image.classList.add('product-overview__image--hidden');
+                        image.style.position = 'fixed';
+                        image.style.top = scrollTopLimit + 'px';
                     });
-                    imageTarget.classList.remove('product-overview__image--hidden');
-                    imageTarget.classList.add('product-overview__image--fixed');
+                } else if ( isSticky && (overviewScreen.getBoundingClientRect().top > scrollTopLimit) ) {
+                    isSticky = false;
+                    console.log(isSticky);
+                    images.forEach((image) => {
+                        image.style.position = 'absolute';
+                        image.style.top = '0';
+                    });
+                }
+
+                if ( isSticky && (images[0].getBoundingClientRect().bottom > overviewScreen.getBoundingClientRect().bottom) ) {
+                    isSticky = false;
+                    console.log(isSticky);
+                    images.forEach((image) => {
+                        image.style.position = 'absolute';
+                        image.style.top = 'auto';
+                        image.style.bottom = '0';
+                    });
                 }
             });
         }
 
-        const observer = new IntersectionObserver(callback, options);
-
-        triggers.forEach((trigger) => {
-            observer.observe(trigger);
-        });
     }
 
 
@@ -211,9 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     prevImage.classList.remove('product-hero-grid__image--highlighted');
                 }, delay);
             }
-
         },delay);
-
     }
 
 });

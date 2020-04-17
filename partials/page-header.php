@@ -25,6 +25,9 @@
                 <li class="main-nav__item">
                     <a href="/products" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/products/' ? 'main-nav__link--active' : '' ?>">Продукты</a>
                 </li>
+                <li class="main-nav__item">
+                    <a href="/information" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/information/' ? 'main-nav__link--active' : '' ?>">Информация</a>
+                </li>
             </ul>
         </nav>
     </div>

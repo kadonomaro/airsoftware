@@ -38,20 +38,19 @@
   }
   &__screen {
     position: relative;
+    height: 100%;
+    outline: 2px dotted red;
+    &::before {
+      content: '';
+      position: fixed;
+      top: 360px;
+      width: 100vw;
+      height: 3px;
+      background-color: green;
+    }
   }
   &__image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     transition: opacity 0.5s ease-in;
-  }
-  &__image--fixed {
-    position: fixed;
-    top: 35%;
-    left: auto;
-    right: auto;
   }
   &__image--hidden {
     opacity: 0;

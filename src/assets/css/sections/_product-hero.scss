@@ -27,6 +27,29 @@
     color: $color-dark-gray;
     box-shadow: 0 0 7px rgba($color-dark-gray, 0.5);
   }
+  &__title-wrap,
+  &__title {
+    z-index: 99;
+    background-size: 200% auto;
+  }
+  &__title-wrap {
+    padding: 15px 20px;
+    background-image: linear-gradient(to right, $color-accent 0%, transparent 50%);
+    background-position: 99% center;
+    animation: title-gradient 2.5s linear forwards 1s;
+  }
+  &__title {
+    position: relative;
+    margin: 0;
+    font-size: 52px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, $color-dark-gray 0%, transparent 50%);
+    background-position: 100% center;
+    animation: title-gradient 3s linear forwards 1s;
+  }
   &__grid {
     position: absolute;
     top: 0;
@@ -42,7 +65,7 @@
 .product-hero-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, minmax(100px ,1fr));
   grid-gap: 10px;
   max-height: 100%;
   &__image-img {
@@ -85,5 +108,13 @@
   &__image--3x3 {
     grid-column-end: span 3;
     grid-row-end: span 3;
+  }
+}
+
+
+@keyframes title-gradient {
+  to {
+    background-position: 0% center;
+    background-size: 1000% auto;
   }
 }

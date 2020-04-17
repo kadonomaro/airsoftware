@@ -18,7 +18,6 @@
         <div class="product-hero__header">
             <?php include_once '../partials/page-header.php'?>
         </div>
-
         <div class="product-hero__content">
             <div class="product-hero__grid">
                 <div class="product-hero-grid">
@@ -144,6 +143,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="product-hero__title-wrap">
+                <h1 class="product-hero__title">Мы работаем чтобы вы зарабатывали</h1>
+            </div>
+
             <div class="product-hero__order">
                 <div class="order">
                     <span class="order__title">Трудно выбрать, легко купить</span>

@@ -170,7 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const images = overviewScreen.querySelectorAll('.js-product-overview-target');
 
         startTextObserver();
-        startImageObserver();
+
+        if (window.innerWidth >= 1023) {
+            startImageObserver();
+        }
 
         function startTextObserver() {
             const options = {

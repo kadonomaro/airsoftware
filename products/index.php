@@ -193,68 +193,104 @@
                     <span class="product-overview__desc">Управление контактами еще никогда не было таким удобным</span>
 
                     <div class="product-overview__item js-product-overview-trigger" data-target="1">
-                        <span class="product-overview__title">Заголовок 1</span>
+                        <span class="product-overview__title">Современный и функциональный интерфейс</span>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
-                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
-                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                            Address Book идеально подходит для небольших компаний для управления контактами.
+                            Удобный, современный и доступный интерфейс не позволит запутаться в приложении.
+                            Им легко пользоваться как с большого экрана персонального компьютера или ноутбука,
+                            так и с маленьких экранов планшетов и телефонов.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            Все элементы интерфейса доступны с клавиатуры и хорошо читаемы. Яркие краски выделяют их среди
+                            основного фона приложения. Ненавязчивые, мягкие цвета позволяют пользоваться приложением
+                            в дневное и ночное время без сильного влияния на глаза.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            После страницы со входом или регистрацией (в случае отсутствия аккаунта), вас встречает главный
+                            экран, на котором уже доступны все основные функции приложения. Вы сразу можете приступить к добавлению
+                            новых контактов или редактированию существующих. Приятная цветовая гамма не отвлекает на себя внимание
+                            во время работы и позволяет сосредоточиться на основных интерактивных элементах управления.
                         </p>
+                        <p>
+                            Список контактов представлен в виде удобной таблицы, состоящей из 6 колонок. В ней указана основная
+                            информация о ваших контактах, с возможностью позвонить или написать им на электронную почту.
+                            Здесь же вы можете увидеть адрес контакта и его статус.
+                        </p>
+                        <p>
+                            При наведении на имя контакта всплывает окно с дополнительными интерактивными элементами.
+                            С его помощью вы можете перейти на детальную страницу контакта для более подробного изучения
+                            или редактирования существующих данных.
+                        </p>
+
                     </div>
 
                     <div class="product-overview__item js-product-overview-trigger" data-target="2">
-                        <span class="product-overview__title">Заголовок 2</span>
+                        <span class="product-overview__title">Все необходимое всегда под рукой</span>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
-                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
-                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                            Выше таблицы со списком контактов вы можете увидеть основные управляющие элементы:
+                        </p>
+                        <ol>
+                            <li>Поле для поиска по контактам</li>
+                            <li>Умный динамический фильтр</li>
+                            <li>Кнопку добавления нового контакта</li>
+                            <li>Кнопку удаления существующего контакта</li>
+                        </ol>
+                        <p>
+                            Что может быть важнее, чем поиск? Его использование еще никогда ранее не было таким удобным.
+                            Вы можете производить поиск по имени, телефону, электронной почте или адресу контактов.
+                            Таблица динамически подстраивается под введенные вами данные и отображает только совпавшие значения.
+                            Теперь вы никогда не запутаетесь в своих контактах при любом их количестве.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            Что если нужно отфильтровать контакты по статусу? Например вы хотите выбрать только руководство
+                            или наоборот подчиненных. У нас есть решение и для этой задачи. Умный динамический фильтр расширяет
+                            возможности поиска данных. Работая в тандеме, они позволяют вам точно выбрать необходимую
+                            информацию и не отвлекаться на другие данные. При добавлении новых контактов и указания их статуса,
+                            эти данные конечно же автоматически добавляются в фильтр или убираются в случае удаления.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            Добавить новый контакт тоже не составляет большого труда. Вам необходимо лишь нажать соотвествующую
+                            кнопку и на экране появится модальное окно с полями для заполнения. Это не займет у вас много времени.
+                        </p>
+                        <p>
+                            Ну и конечно же предусмотрен вариант удаления контактов. Слева от имени, в колонке с порядковым номером,
+                            вы могли заметить интерактивные флажки, которые отвечают за выбор контакта для дальнейшего удаления.
+                            При активации флажка, на верхней панеле появляется кнопка «Удалить».
+                            Вы можете выделить как один флажок, так и сразу несколько и, в зависимости от этого, удалятся
+                            соответствующие контакты.
                         </p>
                     </div>
                     <div class="product-overview__item js-product-overview-trigger" data-target="3">
-                        <span class="product-overview__title">Заголовок 3</span>
+                        <span class="product-overview__title">Управляй и властвуй</span>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad animi doloremque ducimus esse est eveniet exercitationem expedita facere,
-                            inventore ipsa iusto libero magnam maiores minima minus natus omnis possimus qui, quis quod reiciendis rem rerum sed suscipit ut vel vero voluptatum?
-                            Dolore earum esse est impedit nobis odit saepe voluptate!
+                            На детальной странице контакта вы можете ознакомиться с полной информацией о нем.
+                            Здесь добавилась фотография, поле возраста и динамическая карта (при заполнении адреса).
+                            Все элементы удачно расположены на странице и сгруппированы по своему смысловому назначению.
+                            С этой странице вы тоже можете взаимодействовать с телефоном и адресом электронной почты контакта.
+                            Например позвонить или написать ему, чтобы не тратить время на возвращение на предыдущие страницы.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            В случае, если вы ошиблись с данными при добавлении контакта или же данные изменились,
+                            то на этой странице есть возможность редактирования всех полей. Карта в автоматическом режиме
+                            меняет свое положение при заполнении соотвествующего поля с адресом. При ошибочном вводе данных
+                            можно отменить данную операцию и начать с начала, чтобы не случайно не затереть важную информацию.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quod tempore veniam vitae!
-                            Accusantium ad adipisci aliquam culpa cum, doloremque eos et fuga id, impedit,
-                            maxime minima natus non officia omnis pariatur quia saepe sit sunt voluptatem?
-                            Aut illo maxime natus odit porro quo repudiandae sequi. Adipisci ducimus exercitationem iste?
+                            Отдельно хочется выделить страницу текущего пользователя. На ней расположена информация о вашем
+                            аккаунте:
                         </p>
+                        <ol>
+                            <li>Имя</li>
+                            <li>Фотография пользователя</li>
+                            <li>Адрес электронной почты</li>
+                            <li>Дата создания аккаунта и последнего посещения</li>
+                            <li>Кнопка для вызова окна настроек</li>
+                        </ol>
+                        <p>
+                            На данной странице присутствует возможность редактирования данных. Возможности конечно ограничены,
+                            по сравнению с детальной страницей контакта, но так же позволяют заполнить первичные необходимые данные.
+                        </p>
+
                     </div>
 
                 </div>

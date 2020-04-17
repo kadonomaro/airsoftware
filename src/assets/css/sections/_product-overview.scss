@@ -15,9 +15,14 @@
     padding: 20px 20px 10px 30%;
     color: $color-dark-gray;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.5;
     p {
-      margin: 0 0 50px;
+      margin: 0 0 30px;
+    }
+    ol,
+    ul {
+      margin: 0 0 30px;
+      padding-left: 30px;
     }
   }
   &__name {
@@ -32,7 +37,7 @@
   }
   &__title {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
   }

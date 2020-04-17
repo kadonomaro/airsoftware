@@ -25,8 +25,16 @@
                 <li class="main-nav__item">
                     <a href="/products" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/products/' ? 'main-nav__link--active' : '' ?>">Продукты</a>
                 </li>
-                <li class="main-nav__item">
-                    <a href="/information" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/information/' ? 'main-nav__link--active' : '' ?>">Информация</a>
+                <li class="main-nav__item main-nav__item--sub">
+                    <a href="javascript:void(0);" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/information/' ? 'main-nav__link--active' : '' ?>">Информация</a>
+                    <ul class="main-nav__submenu">
+                        <li class="main-nav__item">
+                            <a href="/about" class="main-nav__link">О компании</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="/internship" class="main-nav__link">Стажировка</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>

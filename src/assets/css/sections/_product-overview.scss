@@ -39,15 +39,6 @@
   &__screen {
     position: relative;
     height: 100%;
-    outline: 2px dotted red;
-    &::before {
-      content: '';
-      position: fixed;
-      top: 360px;
-      width: 100vw;
-      height: 3px;
-      background-color: green;
-    }
   }
   &__image {
     transition: opacity 0.5s ease-in;

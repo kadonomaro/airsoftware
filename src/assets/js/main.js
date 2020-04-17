@@ -205,34 +205,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
             window.addEventListener('scroll', () => {
 
-                console.log('screen: ', overviewScreen.getBoundingClientRect().bottom);
-                console.log('image: ', images[0].getBoundingClientRect().bottom);
-
                 if ( !isSticky && (overviewScreen.getBoundingClientRect().top <= scrollTopLimit) ) {
                     isSticky = true;
-                    console.log(isSticky);
                     images.forEach((image) => {
                         image.style.position = 'fixed';
                         image.style.top = scrollTopLimit + 'px';
+                        image.style.bottom = 'auto';
                     });
                 } else if ( isSticky && (overviewScreen.getBoundingClientRect().top > scrollTopLimit) ) {
                     isSticky = false;
-                    console.log(isSticky);
                     images.forEach((image) => {
                         image.style.position = 'absolute';
                         image.style.top = '0';
+                        image.style.bottom = 'auto';
                     });
                 }
 
                 if ( isSticky && (images[0].getBoundingClientRect().bottom > overviewScreen.getBoundingClientRect().bottom) ) {
                     isSticky = false;
-                    console.log(isSticky);
                     images.forEach((image) => {
                         image.style.position = 'absolute';
                         image.style.top = 'auto';
                         image.style.bottom = '0';
                     });
                 }
+
             });
         }
 

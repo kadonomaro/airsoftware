@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.body.classList.contains('product-page')) {
         scrollObservers();
-        gridImageHighlight(3500);
+        if (window.innerWidth >= 767) {
+            gridImageHighlight(3500);
+        }
     }
     navigation();
     modal();
@@ -210,30 +212,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if ( !isSticky && (overviewScreen.getBoundingClientRect().top <= scrollTopLimit) ) {
                     isSticky = true;
-                    images.forEach((image) => {
-                        image.style.position = 'fixed';
-                        image.style.top = scrollTopLimit + 'px';
-                        image.style.bottom = 'auto';
+                    setImagesPosition(images, {
+                        position: 'fixed',
+                        top: scrollTopLimit + 'px',
+                        bottom: 'auto'
                     });
                 } else if ( isSticky && (overviewScreen.getBoundingClientRect().top > scrollTopLimit) ) {
                     isSticky = false;
-                    images.forEach((image) => {
-                        image.style.position = 'absolute';
-                        image.style.top = '0';
-                        image.style.bottom = 'auto';
+                    setImagesPosition(images, {
+                        position: 'absolute',
+                        top: '0',
+                        bottom: 'auto'
                     });
                 }
 
                 if ( isSticky && (images[0].getBoundingClientRect().bottom > overviewScreen.getBoundingClientRect().bottom) ) {
                     isSticky = false;
-                    images.forEach((image) => {
-                        image.style.position = 'absolute';
-                        image.style.top = 'auto';
-                        image.style.bottom = '0';
+                    setImagesPosition(images, {
+                        position: 'absolute',
+                        top: 'auto',
+                        bottom: '0'
                     });
                 }
-
             });
+
+
+            function setImagesPosition(images, { position, top, bottom }) {
+                images.forEach((image) => {
+                    image.style.position = position;
+                    image.style.top = top;
+                    image.style.bottom = bottom;
+                });
+            }
         }
 
     }

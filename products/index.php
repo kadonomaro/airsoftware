@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/assets/css/style.css">
     <title>Наша продукция - Airsoftware</title>
+    <meta name="description" content="Основные продукты для малого и среднего бизнеса от компании Airsoftware">
 </head>
 <body class="product-page">
 <!--    --><?php //include_once '../partials/page-header.php'?>
@@ -347,7 +348,7 @@
             </div>
 
         </div>
-    </section>
+    </section><!-- ./product-overview -->
 
 
     <?php include_once '../partials/page-footer.php'?>

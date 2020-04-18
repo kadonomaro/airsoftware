@@ -15,6 +15,12 @@
                     <li class="footer-nav__item">
                         <a href="/products" class="footer-nav__link">Продукты</a>
                     </li>
+                    <li class="footer-nav__item">
+                        <a href="/about" class="footer-nav__link">О компании</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="/internship" class="footer-nav__link">Стажировка</a>
+                    </li>
                 </ul>
             </nav>
         </div>

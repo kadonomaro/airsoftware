@@ -33,6 +33,7 @@
     background-size: 200% auto;
   }
   &__title-wrap {
+    margin-right: 10px;
     padding: 15px 20px;
     background-image: linear-gradient(to right, $color-accent 0%, transparent 50%);
     background-position: 99% center;
@@ -116,5 +117,43 @@
   to {
     background-position: 0% center;
     background-size: 1000% auto;
+  }
+}
+
+
+@media (max-width: $desktop-small) {
+  .product-hero {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+
+@media (max-width: $tablet-small) {
+  .product-hero {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__title-wrap {
+      margin: 0 0 15px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .product-hero {
+    &__title-wrap {
+      padding: 5px 10px;
+    }
+    &__title {
+      font-size: 28px;
+    }
+    &__order {
+      display: none;
+    }
+
   }
 }

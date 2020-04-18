@@ -88,7 +88,34 @@
     }
     &__text {
       max-height: 50vh;
+      box-shadow:
+              inset 0 5px 5px -5px rgba(#000000, 0.5),
+              inset 0 -5px 5px -5px rgba(#000000, 0.5);
       overflow-y: auto;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .product-overview {
+    &__side {
+      padding: 10px;
+    }
+    &__text {
+      padding: 10px;
+    }
+    &__name {
+      font-size: 22px;
+      text-align: center;
+    }
+    &__desc {
+      margin-bottom: 15px;
+      font-size: 16px;
+      text-align: center;
+    }
+    &__title {
+      font-size: 18px;
     }
   }
 }

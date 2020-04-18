@@ -351,6 +351,78 @@
     </section><!-- ./product-overview -->
 
 
+    <section class="product-list section">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title section__title--dark">Более 200 компаний уже сделали выбор</h2>
+                <span class="section__subtitle section__subtitle--dark">Все еще сомневаешься? Пришло время довериться профессионалам</span>
+            </header>
+            <div class="product-list__inner">
+                <div class="product-list__item">
+                    <article class="product-list-item">
+                        <div class="product-list-item__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
+                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                            </picture>
+                        </div>
+                        <header class="product-list-item__header">
+                            <span class="product-list-item__title">Address Book</span>
+                            <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
+                        </header>
+                        <footer class="product-list-item__footer">
+                            <button class="button product-list-item__button">Заказать</button>
+                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
+                                Попробовать бесплатно
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="product-list__item">
+                    <article class="product-list-item">
+                        <div class="product-list-item__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
+                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                            </picture>
+                        </div>
+                        <header class="product-list-item__header">
+                            <span class="product-list-item__title">Address Book</span>
+                            <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
+                        </header>
+                        <footer class="product-list-item__footer">
+                            <button class="button product-list-item__button">Заказать</button>
+                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
+                                Попробовать бесплатно
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="product-list__item">
+                    <article class="product-list-item">
+                        <div class="product-list-item__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
+                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                            </picture>
+                        </div>
+                        <header class="product-list-item__header">
+                            <span class="product-list-item__title">Address Book</span>
+                            <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
+                        </header>
+                        <footer class="product-list-item__footer">
+                            <button class="button product-list-item__button">Заказать</button>
+                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
+                                Попробовать бесплатно
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section><!-- ./product-list -->
+
+
     <?php include_once '../partials/page-footer.php'?>
 
 

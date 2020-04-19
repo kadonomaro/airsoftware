@@ -362,17 +362,24 @@
                     <article class="product-list-item">
                         <div class="product-list-item__image">
                             <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
-                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                                <img src="/dist/assets/image/product-list/todo-app.png" alt="To-do Application">
                             </picture>
                         </div>
                         <header class="product-list-item__header">
-                            <span class="product-list-item__title">Address Book</span>
-                            <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
+                            <span class="product-list-item__title">To-do Application</span>
+                            <span class="product-list-item__subtitle">Веб-приложение «Список дел»</span>
                         </header>
+                        <div class="product-list-item__content">
+                            <ul class="product-list-item__features-list">
+                                <li class="product-list-item__features-item">Минималистичный интерфейс</li>
+                                <li class="product-list-item__features-item">Сохранение данных в браузере</li>
+                                <li class="product-list-item__features-item">Без регистрации, открыл и работай</li>
+                                <li class="product-list-item__features-item">Прост в работе</li>
+                            </ul>
+                        </div>
                         <footer class="product-list-item__footer">
                             <button class="button product-list-item__button">Заказать</button>
-                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
+                            <a href="https://kadonomaro.github.io/todo-app/" class="product-list-item__link link" target="_blank" rel="noreferrer">
                                 Попробовать бесплатно
                             </a>
                         </footer>
@@ -382,17 +389,25 @@
                     <article class="product-list-item">
                         <div class="product-list-item__image">
                             <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
-                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                                <img src="/dist/assets/image/product-list/address-book.png" alt="Address book">
                             </picture>
                         </div>
                         <header class="product-list-item__header">
                             <span class="product-list-item__title">Address Book</span>
                             <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
                         </header>
+                        <div class="product-list-item__content">
+                            <ul class="product-list-item__features-list">
+                                <li class="product-list-item__features-item">Удобный интерфейс</li>
+                                <li class="product-list-item__features-item">Адаптировано под мобильные устройства</li>
+                                <li class="product-list-item__features-item">Подробная документация</li>
+                                <li class="product-list-item__features-item">Легкость в освоении</li>
+                                <li class="product-list-item__features-item">Высокая скорость работы</li>
+                            </ul>
+                        </div>
                         <footer class="product-list-item__footer">
                             <button class="button product-list-item__button">Заказать</button>
-                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
+                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link" target="_blank" rel="noreferrer">
                                 Попробовать бесплатно
                             </a>
                         </footer>
@@ -400,21 +415,25 @@
                 </div>
                 <div class="product-list__item">
                     <article class="product-list-item">
-                        <div class="product-list-item__image">
+                        <div class="product-list-item__image product-list-item__image--text" data-text="Уже скоро">
                             <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
-                                <img src="/dist/assets/image/product-overview/address-book-1.png" alt="Address book">
+                                <img src="/dist/assets/image/product-list/transport-control.png" alt="Transport Control">
                             </picture>
                         </div>
                         <header class="product-list-item__header">
-                            <span class="product-list-item__title">Address Book</span>
-                            <span class="product-list-item__subtitle">Веб-приложение для управления контактами</span>
+                            <span class="product-list-item__title">Transport Control</span>
+                            <span class="product-list-item__subtitle">Система для управления транспортным потоком</span>
                         </header>
+                        <div class="product-list-item__content">
+                            <ul class="product-list-item__features-list">
+                                <li class="product-list-item__features-item">Современный интерфейс</li>
+                                <li class="product-list-item__features-item">Интеграция с существующими системами</li>
+                                <li class="product-list-item__features-item">Круглосуточная техподдержка</li>
+                                <li class="product-list-item__features-item">Доступная цена</li>
+                            </ul>
+                        </div>
                         <footer class="product-list-item__footer">
-                            <button class="button product-list-item__button">Заказать</button>
-                            <a href="https://address-book-2020.web.app/" class="product-list-item__link link link--light" target="_blank" rel="noreferrer">
-                                Попробовать бесплатно
-                            </a>
+                            <button class="button button-disabled product-list-item__button" disabled>Ожидается</button>
                         </footer>
                     </article>
                 </div>

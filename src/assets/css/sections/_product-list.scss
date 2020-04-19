@@ -1,40 +1,38 @@
 .product-list {
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px;
-    perspective: 2000px;
   }
   &__item {
-    flex-basis: 33.3333%;
-    max-width: 33.3333%;
+    flex-basis: calc(33.3333% - 20px);
+    max-width: calc(33.3333% - 20px);
     margin: 0 10px 20px;
-    transition: transform 0.3s ease-in;
-    &:first-child {
-      transform: rotateY(-10deg);
-    }
-    &:last-child {
-      transform: rotateY(10deg);
-    }
-    &:hover:first-child {
-      transform: rotateY(0);
-    }
-    &:hover:last-child {
-      transform: rotateY(0);
-    }
   }
 }
 
 .product-list-item {
   padding: 10px;
   color: $color-dark-gray;
-  cursor: pointer;
   box-shadow: 0 7px 15px rgba(#000000, 0.1);
   transition: box-shadow 0.2s ease-in;
   &:hover {
     box-shadow: 0 3px 7px rgba(#000000, 0.2);
   }
   &__image {
-
+    position: relative;
+  }
+  &__image--text {
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      font-size: 36px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
   }
   &__header {
     margin-bottom: 15px;
@@ -43,17 +41,37 @@
   }
   &__title {
     display: block;
-    margin-bottom: 15px;
-    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 24px;
   }
   &__subtitle {
     display: block;
     font-size: 20px;
   }
+  &__features-list {
+    margin: 0 0 10px;
+    padding-left: 30px;
+    list-style: none;
+  }
+  &__features-item {
+    position: relative;
+    margin-bottom: 5px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      width: 10px;
+      height: 2px;
+      background-color: $color-accent;
+      transform: translateY(-50%);
+    }
+  }
   &__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 0;
   }
   .button {
     margin-right: 5px;
@@ -63,5 +81,27 @@
     display: block;
     margin-left: 5px;
     color: inherit;
+  }
+}
+
+
+@media (max-width: $tablet-small) {
+  .product-list {
+    &__item {
+      flex-basis: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+}
+
+
+@media (max-width: $mobile-large) {
+  .product-list {
+    &__inner {
+      display: block;
+    }
+    &__item {
+      max-width: 100%;
+    }
   }
 }

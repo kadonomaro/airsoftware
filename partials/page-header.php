@@ -32,7 +32,7 @@
                             <a href="/about" class="main-nav__link">О компании</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="/internship" class="main-nav__link">Стажировка</a>
+                            <a href="/internship" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/internship/' ? 'main-nav__link--active' : '' ?>">Стажировка</a>
                         </li>
                     </ul>
                 </li>

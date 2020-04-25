@@ -12,9 +12,19 @@
     <meta name="description" content="Ежегодная стажировка для студентов и желающих. Опытные наставники и четкий учебный план - Airsoftware">
 </head>
 <body class="internship-page">
-    <?php include_once '../partials/page-header.php'?>
 
+<main class="internship-hero">
+    <div class="internship-hero__header">
+        <?php include_once '../partials/page-header.php'?>
+    </div>
+    <div class="internship-hero__content">
+        <div class="internship-hero__promo">
+            <h1 class="internship-hero__title">Хочешь стать частью профессиональной команды?</h1>
+        </div>
 
+    </div>
+
+</main><!-- ./product-hero -->
 
 
 

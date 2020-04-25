@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.body.classList.contains('product-page')) {
         scrollObservers();
         if (window.innerWidth >= 767) {
-            gridImageHighlight(3500);
+            gridImageHighlight(2500);
         }
     }
     navigation();

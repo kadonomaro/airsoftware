@@ -20,6 +20,17 @@
     <div class="internship-hero__content">
         <div class="internship-hero__promo">
             <h1 class="internship-hero__title">Хочешь стать частью профессиональной команды?</h1>
+            <div class="internship-hero__team">
+                <div class="internship-team">
+                    <div class="internship-team__list">
+                        <div class="internship-team__item"></div>
+                        <div class="internship-team__item"></div>
+                        <div class="internship-team__item internship-team__item--center"></div>
+                        <div class="internship-team__item"></div>
+                        <div class="internship-team__item"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

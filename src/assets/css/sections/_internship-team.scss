@@ -1,0 +1,27 @@
+.internship-team {
+  &__list {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  &__item {
+    flex-basis: calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    margin: 0 10px;
+    height: 500px;
+    background-image: url('/dist/assets/image/internship/office-fog.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(#000000, 0.7);
+    &:first-child,
+    &:last-child {
+      height: 450px;
+    }
+  }
+  &__item--center {
+    height: 550px;
+  }
+}

@@ -13,18 +13,29 @@
     height: 500px;
     background-image: url('/dist/assets/image/internship/office-fog.jpg');
     background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(#000000, 0.7);
     box-sizing: border-box;
+    &:first-child {
+      background-position-x: left;
+    }
+    &:last-child {
+      background-position-x: right;
+    }
     &:first-child,
     &:last-child {
       height: 450px;
     }
+    &:nth-child(2) {
+      background-position-x: 15%;
+    }
+    &:nth-child(4) {
+      background-position-x: 85%;
+    }
   }
   &__item--center {
     height: 550px;
+    background-position-x: center;
   }
   &__image {
     max-height: 100%;

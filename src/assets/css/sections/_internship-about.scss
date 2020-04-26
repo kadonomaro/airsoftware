@@ -1,0 +1,42 @@
+.internship-about {
+  counter-reset: number;
+  background-color: $color-dark-gray;
+  &__inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__item {
+    display: flex;
+    &:nth-child(even) > .internship-about__main {
+      order: 1;
+    }
+  }
+  &__main,
+  &__side {
+    flex-basis: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+  &__main {
+    position: relative;
+    padding: 10px;
+    background-color: $color-light-gray;
+    &::before {
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: rgba(#ffffff, 0.3);
+      font-size: 20em;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__image {
+
+  }
+  &__side {
+    padding-bottom: 50%;
+  }
+}

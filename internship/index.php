@@ -13,54 +13,84 @@
 </head>
 <body class="internship-page">
 
-<main class="internship-hero">
-    <div class="internship-hero__header">
-        <?php include_once '../partials/page-header.php'?>
-    </div>
-    <div class="internship-hero__content">
-        <div class="internship-hero__promo">
-            <h1 class="internship-hero__title">Хочешь стать частью команды профессионалов?</h1>
-            <div class="internship-hero__team">
-                <div class="internship-team">
-                    <div class="internship-team__list">
-                        <div class="internship-team__item">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/intern-1.webp">
-                                <img class="internship-team__image" src="/dist/assets/image/internship/intern-1.png" alt="Парень стажер" >
-                            </picture>
-                        </div>
-                        <div class="internship-team__item">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/intern-2.webp">
-                                <img class="internship-team__image" src="/dist/assets/image/internship/intern-2.png" alt="Парень стажер" >
-                            </picture>
-                        </div>
-                        <div class="internship-team__item internship-team__item--center">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/rowan.webp">
-                                <img class="internship-team__image" src="/dist/assets/image/internship/rowan.png" alt="Стажер Роуэн" >
-                            </picture>
-                        </div>
-                        <div class="internship-team__item">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/intern-3.webp">
-                                <img class="internship-team__image" src="/dist/assets/image/internship/intern-3.png" alt="Девушка стажер" >
-                            </picture>
-                        </div>
-                        <div class="internship-team__item">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/intern-4.webp">
-                                <img class="internship-team__image" src="/dist/assets/image/internship/intern-4.png" alt="Девушка стажер" >
-                            </picture>
+    <main class="internship-hero">
+        <div class="internship-hero__header">
+            <?php include_once '../partials/page-header.php'?>
+        </div>
+        <div class="internship-hero__content">
+            <div class="internship-hero__promo">
+                <h1 class="internship-hero__title">Хочешь стать частью команды профессионалов?</h1>
+                <div class="internship-hero__team">
+                    <div class="internship-team">
+                        <div class="internship-team__list">
+                            <div class="internship-team__item">
+                                <picture>
+                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-1.webp">
+                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-1.png" alt="Парень стажер" >
+                                </picture>
+                            </div>
+                            <div class="internship-team__item">
+                                <picture>
+                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-2.webp">
+                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-2.png" alt="Парень стажер" >
+                                </picture>
+                            </div>
+                            <div class="internship-team__item internship-team__item--center">
+                                <picture>
+                                    <source type="image/webp" srcset="/dist/assets/image/internship/rowan.webp">
+                                    <img class="internship-team__image" src="/dist/assets/image/internship/rowan.png" alt="Стажер Роуэн" >
+                                </picture>
+                            </div>
+                            <div class="internship-team__item">
+                                <picture>
+                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-3.webp">
+                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-3.png" alt="Девушка стажер" >
+                                </picture>
+                            </div>
+                            <div class="internship-team__item">
+                                <picture>
+                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-4.webp">
+                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-4.png" alt="Девушка стажер" >
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </main><!-- ./product-hero -->
 
-    </div>
 
-</main><!-- ./product-hero -->
+    <section class="internship-about section">
+        <div class="container">
+
+            <header class="section__header">
+                <h2 class="section__title">Ежегодная оплачиваемая стажировка</h2>
+                <span class="section__subtitle"></span>
+            </header>
+
+            <div class="internship-about__inner">
+                <div class="internship-about__item">
+                    <div class="internship-about__main"></div>
+                    <div class="internship-about__side"></div>
+                </div>
+                <div class="internship-about__item">
+                    <div class="internship-about__main"></div>
+                    <div class="internship-about__side"></div>
+                </div>
+                <div class="internship-about__item">
+                    <div class="internship-about__main"></div>
+                    <div class="internship-about__side"></div>
+                </div>
+                <div class="internship-about__item">
+                    <div class="internship-about__main"></div>
+                    <div class="internship-about__side"></div>
+                </div>
+            </div>
+
+        </div><!-- /.container -->
+    </section>
 
 
 

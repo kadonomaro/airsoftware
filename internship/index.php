@@ -75,8 +75,8 @@
                     <div class="internship-about__side">
                         <div class="internship-about__image">
                             <picture>
-                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
-                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                                <source type="image/webp" srcset="/dist/assets/image/internship/item-1.webp">
+                                <img src="/dist/assets/image/internship/item-1.jpg" alt="Основные направления">
                             </picture>
                         </div>
                     </div>
@@ -99,8 +99,8 @@
                     <div class="internship-about__side">
                         <div class="internship-about__image">
                             <picture>
-                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
-                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                                <source type="image/webp" srcset="/dist/assets/image/internship/item-2.webp">
+                                <img src="/dist/assets/image/internship/item-2.jpg" alt="Опытные наставники">
                             </picture>
                         </div>
                     </div>
@@ -119,8 +119,8 @@
                     <div class="internship-about__side">
                         <div class="internship-about__image">
                             <picture>
-                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
-                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                                <source type="image/webp" srcset="/dist/assets/image/internship/item-3.webp">
+                                <img src="/dist/assets/image/internship/item-3.jpg" alt="Реальные условия">
                             </picture>
                         </div>
                     </div>
@@ -143,8 +143,8 @@
                     <div class="internship-about__side">
                         <div class="internship-about__image">
                             <picture>
-                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
-                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                                <source type="image/webp" srcset="/dist/assets/image/internship/item-4.webp">
+                                <img src="/dist/assets/image/internship/item-4.jpg" alt="Несколько направлений стажировки">
                             </picture>
                         </div>
                     </div>

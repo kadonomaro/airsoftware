@@ -196,7 +196,7 @@
                             <span class="checkbox-custom"></span>
                             <span class="order__policy">Я согласен на <a class="link" href="/policy">обработку персональных данных</a></span>
                         </label>
-                        <button type="submit" class="order__button button button-disabled" disabled>Оставить заявку</button>
+                        <button type="submit" class="order__button button button--disabled" disabled>Оставить заявку</button>
                     </form>
                 </div>
             </div>

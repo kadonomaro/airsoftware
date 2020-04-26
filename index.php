@@ -62,9 +62,11 @@
         </div>
 
         <div class="clients__order">
-            <form action="" class="order">
-                <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
-            </form>
+            <div class="order">
+                <form action="" class="order__form">
+                    <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
+                </form>
+            </div>
         </div>
 
     </section><!--clients-->

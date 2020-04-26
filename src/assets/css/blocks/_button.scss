@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 40px;
+  padding: 10px 30px;
   color: $color-dark-gray;
   font-family: inherit;
   font-size: 18px;
@@ -16,7 +16,7 @@
     border-color: $color-accent;
   }
 }
-.button-disabled {
+.button--disabled {
   background-color: $color-input;
   border: 2px solid $color-input;
   cursor: initial;

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include_once '../partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="/dist/assets/css/style.css">
     <title>Ежегодная стажировка в Airsoftware</title>
     <meta name="description" content="Ежегодная стажировка для студентов и желающих. Опытные наставники и четкий учебный план - Airsoftware">
@@ -22,14 +23,14 @@
                 <h1 class="internship-hero__title">Хочешь стать частью команды профессионалов?</h1>
                 <div class="internship-hero__team">
                     <div class="internship-team">
-                        <div class="internship-team__list">
-                            <div class="internship-team__item">
+                        <div class="internship-team__list js-internship-team-slider">
+                            <div class="internship-team__item internship-team__item--first">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-1.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-1.png" alt="Парень стажер" >
                                 </picture>
                             </div>
-                            <div class="internship-team__item">
+                            <div class="internship-team__item internship-team__item--center--left">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-2.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-2.png" alt="Парень стажер" >
@@ -41,13 +42,13 @@
                                     <img class="internship-team__image" src="/dist/assets/image/internship/rowan.png" alt="Стажер Роуэн" >
                                 </picture>
                             </div>
-                            <div class="internship-team__item">
+                            <div class="internship-team__item internship-team__item--center--right">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-3.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-3.png" alt="Девушка стажер" >
                                 </picture>
                             </div>
-                            <div class="internship-team__item">
+                            <div class="internship-team__item internship-team__item--last">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-4.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-4.png" alt="Девушка стажер" >
@@ -206,6 +207,8 @@
         <?php include_once '../partials/order-modal.php'?>
     </div>
 
-<script src="../dist/assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../dist/assets/js/main.js"></script>
 </body>
 </html>

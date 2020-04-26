@@ -29,6 +29,7 @@
   &__main {
     position: relative;
     z-index: 1;
+    font-size: 20px;
     padding: 20px;
     background-color: $color-light-gray;
     &::before {
@@ -39,7 +40,7 @@
       top: 50%;
       left: 50%;
       color: rgba(#ffffff, 0.5);
-      font-size: 20em;
+      font-size: 15em;
       text-align: center;
       transform: translate(-50%, -50%);
       pointer-events: none;
@@ -47,7 +48,6 @@
   }
   &__text {
     color: $color-dark-gray;
-    font-size: 20px;
     p,
     ul {
       margin: 0 0 10px;
@@ -69,5 +69,21 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+
+
+@media (max-width: $tablet-small) {
+  .internship-about {
+    &__main {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    &__title {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
   }
 }

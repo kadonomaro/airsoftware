@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.body.classList.contains('internship-page')) {
         scrollObserver();
+        sliderInit('.js-internship-team-slider');
     }
     navigation();
     modal();
@@ -92,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function infiniteSliderInit(sliderSelector) {
-        $(sliderSelector).slick({
+    function infiniteSliderInit(selector) {
+        $(selector).slick({
             variableWidth: true,
             focusOnSelect: false,
             accessibility: false,
@@ -104,6 +105,36 @@ document.addEventListener('DOMContentLoaded', () => {
             cssEase: 'linear',
             slidesToShow: 1,
             slidesToScroll: 1
+        });
+    }
+
+
+    function sliderInit(selector) {
+        $(selector).slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: false,
+            initialSlide: 1,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1023,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
     }
 

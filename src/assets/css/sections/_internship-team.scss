@@ -47,3 +47,27 @@
     margin: 0 auto;
   }
 }
+
+
+
+@media (max-width: $tablet-small) {
+  .internship-team {
+    &__list {
+      display: block;
+    }
+    &__item {
+      max-width: 100%;
+      margin: 0 20px;
+      height: 400px;
+      box-shadow: none;
+      filter: none;
+      &:first-child,
+      &:last-child {
+        height: 400px;
+      }
+    }
+    &__item--center {
+      height: 400px;
+    }
+  }
+}

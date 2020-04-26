@@ -71,21 +71,67 @@
             </header>
 
             <div class="internship-about__inner">
-                <div class="internship-about__item">
-                    <div class="internship-about__main"></div>
-                    <div class="internship-about__side"></div>
+                <div class="internship-about__item js-internship-item">
+                    <div class="internship-about__side">
+                        <div class="internship-about__image">
+                            <picture>
+                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
+                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="internship-about__main">
+                        <div class="internship-about__text">
+                            <h3 class="internship-about__title">Несколько направлений стажировки</h3>
+                            <p>Ты можешь сам выбрать интересующее тебя направление:</p>
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                                <li>UX/UI дизайнер</li>
+                                <li>Тестировщик</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="internship-about__item">
-                    <div class="internship-about__main"></div>
-                    <div class="internship-about__side"></div>
+                <div class="internship-about__item js-internship-item">
+                    <div class="internship-about__side">
+                        <div class="internship-about__image">
+                            <picture>
+                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
+                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="internship-about__main">
+                        <div class="internship-about__text">
+                            <h3 class="internship-about__title">Опытные наставники на все время стажировки</h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="internship-about__item">
+                <div class="internship-about__item js-internship-item">
+                    <div class="internship-about__side">
+                        <div class="internship-about__image">
+                            <picture>
+                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
+                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                            </picture>
+                        </div>
+                    </div>
                     <div class="internship-about__main"></div>
-                    <div class="internship-about__side"></div>
                 </div>
-                <div class="internship-about__item">
+                <div class="internship-about__item js-internship-item">
+                    <div class="internship-about__side">
+                        <div class="internship-about__image">
+                            <picture>
+                                <source type="image/webp" srcset="https://via.placeholder.com/450/f90">
+                                <img src="https://via.placeholder.com/450/f90" alt="Несколько направлений стажировки">
+                            </picture>
+                        </div>
+                    </div>
                     <div class="internship-about__main"></div>
-                    <div class="internship-about__side"></div>
                 </div>
             </div>
 

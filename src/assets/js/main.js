@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             gridImageHighlight(2500);
         }
     }
+    if (document.body.classList.contains('internship-page')) {
+        scrollObserver();
+    }
     navigation();
     modal();
 
@@ -265,6 +268,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, delay);
             }
         },delay);
+    }
+
+
+    function scrollObserver() {
+        const items = document.querySelectorAll('.js-internship-item');
+
+        const options = {
+            root: null,
+            rootMargin: '0px 0px 50% 0px',
+            threshold: 0.50
+        };
+
+        function callback(entries) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('internship-about__item--visible');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(callback, options);
+
+        items.forEach((item) => {
+            observer.observe(item);
+        });
+
     }
 
 });

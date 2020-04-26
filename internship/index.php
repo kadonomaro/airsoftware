@@ -67,7 +67,7 @@
 
             <header class="section__header">
                 <h2 class="section__title">Ежегодная оплачиваемая стажировка</h2>
-                <span class="section__subtitle"></span>
+                <span class="section__subtitle">Хочешь за короткий срок прокачаться свои знания?</span>
             </header>
 
             <div class="internship-about__inner">
@@ -82,13 +82,15 @@
                     </div>
                     <div class="internship-about__main">
                         <div class="internship-about__text">
-                            <h3 class="internship-about__title">Несколько направлений стажировки</h3>
+                            <h3 class="internship-about__title">Основные направления</h3>
                             <p>Ты можешь сам выбрать интересующее тебя направление:</p>
                             <ul>
                                 <li>Frontend</li>
                                 <li>Backend</li>
                                 <li>UX/UI дизайнер</li>
                                 <li>Тестировщик</li>
+                                <li>Аналитик</li>
+                                <li>Менеджер проектов</li>
                             </ul>
                         </div>
                     </div>
@@ -104,9 +106,11 @@
                     </div>
                     <div class="internship-about__main">
                         <div class="internship-about__text">
-                            <h3 class="internship-about__title">Опытные наставники на все время стажировки</h3>
+                            <h3 class="internship-about__title">Опытные наставники</h3>
                             <p>
-
+                                К каждой группе стажеров будет приставлен свой опытный наставник, который обучил уже
+                                не один десяток человек. Группы делятся по направлениям, но не более 15 человек в каждой.
+                                Таким образом мы гарантируем, что времени наставника хватит на всех.
                             </p>
                         </div>
                     </div>
@@ -120,7 +124,20 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="internship-about__main"></div>
+                    <div class="internship-about__main">
+                        <div class="internship-about__text">
+                            <h3 class="internship-about__title">Реальные условия</h3>
+                            <p>
+                                Мы максимально приблизили условия стажировки к реальным. Вы получите практический опыт
+                                и навыки работы в боевых условиях. Жесткие дедлайны и требовательные заказчики.
+                            </p>
+                            <p>
+                                В первый месяц вы познакомитесь с действующей командой разработчиков и своим наставником.
+                                Минимум времени на адаптацию. Поэтому вы уже должны обладать базовыми знаниями
+                                по выбранному направлению.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="internship-about__item js-internship-item">
                     <div class="internship-about__side">
@@ -131,7 +148,19 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="internship-about__main"></div>
+                    <div class="internship-about__main">
+                        <div class="internship-about__text">
+                            <h3 class="internship-about__title">Работа в компании</h3>
+                            <p>
+                                По окончанию обучения, все лучшие стажеры будут приняты на работу в нашу компанию.
+                                Уже сейчас у нас работает более 50 бывшых учеников. Некоторые из них стали наставниками для
+                                новых стажеров.
+                            </p>
+                            <p>
+                                <b>Успей подать заявку до 28 августа.</b>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

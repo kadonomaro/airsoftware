@@ -427,9 +427,11 @@
                 <footer class="products__footer">
                     <span class="products__resume">Выбор всегда остается за вами</span>
                     <div class="products__order">
-                        <form action="" class="order">
-                            <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
-                        </form>
+                        <div class="order">
+                            <form action="" class="order__form">
+                                <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
+                            </form>
+                        </div>
                     </div>
                 </footer>
             </div><!--products--inner-->

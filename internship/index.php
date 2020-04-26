@@ -8,7 +8,7 @@
     <?php include_once '../partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/assets/css/style.css">
-    <title>Стажировка в Airsoftware</title>
+    <title>Ежегодная стажировка в Airsoftware</title>
     <meta name="description" content="Ежегодная стажировка для студентов и желающих. Опытные наставники и четкий учебный план - Airsoftware">
 </head>
 <body class="internship-page">
@@ -59,7 +59,7 @@
             </div>
 
         </div>
-    </main><!-- ./product-hero -->
+    </main><!-- ./internship-hero -->
 
 
     <section class="internship-about section">
@@ -165,7 +165,37 @@
             </div>
 
         </div><!-- /.container -->
-    </section>
+    </section><!-- ./internship-about -->
+
+
+    <section class="internship-join section">
+        <div class="container">
+
+            <header class="section__header">
+                <h2 class="section__title section__title--dark">Присоединись к команде мечты</h2>
+            </header>
+
+            <form action="" method="post" class="internship-join__form">
+                <div class="internship-join__text">
+                    <p>Напиши пару слов о себе:</p>
+                    <ul>
+                        <li>Немного личной информации (имя, возраст, учился/работал)</li>
+                        <li>Почему ты хочешь этим заниматься</li>
+                        <li>Коротко оцени свои текущие навыки</li>
+                        <li>Что хочешь получить от стажировки</li>
+                        <li>Пару нейтральных предложений на английском языке (без переводчика, это важно)</li>
+                        <li>Ссылки на примеры твоих работ</li>
+                    </ul>
+                </div>
+                <textarea class="internship-join__textarea" name="internship-join-about"></textarea>
+                <div class="internship-join__footer">
+                    <button class="internship-join__button button">Отправить</button>
+                </div>
+            </form>
+
+        </div><!-- /.container -->
+
+    </section><!-- /.internship-subscribe -->
 
 
 

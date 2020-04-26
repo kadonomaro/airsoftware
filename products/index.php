@@ -433,7 +433,7 @@
                             </ul>
                         </div>
                         <footer class="product-list-item__footer">
-                            <button class="button button-disabled product-list-item__button" disabled>Ожидается</button>
+                            <button class="button button--disabled product-list-item__button" disabled>Ожидается</button>
                         </footer>
                     </article>
                 </div>

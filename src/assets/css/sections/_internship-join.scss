@@ -1,0 +1,35 @@
+.internship-join {
+  background-color: $color-light-gray;
+
+  &__text {
+    font-size: 18px;
+    p,
+    ul {
+      margin: 0 0 10px;
+    }
+  }
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 10px 14px;
+    color: #141414;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: border-color .1s ease-in;
+    resize: vertical;
+    outline: none;
+    &:hover,
+    &:focus {
+      border-color: $color-accent;
+    }
+  }
+  &__footer {
+    text-align: center;
+  }
+
+
+}

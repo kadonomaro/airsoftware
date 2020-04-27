@@ -49,3 +49,13 @@
     }
   }
 }
+
+
+@media (max-width: $mobile-large) {
+  .internship-hero {
+    &__title {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+  }
+}

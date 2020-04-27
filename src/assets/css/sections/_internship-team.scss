@@ -72,3 +72,16 @@
     }
   }
 }
+
+
+@media (max-width: $mobile-large) {
+  .internship-team {
+    &__item--first,
+    &__item--center-left,
+    &__item--center,
+    &__item--center-right,
+    &__item--last {
+      max-height: 300px;
+    }
+  }
+}

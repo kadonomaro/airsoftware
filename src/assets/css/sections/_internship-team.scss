@@ -17,9 +17,10 @@
     box-shadow: 0 0 15px rgba(#000000, 0.7);
     box-sizing: border-box;
     filter: brightness(0.5);
-    transition: filter 0.2s ease-in;
+    transition: filter 0.2s ease-in, box-shadow 0.2s ease-in;
     &:hover {
       filter: none;
+      box-shadow: 0 0 15px rgba($color-medium-dark-gray, 0.5);
     }
   }
   &__item--first {

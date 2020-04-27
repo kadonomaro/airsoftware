@@ -30,7 +30,7 @@
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-1.png" alt="Парень стажер" >
                                 </picture>
                             </div>
-                            <div class="internship-team__item internship-team__item--center--left">
+                            <div class="internship-team__item internship-team__item--center-left">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-2.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-2.png" alt="Парень стажер" >
@@ -42,7 +42,7 @@
                                     <img class="internship-team__image" src="/dist/assets/image/internship/rowan.png" alt="Стажер Роуэн" >
                                 </picture>
                             </div>
-                            <div class="internship-team__item internship-team__item--center--right">
+                            <div class="internship-team__item internship-team__item--center-right">
                                 <picture>
                                     <source type="image/webp" srcset="/dist/assets/image/internship/intern-3.webp">
                                     <img class="internship-team__image" src="/dist/assets/image/internship/intern-3.png" alt="Девушка стажер" >
@@ -154,7 +154,7 @@
                             <h3 class="internship-about__title">Работа в компании</h3>
                             <p>
                                 По окончанию обучения, все лучшие стажеры будут приняты на работу в нашу компанию.
-                                Уже сейчас у нас работает более 50 бывшых учеников. Некоторые из них стали наставниками для
+                                Уже сейчас у нас работает более 50 бывших учеников. Некоторые из них стали наставниками для
                                 новых стажеров.
                             </p>
                             <p>

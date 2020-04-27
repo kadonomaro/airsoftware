@@ -21,27 +21,26 @@
     &:hover {
       filter: none;
     }
-    &:first-child {
-      background-position-x: left;
-    }
-    &:last-child {
-      background-position-x: right;
-    }
-    &:first-child,
-    &:last-child {
-      height: 450px;
-    }
-    &:nth-child(2) {
-      background-position-x: 15%;
-    }
-    &:nth-child(4) {
-      background-position-x: 85%;
-    }
+  }
+  &__item--first {
+    height: 450px;
+    background-position-x: left;
+  }
+  &__item--center-left {
+    background-position-x: 15%;
   }
   &__item--center {
     height: 550px;
     background-position-x: center;
   }
+  &__item--center-right {
+    background-position-x: 85%;
+  }
+  &__item--last {
+    height: 450px;
+    background-position-x: right;
+  }
+
   &__image {
     max-height: 100%;
     margin: 0 auto;
@@ -57,16 +56,18 @@
     }
     &__item {
       max-width: 100%;
-      margin: 0 20px;
-      height: 400px;
+      margin: 0;
       box-shadow: none;
       filter: none;
-      &:first-child,
-      &:last-child {
-        height: 400px;
-      }
     }
-    &__item--center {
+    .slick-slide {
+      margin: 0 20px;
+    }
+    &__item--first,
+    &__item--center-left,
+    &__item--center,
+    &__item--center-right,
+    &__item--last {
       height: 400px;
     }
   }

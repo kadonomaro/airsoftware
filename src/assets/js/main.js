@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     breakpoint: 1023,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 1,
+                        slidesToScroll: 1
                     }
                 },
                 {

@@ -61,15 +61,21 @@
     transform: translateY(-50%);
   }
   &__arrow {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     padding: 0;
-    background-color: rgba(#000000, 0.5);
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
-    border: 1px solid $color-medium-gray;
+    background-size: 100%;
+    border: none;
     cursor: pointer;
+    transition: opacity 0.1s ease-in;
+    opacity: 0.5;
+    outline: none;
+    &:active {
+      opacity: 1;
+    }
   }
   &__arrow--prev {
     background-image: url("data:image/svg+xml,%3Csvg width='25' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.904.18a.665.665 0 01.91 0 .583.583 0 010 .852L2.197 5.393h22.166c.356 0 .638.267.638.603 0 .335-.282.61-.638.61H2.196l4.619 4.353a.593.593 0 010 .86.665.665 0 01-.911 0L.19 6.426a.57.57 0 010-.851L5.904.18z' fill='%23fff'/%3E%3C/svg%3E");

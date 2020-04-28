@@ -114,7 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            arrows: false,
+            arrows: true,
+            prevArrow: $('.internship-team-slider').find('.js-slider-prev'),
+            nextArrow: $('.internship-team-slider').find('.js-slider-next'),
             initialSlide: 1,
             responsive: [
                 {

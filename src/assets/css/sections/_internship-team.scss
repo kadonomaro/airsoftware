@@ -49,6 +49,37 @@
 }
 
 
+.internship-team-slider {
+  position: relative;
+  &__controls {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: rgba(#000000, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border: 1px solid $color-medium-gray;
+    cursor: pointer;
+  }
+  &__arrow--prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.904.18a.665.665 0 01.91 0 .583.583 0 010 .852L2.197 5.393h22.166c.356 0 .638.267.638.603 0 .335-.282.61-.638.61H2.196l4.619 4.353a.593.593 0 010 .86.665.665 0 01-.911 0L.19 6.426a.57.57 0 010-.851L5.904.18z' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  &__arrow--next {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.096.18a.665.665 0 00-.91 0 .583.583 0 000 .852l4.619 4.361H.637c-.356 0-.638.267-.638.603 0 .335.282.61.638.61h22.166l-4.618 4.353a.593.593 0 000 .86c.254.241.665.241.91 0l5.713-5.393a.57.57 0 000-.851L19.096.18z' fill='%23fff'/%3E%3C/svg%3E");
+  }
+}
+
+
 
 @media (max-width: $tablet-small) {
   .internship-team {
@@ -65,15 +96,21 @@
         box-shadow: none;
       }
     }
-    .slick-slide {
-      margin: 0 20px;
-    }
     &__item--first,
     &__item--center-left,
     &__item--center,
     &__item--center-right,
     &__item--last {
       height: 400px;
+    }
+  }
+
+  .internship-team-slider {
+    &__controls {
+      display: flex;
+    }
+    .slick-slide {
+      margin: 0 20px;
     }
   }
 }

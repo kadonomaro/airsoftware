@@ -22,7 +22,13 @@
             <div class="internship-hero__promo">
                 <h1 class="internship-hero__title">Хочешь стать частью команды профессионалов?</h1>
                 <div class="internship-hero__team">
-                    <div class="internship-team">
+                    <div class="internship-team internship-team-slider">
+
+                        <div class="internship-team-slider__controls">
+                            <button class="internship-team-slider__arrow internship-team-slider__arrow--prev js-slider-prev" aria-label="slider prev"></button>
+                            <button class="internship-team-slider__arrow internship-team-slider__arrow--next js-slider-next" aria-label="slider next"></button>
+                        </div>
+
                         <div class="internship-team__list js-internship-team-slider">
                             <div class="internship-team__item internship-team__item--first">
                                 <picture>

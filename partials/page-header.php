@@ -2,7 +2,13 @@
     <div class="page-header__logo">
         <div class="logo">
             <div class="logo__image">
+                <?php if(preg_match('/^\/$/', $_SERVER['REQUEST_URI'])): ?>
                 <img src="/dist/assets/image/logo.svg" alt="Airsoftware">
+                <?php else: ?>
+                <a href="/">
+                    <img src="/dist/assets/image/logo.svg" alt="Airsoftware">
+                </a>
+                <?php endif ?>
             </div>
         </div>
     </div>
@@ -19,9 +25,6 @@
                 </svg>
             </button>
             <ul class="main-nav__list js-menu-navigation">
-                <li class="main-nav__item">
-                    <a href="/" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/' ? 'main-nav__link--active' : '' ?>">Главная</a>
-                </li>
                 <li class="main-nav__item">
                     <a href="/products" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/products/' ? 'main-nav__link--active' : '' ?>">Продукты</a>
                 </li>

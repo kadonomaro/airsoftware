@@ -1,5 +1,12 @@
 .logo {
   display: flex;
+  &__link {
+    display: block;
+    transition: filter 0.2s ease-in;
+    &:hover {
+      filter: drop-shadow(0 0 1px $color-accent);
+    }
+  }
   &__image {
     width: 100px;
     img {

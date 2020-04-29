@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const renderLimit = renderCount - renderCount * 0.5;
             let counter = 0;
             const positions = [];
-            const colors = ['#e6e6e6','#cdcdcd', '#b4b4b4', '#9b9b9b'];
+            const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
 
             const interval = setInterval(() => {
                 const position = {

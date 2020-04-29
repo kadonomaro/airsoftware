@@ -5,7 +5,7 @@
                 <?php if(preg_match('/^\/$/', $_SERVER['REQUEST_URI'])): ?>
                 <img src="/dist/assets/image/logo.svg" alt="Airsoftware">
                 <?php else: ?>
-                <a href="/">
+                <a class="logo__link" href="/">
                     <img src="/dist/assets/image/logo.svg" alt="Airsoftware">
                 </a>
                 <?php endif ?>

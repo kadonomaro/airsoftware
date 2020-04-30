@@ -1,5 +1,7 @@
 .about {
   background-color: $color-dark-gray;
+  background-image: repeating-linear-gradient(45deg, rgba($color-medium-gray, 0.05), rgba($color-medium-gray, 0.05) 1px, transparent 1px, transparent 20px),
+  repeating-linear-gradient(135deg, rgba($color-medium-gray, 0.05), rgba($color-medium-gray, 0.05) 1px, transparent 1px, transparent 20px);
   &__inner {
     display: flex;
     flex-wrap: wrap;

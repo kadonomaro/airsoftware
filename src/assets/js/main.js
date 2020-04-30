@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver();
         sliderInit('.js-internship-team-slider');
     }
+
+    if (document.body.classList.contains('404-page')) {
+        page404CanvasAnimation();
+    }
     navigation();
     modal();
 
@@ -85,11 +89,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }, delay);
         }
+    }
 
-        function getRandomSymbol(start, end) {
-            return String.fromCharCode(getRandomRange(start, end));
-        }
 
+    function page404CanvasAnimation() {
+        const canvas = document.querySelector('.js-404-canvas');
+        const ctx = canvas.getContext('2d');
+        const positionsFromImage = [];
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const width = canvas.width;
+        const height = canvas.height;
+
+        const image = new Image();
+        image.src = '/dist/assets/image/404/404.jpg';
+
+
+        ctx.font = "bold 16px Roboto";
+
+        image.addEventListener('load', function () {
+
+            ctx.drawImage(image, 0, 0, width, height);
+            const imageData = ctx.getImageData(0,0, width, height);
+
+            for (let i = 0; i < imageData.data.length; i += (4 + 20)) {
+                const data = imageData.data;
+                const pixel = {
+                    r: data[i],
+                    g: data[i + 1],
+                    b: data[i + 2],
+                    a: data[i + 3]
+                };
+                positionsFromImage.push(pixel);
+            }
+
+            console.log(positionsFromImage);
+
+        });
     }
 
 
@@ -334,4 +372,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function getRandomRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+function getRandomSymbol(start, end) {
+    return String.fromCharCode(getRandomRange(start, end));
 }

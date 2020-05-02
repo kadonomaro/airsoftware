@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             ctx.drawImage(image, 0, 0, width, height);
             const data = ctx.getImageData(0,0, width, height).data;
+            const cellWidth = 20;
+            const cellHeight = 20;
 
             for (let i = 0; i < data.length; i += 4) {
                 const pixel = {
@@ -121,13 +123,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     b: data[i + 2],
                     a: data[i + 3],
                     x: (i / 4) % width,
-                    y: Math.floor((i / 4 ) / width)
+                    y: Math.floor((i / 4) / width)
                 };
 
-                pixels.push(pixel);
+                // pixels.push(pixel);
+
+                if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
+                    pixels.push(pixel);
+                }
             }
 
             console.log(pixels);
+
+            // render();
+
+            function render(delay = 1) {
+                let counter = 0;
+                const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
+
+                const interval = setInterval(() => {
+
+                    ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
+                    ctx.fillText(getRandomSymbol(65, 122), pixels[counter].x, pixels[counter].y);
+                    counter++;
+
+                    if (counter >= pixels.length) {
+                        clearInterval(interval);
+                    }
+                }, delay);
+            }
 
         });
     }
@@ -380,3 +404,11 @@ function getRandomRange(min, max) {
 function getRandomSymbol(start, end) {
     return String.fromCharCode(getRandomRange(start, end));
 }
+
+Array.prototype.chunk = function (size) {
+    const temp = [];
+    for (let i = 0; i < this.length; i+=size) {
+        temp.push(this.slice(i, i + size));
+    }
+    return temp;
+};

@@ -94,6 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function page404CanvasAnimation() {
         const canvas = document.querySelector('.js-404-canvas');
+        const imageCanvas = document.createElement('canvas');
+        const imageCanvasContext = imageCanvas.getContext('2d');
         const ctx = canvas.getContext('2d');
         let pixels = [];
 
@@ -103,6 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const width = canvas.width;
         const height = canvas.height;
 
+        imageCanvas.width = width;
+        imageCanvas.height = height;
+
         const image = new Image();
         image.src = '/dist/assets/image/404/404.jpg';
 
@@ -111,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         image.addEventListener('load', function () {
 
-            ctx.drawImage(image, 0, 0, width, height);
-            const data = ctx.getImageData(0,0, width, height).data;
+            imageCanvasContext.drawImage(image, 0, 0, width, height);
+            const data = imageCanvasContext.getImageData(0,0, width, height).data;
             const cellWidth = 20;
             const cellHeight = 20;
 
@@ -139,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-            const positions = [];
+            let positions = [];
 
             for (let i = 0; i < pixels.length; i += cellWidth) {
                 for (let j = 0; j < pixels[i].length; j += cellHeight) {
@@ -158,11 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            console.log(positions);
+            positions = positions.shuffle();
 
             render();
 
-            function render(delay = 1) {
+            function render(delay = 10) {
                 let counter = 0;
                 const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
 
@@ -437,3 +442,11 @@ Array.prototype.chunk = function (size) {
     }
     return temp;
 };
+
+Array.prototype.shuffle = function () {
+    for (let i = this.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [this[i], this[j]] = [this[j], this[i]];
+    }
+    return this;
+}

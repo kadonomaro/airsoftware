@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function page404CanvasAnimation() {
         const canvas = document.querySelector('.js-404-canvas');
         const ctx = canvas.getContext('2d');
-        const pixels = [];
+        let pixels = [];
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -126,16 +126,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     y: Math.floor((i / 4) / width)
                 };
 
-                // pixels.push(pixel);
+                pixels.push(pixel);
 
-                if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
-                    pixels.push(pixel);
+                // if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
+                //     pixels.push(pixel);
+                // }
+            }
+
+
+
+            pixels = pixels.chunk(width);
+
+
+
+            const positions = [];
+
+            for (let i = 0; i < pixels.length; i += cellWidth) {
+                for (let j = 0; j < pixels[i].length; j += cellHeight) {
+                    const pixel = {
+                        r: pixels[i][j].r,
+                        g: pixels[i][j].g,
+                        b: pixels[i][j].b,
+                        x: j,
+                        y: i
+                    };
+
+                    if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
+                        positions.push(pixel);
+                    }
+
                 }
             }
 
-            console.log(pixels);
+            console.log(positions);
 
-            // render();
+            render();
 
             function render(delay = 1) {
                 let counter = 0;
@@ -144,10 +169,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const interval = setInterval(() => {
 
                     ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                    ctx.fillText(getRandomSymbol(65, 122), pixels[counter].x, pixels[counter].y);
+                    ctx.fillText(getRandomSymbol(65, 122), positions[counter].x, positions[counter].y);
                     counter++;
 
-                    if (counter >= pixels.length) {
+                    if (counter >= positions.length) {
                         clearInterval(interval);
                     }
                 }, delay);

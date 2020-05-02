@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function page404CanvasAnimation() {
         const canvas = document.querySelector('.js-404-canvas');
         const ctx = canvas.getContext('2d');
-        const positionsFromImage = [];
+        const pixels = [];
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -112,20 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
         image.addEventListener('load', function () {
 
             ctx.drawImage(image, 0, 0, width, height);
-            const imageData = ctx.getImageData(0,0, width, height);
+            const data = ctx.getImageData(0,0, width, height).data;
 
-            for (let i = 0; i < imageData.data.length; i += (4 + 20)) {
-                const data = imageData.data;
+            for (let i = 0; i < data.length; i += 4) {
                 const pixel = {
                     r: data[i],
                     g: data[i + 1],
                     b: data[i + 2],
-                    a: data[i + 3]
+                    a: data[i + 3],
+                    x: (i / 4) % width,
+                    y: Math.floor((i / 4 ) / width)
                 };
-                positionsFromImage.push(pixel);
+
+                pixels.push(pixel);
             }
 
-            console.log(positionsFromImage);
+            console.log(pixels);
 
         });
     }

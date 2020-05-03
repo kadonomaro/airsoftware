@@ -6,7 +6,7 @@ class Canvas2D {
         this.canvas.height = height;
     }
 
-    drawText({font, colors, cell= {width: 1, height: 1}, delay}) {
+    drawText({font, ASCIICharRange, colors, cell= {width: 1, height: 1}, delay}) {
         const renderCount = (this.canvas.width / cell.width) * (this.canvas.height / cell.height);
         const renderLimit = renderCount - renderCount * 0.5;
         let counter = 0;
@@ -22,7 +22,7 @@ class Canvas2D {
 
             if (!positions.some(pos => pos.x === position.x && pos.y === position.y)) {
                 this.ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                this.ctx.fillText(getRandomSymbol(65, 122), position.x, position.y);
+                this.ctx.fillText(getRandomSymbol(...ASCIICharRange), position.x, position.y);
                 counter++;
             }
             positions.push(position);
@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         canvas.drawText({
             font: 'bold 16px Roboto',
+            ASCIICharRange: [65, 122],
             cell: {
                 width: 20,
                 height: 20
@@ -128,10 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         image.addEventListener('load', function () {
             imageCanvasContext.drawImage(image, 0, 0, width, height);
             const data = imageCanvasContext.getImageData(0,0, width, height).data;
-            const cellWidth = window.innerWidth > 767 ? 15 : 8;
-            const cellHeight = window.innerWidth > 767 ? 15 : 8;
-
-            let t1 = performance.now();
+            const cellWidth = window.innerWidth > 767 ? 15 : 5;
+            const cellHeight = window.innerWidth > 767 ? 15 : 5;
 
             for (let i = 0; i < data.length; i += 4) {
                 const pixel = {
@@ -140,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     b: data[i + 2],
                     a: data[i + 3],
                 };
-
                 pixels.push(pixel);
             }
 
@@ -156,17 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         y: i
                     };
 
-                    if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
+                    if (pixel.r > 100 && pixel.g > 100 && pixel.b > 100) {
                         pixelCoords.push(pixel);
                     }
                 }
             }
 
             pixelCoords = pixelCoords.shuffle();
-
-            let t2 = performance.now();
-
-            console.log(t2 - t1);
 
             render();
 
@@ -175,14 +169,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
 
                 const interval = setInterval(() => {
-
                     ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                    ctx.fillText(getRandomSymbol(65, 122), pixelCoords[counter].x, pixelCoords[counter].y);
+                    ctx.fillText(window.innerWidth > 767 ? getRandomSymbol(65, 122) : getRandomSymbol(7, 7), pixelCoords[counter].x, pixelCoords[counter].y);
                     counter++;
 
                     if (counter >= pixelCoords.length) {
                         clearInterval(interval);
-
                     }
                 }, delay);
             }

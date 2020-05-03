@@ -53,6 +53,22 @@
     transform: translateX(10%);
     opacity: 1;
   }
+  &__404 {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    padding: 0 10px;
+    color: $color-light-gray;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  &__title-404 {
+    margin: 0 0 20px;
+  }
+  &__subtitle-404 {
+    display: block;
+    font-size: 20px;
+  }
 }
 
 
@@ -81,6 +97,12 @@
     &__title--fade-in,
     &__subtitle--fade-in {
       transform: translateX(0);
+    }
+    &__title-404 {
+      font-size: 24px;
+    }
+    &__subtitle-404 {
+      font-size: 18px;
     }
     &__body {
       padding: 10px;

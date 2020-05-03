@@ -16,6 +16,10 @@
     <main class="hero">
         <canvas class="hero__canvas js-404-canvas"></canvas>
         <?php include_once 'partials/page-header.php'?>
+        <div class="hero__404">
+            <h1 class="hero__title-404">К сожалению запрашиваемая страница не найдена</h1>
+            <span class="hero__subtitle-404">Пока мы работаем над этой проблемой вы можете посетить другие страницы</span>
+        </div>
     </main><!--hero-->
 
 

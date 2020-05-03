@@ -94,10 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function page404CanvasAnimation() {
         const canvas = document.querySelector('.js-404-canvas');
+        const ctx = canvas.getContext('2d');
         const imageCanvas = document.createElement('canvas');
         const imageCanvasContext = imageCanvas.getContext('2d');
-        const ctx = canvas.getContext('2d');
+
         let pixels = [];
+        let pixelCoords = [];
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -109,17 +111,18 @@ document.addEventListener('DOMContentLoaded', () => {
         imageCanvas.height = height;
 
         const image = new Image();
-        image.src = '/dist/assets/image/404/404.jpg';
+        image.src = '/dist/assets/image/404/404_compressed.jpg';
 
 
-        ctx.font = "bold 16px Roboto";
+        ctx.font = "bold 14px Roboto";
 
         image.addEventListener('load', function () {
-
             imageCanvasContext.drawImage(image, 0, 0, width, height);
             const data = imageCanvasContext.getImageData(0,0, width, height).data;
-            const cellWidth = 20;
-            const cellHeight = 20;
+            const cellWidth = 15;
+            const cellHeight = 15;
+
+            let t1 = performance.now();
 
             for (let i = 0; i < data.length; i += 4) {
                 const pixel = {
@@ -127,24 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     g: data[i + 1],
                     b: data[i + 2],
                     a: data[i + 3],
-                    x: (i / 4) % width,
-                    y: Math.floor((i / 4) / width)
                 };
 
                 pixels.push(pixel);
-
-                // if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
-                //     pixels.push(pixel);
-                // }
             }
 
-
-
             pixels = pixels.chunk(width);
-
-
-
-            let positions = [];
 
             for (let i = 0; i < pixels.length; i += cellWidth) {
                 for (let j = 0; j < pixels[i].length; j += cellHeight) {
@@ -157,13 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     };
 
                     if (pixel.r > 0 && pixel.g > 0 && pixel.b > 0) {
-                        positions.push(pixel);
+                        pixelCoords.push(pixel);
                     }
-
                 }
             }
 
-            positions = positions.shuffle();
+            pixelCoords = pixelCoords.shuffle();
+
+            let t2 = performance.now();
+
+            console.log(t2 - t1);
 
             render();
 
@@ -174,11 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const interval = setInterval(() => {
 
                     ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                    ctx.fillText(getRandomSymbol(65, 122), positions[counter].x, positions[counter].y);
+                    ctx.fillText(getRandomSymbol(65, 122), pixelCoords[counter].x, pixelCoords[counter].y);
                     counter++;
 
-                    if (counter >= positions.length) {
+                    if (counter >= pixelCoords.length) {
                         clearInterval(interval);
+                        console.log('clear');
                     }
                 }, delay);
             }
@@ -449,4 +444,4 @@ Array.prototype.shuffle = function () {
         [this[i], this[j]] = [this[j], this[i]];
     }
     return this;
-}
+};

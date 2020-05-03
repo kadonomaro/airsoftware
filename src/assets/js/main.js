@@ -1,3 +1,41 @@
+class Canvas2D {
+    constructor({canvas, width, height}) {
+        this.canvas = canvas;
+        this.ctx = this.canvas.getContext('2d');
+        this.canvas.width = width;
+        this.canvas.height = height;
+    }
+
+    drawText({font, colors, cell= {width: 1, height: 1}, delay}) {
+        const renderCount = (this.canvas.width / cell.width) * (this.canvas.height / cell.height);
+        const renderLimit = renderCount - renderCount * 0.5;
+        let counter = 0;
+        const positions = [];
+
+        this.ctx.font = font;
+
+        const interval = setInterval(() => {
+            const position = {
+                x: Math.ceil(getRandomRange(0, this.canvas.width) / cell.width) * cell.width,
+                y: Math.ceil(getRandomRange(0, this.canvas.height) / cell.height) * cell.height,
+            };
+
+            if (!positions.some(pos => pos.x === position.x && pos.y === position.y)) {
+                this.ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
+                this.ctx.fillText(getRandomSymbol(65, 122), position.x, position.y);
+                counter++;
+            }
+            positions.push(position);
+
+            if (counter >= renderLimit) {
+                clearInterval(interval);
+            }
+        }, delay);
+    }
+
+};
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     if (document.body.classList.contains('main-page')) {
@@ -45,50 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function heroCanvasAnimation() {
-        const canvas = document.querySelector('.js-hero-canvas');
-        const ctx = canvas.getContext('2d');
+        const canvas = new Canvas2D({
+            canvas: document.querySelector('.js-hero-canvas'),
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const width = canvas.width;
-        const height = canvas.height;
-        let delay = 10;
-
-        if (window.innerWidth <= 767) {
-            delay = 50;
-        }
-
-        ctx.font = "bold 16px Roboto";
-
-        render(20,20, delay);
-
-
-        function render(cellWidth = 20, cellHeight = 20, delay = 100) {
-            const renderCount = (width / cellWidth) * (height / cellHeight);
-            const renderLimit = renderCount - renderCount * 0.5;
-            let counter = 0;
-            const positions = [];
-            const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
-
-            const interval = setInterval(() => {
-                const position = {
-                    x: Math.ceil(getRandomRange(0, width) / cellWidth) * cellWidth,
-                    y: Math.ceil(getRandomRange(0, height) / cellHeight) * cellHeight,
-                };
-
-                if (!positions.some(pos => pos.x === position.x && pos.y === position.y)) {
-                    ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                    ctx.fillText(getRandomSymbol(65, 122), position.x, position.y);
-                    counter++;
-                }
-                positions.push(position);
-
-                if (counter >= renderLimit) {
-                    clearInterval(interval);
-                }
-            }, delay);
-        }
+        canvas.drawText({
+            font: 'bold 16px Roboto',
+            cell: {
+                width: 20,
+                height: 20
+            },
+            colors: ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'],
+            delay: window.innerWidth <= 767 ? 50 : 10
+        });
     }
 
 

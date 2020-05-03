@@ -33,7 +33,7 @@ class Canvas2D {
         }, delay);
     }
 
-};
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function navigation() {
         const navToggle = document.querySelector('.js-menu-toggle');
-        const navMenu = document.querySelector('.js-menu-navigation')
+        const navMenu = document.querySelector('.js-menu-navigation');
         navToggle.addEventListener('click', function (evt) {
             evt.preventDefault();
             this.classList.toggle('main-nav__toggle--opened');
@@ -120,16 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
         imageCanvas.height = height;
 
         const image = new Image();
-        image.src = '/dist/assets/image/404/404_compressed.jpg';
+        image.src = window.innerWidth > 767 ? '/dist/assets/image/404/404.jpg' : '/dist/assets/image/404/404__mobile.jpg';
 
 
-        ctx.font = "bold 14px Roboto";
+        ctx.font = window.innerWidth > 767 ? 'bold 14px Roboto' : 'bold 8px Roboto';
 
         image.addEventListener('load', function () {
             imageCanvasContext.drawImage(image, 0, 0, width, height);
             const data = imageCanvasContext.getImageData(0,0, width, height).data;
-            const cellWidth = 15;
-            const cellHeight = 15;
+            const cellWidth = window.innerWidth > 767 ? 15 : 8;
+            const cellHeight = window.innerWidth > 767 ? 15 : 8;
 
             let t1 = performance.now();
 
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (counter >= pixelCoords.length) {
                         clearInterval(interval);
-                        console.log('clear');
+
                     }
                 }, delay);
             }

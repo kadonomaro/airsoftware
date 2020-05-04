@@ -33,6 +33,73 @@ class Canvas2D {
         }, delay);
     }
 
+    drawFromImage({image, font, ASCIICharRange, colors, cell= {width: 1, height: 1}, delay}) {
+        const imageCanvas = document.createElement('canvas');
+        const imageCanvasContext = imageCanvas.getContext('2d');
+        this.ctx.font = font;
+
+        let pixels = [];
+        let pixelCoords = [];
+
+        imageCanvas.width = this.canvas.width;
+        imageCanvas.height = this.canvas.height;
+
+        const img = new Image();
+        img.src = image;
+
+        img.addEventListener('load',  () => {
+            imageCanvasContext.drawImage(img, 0, 0, imageCanvas.width, imageCanvas.height);
+            const data = imageCanvasContext.getImageData(0,0, imageCanvas.width, imageCanvas.height).data;
+
+            for (let i = 0; i < data.length; i += 4) {
+                const pixel = {
+                    r: data[i],
+                    g: data[i + 1],
+                    b: data[i + 2],
+                    a: data[i + 3],
+                };
+                pixels.push(pixel);
+            }
+
+            pixels = pixels.chunk(imageCanvas.width);
+
+            for (let i = 0; i < pixels.length; i += cell.width) {
+                for (let j = 0; j < pixels[i].length; j += cell.height) {
+                    const pixel = {
+                        r: pixels[i][j].r,
+                        g: pixels[i][j].g,
+                        b: pixels[i][j].b,
+                        x: j,
+                        y: i
+                    };
+
+                    if (pixel.r > 100 && pixel.g > 100 && pixel.b > 100) {
+                        pixelCoords.push(pixel);
+                    }
+                }
+            }
+
+            pixelCoords = pixelCoords.shuffle();
+
+            const render = () => {
+                let counter = 0;
+
+                const interval = setInterval(() => {
+                    this.ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
+                    this.ctx.fillText(getRandomSymbol(...ASCIICharRange), pixelCoords[counter].x, pixelCoords[counter].y);
+                    counter++;
+
+                    if (counter >= pixelCoords.length) {
+                        clearInterval(interval);
+                    }
+                }, delay);
+            };
+
+            render();
+
+        });
+    }
+
 }
 
 
@@ -103,81 +170,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function page404CanvasAnimation() {
-        const canvas = document.querySelector('.js-404-canvas');
-        const ctx = canvas.getContext('2d');
-        const imageCanvas = document.createElement('canvas');
-        const imageCanvasContext = imageCanvas.getContext('2d');
+        const canva = new Canvas2D({
+           canvas: document.querySelector('.js-404-canvas'),
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
 
-        let pixels = [];
-        let pixelCoords = [];
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const width = canvas.width;
-        const height = canvas.height;
-
-        imageCanvas.width = width;
-        imageCanvas.height = height;
-
-        const image = new Image();
-        image.src = window.innerWidth > 767 ? '/dist/assets/image/404/404.jpg' : '/dist/assets/image/404/404__mobile.jpg';
-
-
-        ctx.font = window.innerWidth > 767 ? 'bold 14px Roboto' : 'bold 8px Roboto';
-
-        image.addEventListener('load', function () {
-            imageCanvasContext.drawImage(image, 0, 0, width, height);
-            const data = imageCanvasContext.getImageData(0,0, width, height).data;
-            const cellWidth = window.innerWidth > 767 ? 15 : 5;
-            const cellHeight = window.innerWidth > 767 ? 15 : 5;
-
-            for (let i = 0; i < data.length; i += 4) {
-                const pixel = {
-                    r: data[i],
-                    g: data[i + 1],
-                    b: data[i + 2],
-                    a: data[i + 3],
-                };
-                pixels.push(pixel);
-            }
-
-            pixels = pixels.chunk(width);
-
-            for (let i = 0; i < pixels.length; i += cellWidth) {
-                for (let j = 0; j < pixels[i].length; j += cellHeight) {
-                    const pixel = {
-                        r: pixels[i][j].r,
-                        g: pixels[i][j].g,
-                        b: pixels[i][j].b,
-                        x: j,
-                        y: i
-                    };
-
-                    if (pixel.r > 100 && pixel.g > 100 && pixel.b > 100) {
-                        pixelCoords.push(pixel);
-                    }
-                }
-            }
-
-            pixelCoords = pixelCoords.shuffle();
-
-            render();
-
-            function render(delay = 10) {
-                let counter = 0;
-                const colors = ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'];
-
-                const interval = setInterval(() => {
-                    ctx.fillStyle = colors[getRandomRange(0, colors.length - 1)];
-                    ctx.fillText(window.innerWidth > 767 ? getRandomSymbol(65, 122) : getRandomSymbol(7, 7), pixelCoords[counter].x, pixelCoords[counter].y);
-                    counter++;
-
-                    if (counter >= pixelCoords.length) {
-                        clearInterval(interval);
-                    }
-                }, delay);
-            }
+        canva.drawFromImage({
+           image: window.innerWidth > 767 ? '/dist/assets/image/404/404.jpg' : '/dist/assets/image/404/404__mobile.jpg',
+           font: window.innerWidth > 767 ? 'bold 14px Roboto' : 'bold 8px Roboto',
+           ASCIICharRange: window.innerWidth > 767 ? [65, 122] : [7, 7],
+           cell: {
+               width: window.innerWidth > 767 ? 15 : 5,
+               height: window.innerWidth > 767 ? 15 : 5
+           },
+           colors: ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'],
+           delay: 10
 
         });
     }

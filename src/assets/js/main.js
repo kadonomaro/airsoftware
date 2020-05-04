@@ -99,7 +99,6 @@ class Canvas2D {
 
         });
     }
-
 }
 
 
@@ -170,13 +169,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function page404CanvasAnimation() {
-        const canva = new Canvas2D({
+        const canvas = new Canvas2D({
            canvas: document.querySelector('.js-404-canvas'),
             width: window.innerWidth,
             height: window.innerHeight
         });
 
-        canva.drawFromImage({
+        canvas.drawFromImage({
            image: window.innerWidth > 767 ? '/dist/assets/image/404/404.jpg' : '/dist/assets/image/404/404__mobile.jpg',
            font: window.innerWidth > 767 ? 'bold 14px Roboto' : 'bold 8px Roboto',
            ASCIICharRange: window.innerWidth > 767 ? [65, 122] : [7, 7],
@@ -186,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
            },
            colors: ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'],
            delay: 10
-
         });
     }
 

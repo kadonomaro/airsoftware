@@ -7,7 +7,8 @@
     <?php include_once '../partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/assets/css/style.css">
-    <title>Наша продукция - Airsoftware</title>
+    <title>Политика конфиденциальности - Airsoftware</title>
+    <meta name="description" content="Политика в отношении обработки персональных данных компании Airsoftware">
 </head>
 <body class="product-page">
 <?php include_once '../partials/page-header.php'?>

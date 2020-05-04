@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include_once 'partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="dist/assets/css/style.css">
-    <title>Airsoftware - современные решения для бизнеса</title>
-    <meta name="description" content="Компания Airsoftware – это разработчик программного обеспечения для малого и среднего бизнеса.">
+    <title>404 - страница не найдена - Airsoftware</title>
+    <meta name="description" content="К сожалению запрашиваемая страница не найдена. Пока мы работаем над этой проблемой вы можете посетить другие страницы - Airsoftware">
 </head>
 <body class="404-page">
 

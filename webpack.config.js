@@ -5,6 +5,7 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+    devtool: 'source-map',
     entry: './src/js/main.js',
     output: {
         filename: 'bundle.js',

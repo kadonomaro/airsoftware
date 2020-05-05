@@ -7,7 +7,7 @@
     <span class="modal__title">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</span>
     <div class="order">
         <form action="" class="order__form">
-            <label class="order__label">
+            <label class="order__label" aria-label="selected products">
                 <select name="order-product" class="order__select">
                     <option value="">Выберите продукт</option>
                     <option value="address-book">Address Book</option>
@@ -15,13 +15,13 @@
                     <option value="transport-control">Transport Control</option>
                 </select>
             </label>
-            <label class="order__label">
+            <label class="order__label" aria-label="user name">
                 <input type="text" name="order-name" class="order__input" placeholder="Ваше имя">
             </label>
-            <label class="order__label">
+            <label class="order__label" aria-label="user phone">
                 <input type="tel" name="order-phone" class="order__input" placeholder="Ваш телефон">
             </label>
-            <label class="order__label">
+            <label class="order__label" aria-label="user email">
                 <input type="email" name="order-email" class="order__input" placeholder="Ваш email">
             </label>
             <label class="order__label">

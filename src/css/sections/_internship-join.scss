@@ -1,12 +1,12 @@
 .internship-join {
   background-color: $color-light-gray;
-  &__form-inner {
+  &__inner {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
   &__text,
-  &__textarea {
+  &__form {
     flex-basis: 50%;
     flex-grow: 1;
     min-width: 300px;
@@ -21,12 +21,19 @@
       margin: 0 0 10px;
     }
   }
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__input {
+    padding: 10px 14px;
+  }
   &__textarea {
     display: block;
-    flex-basis: 50%;
-    min-height: 200px;
+    width: 100%;
+    min-height: 150px;
     padding: 10px 14px;
-    color: #141414;
+    color: $color-dark-gray;
     font-size: 16px;
     background-color: #f1f1f1;
     border: 2px solid transparent;
@@ -38,9 +45,6 @@
     &:focus {
       border-color: $color-accent;
     }
-  }
-  &__footer {
-    text-align: center;
   }
 }
 

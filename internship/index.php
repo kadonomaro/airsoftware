@@ -180,25 +180,31 @@
                 <h2 class="section__title section__title--dark">Присоединись к команде мечты</h2>
             </header>
 
-            <form action="" method="post" class="internship-join__form">
-                <div class="internship-join__form-inner">
-                    <div class="internship-join__text">
-                        <p>Напиши пару слов о себе:</p>
-                        <ul>
-                            <li>Немного личной информации (имя, возраст, где учился/работал)</li>
-                            <li>Почему ты хочешь этим заниматься</li>
-                            <li>Коротко оцени свои текущие навыки</li>
-                            <li>Что хочешь получить от стажировки</li>
-                            <li>Пару нейтральных предложений на английском языке (без переводчика, это важно)</li>
-                            <li>Ссылки на примеры твоих работ</li>
-                        </ul>
-                    </div>
-                    <textarea class="internship-join__textarea" name="internship-join-about" >•</textarea>
+            <div class="internship-join__inner">
+                <div class="internship-join__text">
+                    <p>Напиши пару слов о себе:</p>
+                    <ul>
+                        <li>Немного информации об опыте (где учился/работал)</li>
+                        <li>Почему ты хочешь этим заниматься</li>
+                        <li>Коротко оцени свои текущие навыки</li>
+                        <li>Что хочешь получить от стажировки</li>
+                        <li>Пару нейтральных предложений на английском языке (без переводчика, это важно)</li>
+                        <li>Ссылки на примеры твоих работ</li>
+                    </ul>
                 </div>
-                <div class="internship-join__footer">
-                    <button class="internship-join__button button">Отправить</button>
-                </div>
-            </form>
+                <form action="" method="post" class="internship-join__form">
+                    <label class="internship-join__label" aria-label="user name">
+                        <input class="internship-join__input" type="text" name="internship-join-name" placeholder="Имя">
+                    </label>
+                    <label class="internship-join__label" aria-label="user text">
+                        <textarea class="internship-join__textarea" name="internship-join-about"></textarea>
+                    </label>
+                    <button type="submit" class="internship-join__button button">Отправить</button>
+
+                </form>
+            </div>
+
+
 
         </div><!-- /.container -->
 

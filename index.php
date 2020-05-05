@@ -21,7 +21,7 @@
             <span class="hero__subtitle">Современные решения для бизнеса</span>
         </div>
 
-    </main><!--hero-->
+    </main><!-- /.hero-->
 
 
     <section class="clients section">
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-    </section><!--clients-->
+    </section><!-- /.clients-->
 
 
     <section class="about section">
@@ -102,7 +102,7 @@
                     </p>
                 </div>
             </div>
-        </div><!--about__inner-->
+        </div><!-- /.about__inner-->
 
         <div class="about__inner">
             <div class="about__side about__side--ordered">
@@ -135,7 +135,7 @@
                     </Ul>
                 </div>
             </div>
-        </div><!--about__inner-->
+        </div><!-- /.about__inner -->
 
 
         <div class="about__inner">
@@ -232,7 +232,6 @@
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
-                                                    </td>
                                                     <td>
                                                         <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#a0a0a0" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
@@ -305,7 +304,6 @@
                                                         <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
-                                                    </td>
                                                     </td>
                                                     <td>
                                                         <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -380,7 +378,6 @@
                                                             <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
                                                         </svg>
                                                     </td>
-                                                    </td>
                                                     <td>
                                                         <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                             <path fill="#a0a0a0" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
@@ -434,7 +431,7 @@
                         </div>
                     </div>
                 </footer>
-            </div><!--products--inner-->
+            </div><!-- /.products__inner-->
 
         </div>
     </section><!-- /.products -->

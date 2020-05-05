@@ -1,3 +1,5 @@
+import '@/css/style.scss';
+
 class Canvas2D {
     constructor({canvas, width, height}) {
         this.canvas = canvas;
@@ -124,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.body.classList.contains('404-page')) {
         page404CanvasAnimation();
     }
+
     navigation();
     modal();
 

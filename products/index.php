@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include_once '../partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/assets/css/style.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
     <title>Наша продукция - Airsoftware</title>
     <meta name="description" content="Основные продукты для малого и среднего бизнеса от компании Airsoftware">
 </head>
@@ -448,6 +448,6 @@
         <?php include_once '../partials/order-modal.php'?>
     </div>
 
-    <script src="../dist/assets/js/main.js"></script>
+    <script src="../dist/js/bundle.js"></script>
 </body>
 </html>

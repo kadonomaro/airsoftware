@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include_once '../partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/assets/css/style.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
     <title>Политика конфиденциальности - Airsoftware</title>
     <meta name="description" content="Политика в отношении обработки персональных данных компании Airsoftware">
 </head>
-<body class="product-page">
+<body class="policy-page">
 <?php include_once '../partials/page-header.php'?>
 
 
@@ -243,6 +243,6 @@
     </div>
 </div>
 
-<script src="../dist/assets/js/main.js"></script>
+<script src="../dist/js/bundle.js"></script>
 </body>
 </html>

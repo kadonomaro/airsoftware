@@ -3,6 +3,8 @@ import Canvas2D from "./lib/Canvas2D";
 import modal from "./lib/modal";
 import navigation from "./lib/navigation";
 import { infiniteSlider, internshipTeamSlider } from "./lib/sliders";
+import tabs from "./lib/tabs";
+import imageHighlight from "./lib/imageHighlight";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -10,12 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         heroCanvasAnimation();
         heroTextAnimation();
         infiniteSlider('.js-clients-slider');
-        tabsInit('.js-tabs');
+        tabs('.js-tabs');
     }
     if (document.body.classList.contains('product-page')) {
         scrollObservers();
         if (window.innerWidth >= 767) {
-            gridImageHighlight(2500);
+            imageHighlight({
+                image: {
+                    selector: '.js-product-hero-image',
+                    highlightClass: 'product-hero-grid__image--highlighted'
+                },
+                delay: 2500
+            });
         }
     }
     if (document.body.classList.contains('internship-page')) {
@@ -77,25 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
            },
            colors: ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'],
            delay: 10
-        });
-    }
-
-
-    function tabsInit(selector) {
-        const tabs = document.querySelector(selector);
-        const tabLinks = [...tabs.querySelectorAll('[data-target]')];
-        const tabLinkTargets = [...tabs.querySelectorAll('[data-content]')];
-
-        tabLinks.forEach((link) => {
-            link.addEventListener('click', function (evt) {
-                evt.preventDefault();
-                tabLinks.forEach(link => link.classList.remove('tabs__button--active'));
-                this.classList.add('tabs__button--active');
-
-                const linkTarget = tabs.querySelector(`[data-content="${this.dataset.target}"]`);
-                tabLinkTargets.forEach(target => target.classList.remove('tabs__content--visible'));
-                linkTarget.classList.add('tabs__content--visible');
-            });
         });
     }
 
@@ -183,27 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function gridImageHighlight(delay) {
-        const images = document.querySelectorAll('.js-product-hero-image');
-        const maxLength = images.length - 1;
-        const highlightAmount = 2;
-
-        const interval = setInterval(() => {
-            for (let i = 0; i < highlightAmount; i++) {
-                const currentImage = images[getRandomRange(0, maxLength)];
-                currentImage.classList.add('product-hero-grid__image--highlighted');
-
-                setTimeout(() => {
-                    const prevImage = currentImage;
-                    prevImage.classList.remove('product-hero-grid__image--highlighted');
-                }, delay);
-            }
-        },delay);
-    }
-
-
     function scrollObserver() {
         const items = document.querySelectorAll('.js-internship-item');
+
         const options = {
             root: null,
             rootMargin: `0px 0px ${window.innerWidth > 767 ? "50%" : "100%"} 0px`,

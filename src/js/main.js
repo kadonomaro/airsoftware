@@ -1,13 +1,15 @@
 import '@/css/style.scss';
 import Canvas2D from "./lib/Canvas2D";
-
+import modal from "./lib/modal";
+import navigation from "./lib/navigation";
+import { infiniteSlider, internshipTeamSlider } from "./lib/sliders";
 
 document.addEventListener('DOMContentLoaded', () => {
 
     if (document.body.classList.contains('main-page')) {
         heroCanvasAnimation();
         heroTextAnimation();
-        infiniteSliderInit('.js-clients-slider');
+        infiniteSlider('.js-clients-slider');
         tabsInit('.js-tabs');
     }
     if (document.body.classList.contains('product-page')) {
@@ -18,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.body.classList.contains('internship-page')) {
         scrollObserver();
-        sliderInit('.js-internship-team-slider');
+        internshipTeamSlider('.js-internship-team-slider');
     }
 
     if (document.body.classList.contains('404-page')) {
@@ -29,18 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modal();
 
 
-    function navigation() {
-        const navToggle = document.querySelector('.js-menu-toggle');
-        const navMenu = document.querySelector('.js-menu-navigation');
-        navToggle.addEventListener('click', function (evt) {
-            evt.preventDefault();
-            this.classList.toggle('main-nav__toggle--opened');
-            navMenu.classList.toggle('main-nav__list--opened');
-        })
-    }
-
-
-    function  heroTextAnimation() {
+    function heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
         const heroSubtitle = document.querySelector('.hero__subtitle');
 
@@ -90,54 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function infiniteSliderInit(selector) {
-        $(selector).slick({
-            variableWidth: true,
-            focusOnSelect: false,
-            accessibility: false,
-            autoplay: true,
-            autoplaySpeed: 0,
-            speed: 10000,
-            arrows: false,
-            cssEase: 'linear',
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
-    }
-
-
-    function sliderInit(selector) {
-        $(selector).slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: true,
-            prevArrow: $('.internship-team-slider').find('.js-slider-prev'),
-            nextArrow: $('.internship-team-slider').find('.js-slider-next'),
-            initialSlide: 1,
-            responsive: [
-                {
-                    breakpoint: 9999,
-                    settings: "unslick"
-                },
-                {
-                    breakpoint: 1023,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
-    }
-
-
     function tabsInit(selector) {
         const tabs = document.querySelector(selector);
         const tabLinks = [...tabs.querySelectorAll('[data-target]')];
@@ -154,48 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 linkTarget.classList.add('tabs__content--visible');
             });
         });
-    }
-
-
-    function modal() {
-        const openModalButton = document.querySelectorAll('.js-open-modal');
-        const modalOverlay = document.querySelector('.modal-overlay');
-        let id;
-
-        openModalButton.forEach(button => {
-            button.addEventListener('click', function (evt) {
-                evt.preventDefault();
-                id = this.dataset.target;
-                openModal(id);
-            });
-        });
-        modalOverlay.addEventListener('click', function (evt) {
-            const modal = modalOverlay.querySelector(`#${id}`);
-            const closeModalButton = modal.querySelector('.js-close-modal');
-            if (evt.target === this || evt.target === closeModalButton) {
-                closeModal(id);
-            }
-        });
-
-
-        function openModal(id) {
-            modalOverlay.style.display = 'block';
-            setTimeout(() => {
-                modalOverlay.classList.add('modal-overlay--active');
-                modalOverlay.querySelector(`#${id}`).classList.add('modal--active');
-                modalOverlay.querySelector('.js-close-modal').focus();
-            }, 10);
-            document.body.classList.add('modal-is-open');
-        }
-
-        function closeModal(id) {
-            modalOverlay.classList.remove('modal-overlay--active');
-            modalOverlay.querySelector(`#${id}`).classList.remove('modal--active');
-            setTimeout(() => {
-                modalOverlay.style.display = 'none';
-            }, 300);
-            document.body.classList.remove('modal-is-open');
-        }
     }
 
 
@@ -303,7 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function scrollObserver() {
         const items = document.querySelectorAll('.js-internship-item');
-
         const options = {
             root: null,
             rootMargin: `0px 0px ${window.innerWidth > 767 ? "50%" : "100%"} 0px`,
@@ -323,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach((item) => {
             observer.observe(item);
         });
-
     }
 
 });

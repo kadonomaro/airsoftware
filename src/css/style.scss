@@ -4,31 +4,33 @@
 @import "partials/header";
 @import "partials/footer";
 
-/*Main page*/
+/* Main page */
 @import "sections/hero";
 @import "sections/clients";
 @import "sections/about";
 @import "sections/products";
 @import "sections/team";
 
-/*Product page*/
+/* Product page */
 @import "sections/product-hero";
 @import "sections/product-overview";
 @import "sections/product-list";
 
-/*Internship page*/
+/* Internship page */
 @import "sections/internship-hero";
 @import "sections/internship-team";
 @import "sections/internship-about";
 @import "sections/internship-join";
 
-/*Policy page*/
+/* Policy page */
 @import "sections/policy";
 
+/* Blocks */
 @import "blocks/section";
 @import "blocks/main-nav";
 @import "blocks/logo";
 @import "blocks/button";
+@import "blocks/input";
 @import "blocks/checkbox";
 @import "blocks/link";
 @import "blocks/tabs";

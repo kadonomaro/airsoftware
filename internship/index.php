@@ -194,10 +194,10 @@
                 </div>
                 <form action="" method="post" class="internship-join__form">
                     <label class="internship-join__label" aria-label="user name">
-                        <input class="internship-join__input" type="text" name="internship-join-name" placeholder="Имя">
+                        <input class="internship-join__input input" type="text" name="internship-join-name" placeholder="Имя">
                     </label>
                     <label class="internship-join__label" aria-label="user text">
-                        <textarea class="internship-join__textarea" name="internship-join-about"></textarea>
+                        <textarea class="internship-join__textarea input" name="internship-join-about"></textarea>
                     </label>
                     <button type="submit" class="internship-join__button button">Отправить</button>
 

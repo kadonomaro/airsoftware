@@ -8,7 +8,7 @@
     <div class="order">
         <form action="" class="order__form">
             <label class="order__label" aria-label="selected products">
-                <select name="order-product" class="order__select">
+                <select name="order-product" class="order__select input">
                     <option value="">Выберите продукт</option>
                     <option value="address-book">Address Book</option>
                     <option value="todo">Todo Application</option>
@@ -16,13 +16,13 @@
                 </select>
             </label>
             <label class="order__label" aria-label="user name">
-                <input type="text" name="order-name" class="order__input" placeholder="Ваше имя">
+                <input type="text" name="order-name" class="order__input input" placeholder="Ваше имя">
             </label>
             <label class="order__label" aria-label="user phone">
-                <input type="tel" name="order-phone" class="order__input" placeholder="Ваш телефон">
+                <input type="tel" name="order-phone" class="order__input input" placeholder="Ваш телефон">
             </label>
             <label class="order__label" aria-label="user email">
-                <input type="email" name="order-email" class="order__input" placeholder="Ваш email">
+                <input type="email" name="order-email" class="order__input input" placeholder="Ваш email">
             </label>
             <label class="order__label">
                 <input type="checkbox" name="order-agree" class="checkbox visually-hidden">

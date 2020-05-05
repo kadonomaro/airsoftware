@@ -5,6 +5,7 @@ import navigation from "./lib/navigation";
 import { infiniteSlider, internshipTeamSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
 import imageHighlight from "./lib/imageHighlight";
+import order from "./lib/order";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navigation();
     modal();
+    // order();
 
 
     function heroTextAnimation() {
@@ -71,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function page404CanvasAnimation() {
         const canvas = new Canvas2D({
            canvas: document.querySelector('.js-404-canvas'),
-            width: window.innerWidth,
-            height: window.innerHeight
+           width: window.innerWidth,
+           height: window.innerHeight
         });
 
         canvas.drawFromImage({

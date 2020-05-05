@@ -193,7 +193,7 @@
                             <li>Ссылки на примеры твоих работ</li>
                         </ul>
                     </div>
-                    <textarea class="internship-join__textarea" name="internship-join-about"></textarea>
+                    <textarea class="internship-join__textarea" name="internship-join-about" >•</textarea>
                 </div>
                 <div class="internship-join__footer">
                     <button class="internship-join__button button">Отправить</button>

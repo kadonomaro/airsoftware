@@ -6,7 +6,7 @@ import { infiniteSlider, internshipTeamSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
 import imageHighlight from "./lib/imageHighlight";
 import order from "./lib/order";
-import mailSender from "./lib/mailSender";
+import FormSender from "./lib/FormSender";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.body.classList.contains('internship-page')) {
         scrollObserver();
         internshipTeamSlider('.js-internship-team-slider');
-        mailSender();
+        emailSend();
     }
 
     if (document.body.classList.contains('404-page')) {
@@ -41,6 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation();
     modal();
     // order();
+
+
+    function emailSend() {
+        const joinForm = document.querySelector('.js-join-form');
+        const sender = new FormSender({
+            url: '/php/mail.php',
+            form: joinForm
+        });
+
+        sender.send().then(() => joinForm.reset());
+    }
 
 
     function heroTextAnimation() {

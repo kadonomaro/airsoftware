@@ -31,3 +31,10 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+
+
+@media (max-width: $mobile-large) {
+  .modal-is-open {
+    padding-right: 0;
+  }
+}

@@ -23,3 +23,12 @@
     vertical-align: middle;
   }
 }
+
+
+@media (max-width: $mobile-small) {
+  .order {
+    &__label {
+      margin-bottom: 10px;
+    }
+  }
+}

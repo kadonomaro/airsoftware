@@ -1,11 +1,15 @@
 .company-map {
   &__map {
     height: 400px;
+    margin-bottom: 40px;
     background-image: url('/dist/assets/image/company/map.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-top: 1px solid $color-medium-gray;
     border-bottom: 1px solid $color-medium-gray;
+  }
+  &__footer {
+    text-align: center;
   }
 }

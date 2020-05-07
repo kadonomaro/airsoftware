@@ -1,6 +1,6 @@
 import '@/css/style.scss';
 import Canvas2D from "./lib/Canvas2D";
-import modal from "./lib/modal";
+import Modal from "./lib/Modal";
 import navigation from "./lib/navigation";
 import { infiniteSlider, internshipTeamSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
@@ -38,9 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
         page404CanvasAnimation();
     }
 
+    modalInit();
     navigation();
-    modal();
+
     // order();
+
+
+    function modalInit() {
+        const modal = new Modal({
+            openButtonSelector: '.js-open-modal',
+        });
+        modal.init();
+    }
 
 
     function emailSend() {

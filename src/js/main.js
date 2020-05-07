@@ -7,6 +7,7 @@ import tabs from "./lib/tabs";
 import imageHighlight from "./lib/imageHighlight";
 import order from "./lib/order";
 import FormSender from "./lib/FormSender";
+import lazyMap from "@/js/lib/lazyMap";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         infiniteSlider('.js-clients-slider');
         tabs('.js-tabs');
     }
+
     if (document.body.classList.contains('product-page')) {
         scrollObservers();
         if (window.innerWidth >= 767) {
@@ -28,10 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
     if (document.body.classList.contains('internship-page')) {
         scrollObserver();
         internshipTeamSlider('.js-internship-team-slider');
         emailSend();
+    }
+
+    if (document.body.classList.contains('company-page')) {
+        lazyMap('.js-company-map');
     }
 
     if (document.body.classList.contains('404-page')) {

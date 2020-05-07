@@ -21,6 +21,9 @@
 
     <section class="company-map section">
 
+        <div class="company-map__map js-company-map">
+            <script class="js-lazy-map" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1942fa0dd32419e08c7518c9eb1965401f370301bec227b6142b4119011379b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
     </section>
 
 

@@ -1,3 +1,6 @@
 .company-map {
-
+  &__map {
+    background-image: url('/dist/assets/image/company/map.jpg');
+    height: 400px;
+  }
 }

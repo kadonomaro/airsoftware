@@ -170,8 +170,8 @@
 
             <div class="product-hero__order">
                 <div class="order">
-                    <span class="order__title">Трудно выбрать, легко купить</span>
-                    <span class="order__subtitle">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</span>
+                    <span class="order__title">Все еще выбираете?</span>
+                    <span class="order__subtitle">Оставьте заявку и наш менеджер поможет определиться с интересующим продуктом</span>
                     <form action="" class="order__form">
                         <label class="order__label" aria-label="selected products">
                             <select name="order-product" class="order__select input">

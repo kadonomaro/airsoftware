@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function modalInit() {
         const modal = new Modal({
-            openButtonSelector: '.js-open-modal',
+            openButtonSelector: '.js-open-modal'
         });
         modal.init();
     }

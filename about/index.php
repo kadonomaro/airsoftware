@@ -23,7 +23,7 @@
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Наша команда</h2>
-                <span class="section__subtitle">Поможем воплотить ваши самые смелые желания в реальность</span>
+                <span class="section__subtitle">Вы придумываете – мы воплощаем</span>
             </header>
 
             <div class="team__inner">
@@ -33,7 +33,7 @@
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/oleg-komarov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/oleg-komarov.jpg" alt="Олег Комаров" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/oleg-komarov.jpg" alt="Олег Комаров">
                             </picture>
                         </div>
                         <div class="team-card__text">
@@ -46,7 +46,7 @@
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/david-denisov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/david-denisov.jpg" alt="Давид Денисов" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/david-denisov.jpg" alt="Давид Денисов">
                             </picture>
                         </div>
                         <div class="team-card__text">
@@ -57,12 +57,12 @@
                 </div><!-- /.team__card -->
 
                 <div class="team__card">
-                    <h3 class="team__title">Руководители</h3>
+                    <h3 class="team__title">Директора</h3>
                     <article class="team-card">
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/joe-noname.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/joe-noname.jpg" alt="Джо Ноунейм" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/joe-noname.jpg" alt="Джо Ноунейм">
                             </picture>
                         </div>
                         <div class="team-card__text">
@@ -75,7 +75,7 @@
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/anna-orehova.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/anna-orehova.jpg" alt="Анна Орехова" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/anna-orehova.jpg" alt="Анна Орехова">
                             </picture>
                         </div>
                         <div class="team-card__text">
@@ -91,7 +91,7 @@
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/maxim-mohov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/maxim-mohov.jpg" alt="Максим Мохов" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/maxim-mohov.jpg" alt="Максим Мохов">
                             </picture>
                         </div>
                         <div class="team-card__text">
@@ -104,12 +104,70 @@
                         <div class="team-card__image">
                             <picture>
                                 <source type="image/webp" srcset="/dist/assets/image/team/anton-ivanov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/anton-ivanov.jpg" alt="Антон Иванов" >
+                                <img class="team-card__image-img" src="/dist/assets/image/team/anton-ivanov.jpg" alt="Антон Иванов">
                             </picture>
                         </div>
                         <div class="team-card__text">
                             <span class="team-card__name">Антон Иванов</span>
                             <span class="team-card__role">Ведущий инженер</span>
+                        </div>
+                    </article>
+                </div><!-- /.team__card -->
+
+                <div class="team__card">
+                    <h3 class="team__title">Работа с клиентами</h3>
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/team/alena-kochkina.webp">
+                                <img class="team-card__image-img" src="/dist/assets/image/team/alena-kochkina.jpg" alt="Алена Кочкина">
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Алена Кочкина</span>
+                            <span class="team-card__role">Менеджер по работе с клиентами</span>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/team/yulia-german.webp">
+                                <img class="team-card__image-img" src="/dist/assets/image/team/yulia-german.jpg" alt="Юлия Герман">
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Юлия Герман</span>
+                            <span class="team-card__role">Младший специалист</span>
+                        </div>
+                    </article>
+                </div><!-- /.team__card -->
+
+                <div class="team__card">
+                    <h3 class="team__title">Маркетинг</h3>
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/team/john-doe.webp">
+                                <img class="team-card__image-img" src="/dist/assets/image/team/john-doe.jpg" alt="Джон Доу">
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Джон Доу</span>
+                            <span class="team-card__role">Руководитель отдела маркетинга</span>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="/dist/assets/image/team/stanislav-knyazev.webp">
+                                <img class="team-card__image-img" src="/dist/assets/image/team/stanislav-knyazev.jpg" alt="Станислав Князев">
+                            </picture>
+                        </div>
+                        <div class="team-card__text">
+                            <span class="team-card__name">Станислав Князев</span>
+                            <span class="team-card__role">Помощник руководителя отдела маркетинга</span>
                         </div>
                     </article>
                 </div><!-- /.team__card -->

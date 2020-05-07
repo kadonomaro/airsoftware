@@ -1,18 +1,21 @@
 export default class Modal {
     constructor({openButtonSelector}) {
-        this.openButton = document.querySelectorAll(openButtonSelector);
+        this.openButton = document.querySelectorAll(openButtonSelector) || null;
         this.modalOverlay = document.querySelector('.modal-overlay');
         this.id = null;
     }
 
     init() {
-        this.openButton.forEach(button => {
-            button.addEventListener('click', (evt) => {
-                evt.preventDefault();
-                this.id = button.dataset.target;
-                this.open(this.id);
+        if (this.openButton) {
+            this.openButton.forEach(button => {
+                button.addEventListener('click', (evt) => {
+                    evt.preventDefault();
+                    this.id = button.dataset.target;
+                    this.open(this.id);
+                });
             });
-        });
+        }
+
         this.modalOverlay.addEventListener('click', (evt) => {
             const modal = this.modalOverlay.querySelector(`#${this.id}`);
             const closeModalButton = modal.querySelector('.js-close-modal');

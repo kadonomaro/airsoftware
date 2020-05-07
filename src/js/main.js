@@ -59,7 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
             form: joinForm
         });
 
-        sender.send().then(() => joinForm.reset());
+        sender.send()
+            .then(() => {
+                joinForm.reset();
+                const modal = new Modal({
+                    openButtonSelector: '.js-open-modal'
+                });
+                modal.open('thanks-modal');
+            });
     }
 
 

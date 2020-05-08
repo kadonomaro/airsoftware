@@ -8,7 +8,7 @@ import imageHighlight from "./lib/imageHighlight";
 import order from "./lib/order";
 import FormSender from "./lib/FormSender";
 import lazyMap from "@/js/lib/lazyMap";
-
+import magicScroll from "@/js/lib/magicScroll";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.body.classList.contains('company-page')) {
         lazyMap('.js-company-map');
+        magicScroll();
     }
 
     if (document.body.classList.contains('404-page')) {

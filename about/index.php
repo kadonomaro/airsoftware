@@ -19,7 +19,7 @@
         <div class="company-hero__content">
             <div class="company-hero__text">
                 <div class="magic-scroll js-magic-scroll">
-                    <div class="magic-scroll__item js-magic-scroll-item">
+                    <div class="magic-scroll__text js-magic-scroll-item">
                         Десятки стран, сотни городов, тысячи пользователей по всему миру.
                     </div>
                     <div class="magic-scroll__text js-magic-scroll-item">

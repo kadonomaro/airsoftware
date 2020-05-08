@@ -10,10 +10,11 @@ export default function magicScroll() {
         if (window.scrollY > scrollSection * (index + 1)) {
             if (children[index]) {
                 children[index].style.opacity = '1';
+                children[index].style.transform = 'translateY(0) scale(1)';
             }
             index++;
 
-            if (index >= children.length && window.pageYOffset >= (window.innerHeight * 2) ) {
+            if (index >= children.length && window.pageYOffset >= window.innerHeight * 2) {
                 window.removeEventListener('scroll', startScroll);
                 parent.style.position = 'absolute';
                 document.querySelector('.company-hero').style.minHeight = '100vh';

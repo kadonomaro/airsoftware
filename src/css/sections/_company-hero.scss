@@ -16,3 +16,13 @@
     text-align: center;
   }
 }
+
+
+
+@media (max-width: $mobile-large) {
+  .company-hero {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

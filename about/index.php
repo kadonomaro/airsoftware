@@ -19,18 +19,18 @@
         <div class="company-hero__content">
             <div class="company-hero__text">
                 <div class="magic-scroll js-magic-scroll">
-                    <p class="magic-scroll__item js-magic-scroll-item">
+                    <div class="magic-scroll__item js-magic-scroll-item">
                         Десятки стран, сотни городов, тысячи пользователей по всему миру.
-                    </p>
-                    <p class="magic-scroll__item js-magic-scroll-item">
+                    </div>
+                    <div class="magic-scroll__text js-magic-scroll-item">
                         Мы - это команда профессионалов в сфере разработки программного обеспечения для малого и среднего бизнеса.
-                    </p>
-                    <p class="magic-scroll__item js-magic-scroll-item">
+                    </div>
+                    <div class="magic-scroll__text js-magic-scroll-item">
                         Более 20 лет мы создаем продукты, которые помогают решать вам свои проблемы
-                    </p>
-                    <p class="magic-scroll__item js-magic-scroll-item">
+                    </div>
+                    <div class="magic-scroll__text js-magic-scroll-item">
                         освобождают от рутины и дают более точно сосредоточиться на действительно важных вещах.
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

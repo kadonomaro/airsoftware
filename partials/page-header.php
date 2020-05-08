@@ -32,7 +32,7 @@
                     <a href="javascript:void(0);" class="main-nav__link <?php echo $_SERVER['REQUEST_URI'] === '/information/' ? 'main-nav__link--active' : '' ?>">Информация</a>
                     <ul class="main-nav__submenu">
                         <li class="main-nav__item">
-                            <a href="/about" class="main-nav__link main-nav__link--sub">О компании</a>
+                            <a href="/about" class="main-nav__link main-nav__link--sub <?php echo $_SERVER['REQUEST_URI'] === '/about/' ? 'main-nav__link--active' : '' ?>">О компании</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="/internship" class="main-nav__link main-nav__link--sub <?php echo $_SERVER['REQUEST_URI'] === '/internship/' ? 'main-nav__link--active' : '' ?>">Стажировка</a>

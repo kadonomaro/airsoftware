@@ -9,6 +9,7 @@ import order from "./lib/order";
 import FormSender from "./lib/FormSender";
 import lazyMap from "@/js/lib/lazyMap";
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
     if (document.body.classList.contains('main-page')) {

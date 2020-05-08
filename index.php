@@ -475,7 +475,7 @@
                 </div><!-- /.team__card -->
 
                 <div class="team__card">
-                    <h3 class="team__title">Руководители</h3>
+                    <h3 class="team__title">Директора</h3>
                     <article class="team-card">
                         <div class="team-card__image">
                             <picture>

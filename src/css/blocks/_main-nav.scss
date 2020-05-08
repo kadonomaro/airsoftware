@@ -16,9 +16,7 @@
   }
   &__item {
     position: relative;
-    &:not(:last-child) {
-      margin-right: 25px;
-    }
+    margin: 0 12px;
   }
   &__item--sub {
     &:hover > .main-nav__submenu,
@@ -46,19 +44,19 @@
     opacity: 1;
   }
   &__link--sub {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
   }
   &__submenu {
     position: absolute;
     display: none;
     margin: -1px 0 0;
-    padding: 10px 20px;
+    padding: 10px;
     white-space: nowrap;
     list-style: none;
     font-size: 20px;
     background-color: rgba(#000000, 0.7);
   }
-
 }
 
 

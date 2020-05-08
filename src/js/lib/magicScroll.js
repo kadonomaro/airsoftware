@@ -2,11 +2,17 @@ export default function magicScroll() {
     const parent = document.querySelector('.js-magic-scroll');
     const children = parent.querySelectorAll('.js-magic-scroll-item');
     const scrollSection = window.innerHeight / children.length;
+    const mouse = document.querySelector('.js-magic-scroll-mouse');
     let index = 0;
 
     window.addEventListener('scroll', startScroll);
 
     function startScroll() {
+        mouse.style.opacity = '0';
+        setTimeout(()=>{
+            mouse.style.display = 'none';
+        }, 300);
+
         if (window.scrollY > scrollSection * (index + 1)) {
             if (children[index]) {
                 children[index].style.opacity = '1';

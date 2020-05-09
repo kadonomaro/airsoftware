@@ -3,7 +3,7 @@ export default function magicScroll() {
     const children = parent.querySelectorAll('.js-magic-scroll-item');
     const scrollSection = window.innerHeight / children.length;
     const mouse = document.querySelector('.js-magic-scroll-mouse');
-    let index = 0;
+    let index = 1;
 
     window.addEventListener('scroll', startScroll);
 
@@ -13,7 +13,8 @@ export default function magicScroll() {
             mouse.style.display = 'none';
         }, 300);
 
-        if (window.scrollY > scrollSection * (index + 1)) {
+
+        if (window.pageYOffset > scrollSection * index) {
             if (children[index]) {
                 children[index].style.opacity = '1';
                 children[index].style.transform = 'translateY(0) scale(1)';

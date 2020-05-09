@@ -13,3 +13,9 @@
     border-color: $color-accent;
   }
 }
+.input--error {
+  border-color: $color-danger;
+  &:focus {
+    border-color: $color-danger;
+  }
+}

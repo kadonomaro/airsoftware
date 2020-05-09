@@ -1,52 +1,47 @@
 export default class Validation {
     constructor() {
-
+        this.error = '';
     }
 
-    /**
-     *
-     * @param {HTMLElement} fields
-     * @returns {boolean} validation status
-     */
-    validateName({fields, rules = {required: false, minLength: 0, maxLength: 0,}}) {
-        let error = '';
+    setError(message) {
+        this.error = message;
+        console.log(message);
+    }
+
+
+    validate({fields, rules = {required: false, minLength: 0, maxLength: 0,}}) {
         fields.forEach(field => {
-           field.addEventListener('input', function (evt) {
+           field.addEventListener('input', (evt) => {
+
                 if (rules.required) {
-                    console.log('Поле обязательно для заполнения');
-                    return this.value.trim().length > 0;
+                    if (evt.target.value.trim().length < 1) {
+                        evt.target.classList.add('input--error');
+                        this.setError('Поле обязательно для заполнения');
+                    } else {
+                        evt.target.classList.remove('input--error');
+                    }
                 }
+
                 if (rules.minLength) {
-                    console.log(`Минимальная длина не должна быть менее ${rules.minLength} символов`);
-                    return this.value.length >= rules.minLength
+                    if (evt.target.value.length < rules.minLength) {
+                        evt.target.classList.add('input--error');
+                        this.setError(`Минимальная длина не должна быть менее ${rules.minLength} символов`);
+                    } else {
+                        evt.target.classList.remove('input--error');
+                    }
                 }
+
                 if (rules.maxLength) {
-                    console.log(`Максимальная длина не должна быть более ${rules.maxLength} символов`);
-                    return this.value.length <= rules.maxLength;
+                    if (evt.target.value.length > rules.maxLength) {
+                        evt.target.classList.add('input--error');
+                        this.setError(`Максимальная длина не должна быть более ${rules.maxLength} символов`);
+                    } else {
+                        evt.target.classList.remove('input--error');
+                    }
                 }
-                if (rules.minLength && rules.maxLength) {
-                    console.log(`Длина должна быть в диапазоне от ${rules.minLength} до ${rules.maxLength}`);
-                    return this.value.length >= rules.minLength && this.value.length <= rules.maxLength
-                }
+
            });
         });
     }
 
-    /**
-     *
-     * @param {HTMLElement} fields
-     * @returns {boolean} validation status
-     */
-    validatePhone(fields) {
-
-    }
-
-    /**
-     *
-     * @param {HTMLElement} fields
-     * @returns {boolean} validation status
-     */
-    validateEmail(fields) {
-
-    }
 }

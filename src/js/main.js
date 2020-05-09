@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalInit();
     navigation();
 
-    // order();
+    order();
 
 
     function modalInit() {

@@ -8,15 +8,29 @@ export default function order() {
 
     const validation = new Validation();
 
-    validation.validateName({
+    validation.validate({
         fields: nameFields,
         rules: {
             required: true,
-            minLength: 1,
             maxLength: 50
         }
     });
 
-    validation.validatePhone(phoneFields);
-    validation.validateEmail(emailFields);
+    validation.validate({
+        fields: phoneFields,
+        rules: {
+            required: true,
+            minLength: 6
+        }
+    });
+
+    validation.validate({
+        fields: emailFields,
+        rules: {
+            required: true,
+            minLength: 3
+        }
+    });
+
+
 }

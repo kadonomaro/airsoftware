@@ -20,9 +20,8 @@ export default class FormValidation {
 
                });
 
-                let isValid = elements.filter(element => element.validity.valid === true).length;
-
-                if (isValid) {
+                let isValid = !elements.filter(element => element.validity.valid === false).length;
+                if (isValid && callback) {
                     callback();
                 }
 

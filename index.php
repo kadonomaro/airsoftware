@@ -62,11 +62,7 @@
         </div>
 
         <div class="clients__order">
-            <div class="order">
-                <form action="" class="order__form">
-                    <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
-                </form>
-            </div>
+            <button class="button js-open-modal" data-target="order-modal">Присоединиться</button>
         </div>
 
     </section><!-- /.clients-->
@@ -424,11 +420,7 @@
                 <footer class="products__footer">
                     <span class="products__resume">Выбор всегда остается за вами</span>
                     <div class="products__order">
-                        <div class="order">
-                            <form action="" class="order__form">
-                                <button class="order__button button js-open-modal" data-target="order-modal">Присоединиться</button>
-                            </form>
-                        </div>
+                        <button class="button js-open-modal" data-target="order-modal">Присоединиться</button>
                     </div>
                 </footer>
             </div><!-- /.products__inner-->

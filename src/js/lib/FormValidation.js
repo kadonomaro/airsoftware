@@ -8,8 +8,12 @@ export default class FormValidation {
             form.addEventListener('submit', (evt) => {
                evt.preventDefault();
                [...evt.target.elements].forEach(element => {
-                   console.log(element.validity.valid);
-                   console.log(element.validationMessage);
+                   console.dir(element);
+                   const errorMessageBlock = element.closest('label').querySelector('.js-validation-error');
+                   if (errorMessageBlock) {
+                       errorMessageBlock.textContent = element.validationMessage;
+                   }
+                   element.validity.valid ? element.classList.remove('input--error') : element.classList.add('input--error');
                });
             });
         })

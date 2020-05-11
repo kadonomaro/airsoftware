@@ -180,6 +180,7 @@
                                 <option value="todo">Todo Application</option>
                                 <option value="transport-control">Transport Control</option>
                             </select>
+                            <span class="order__error js-validation-error"></span>
                         </label>
                         <label class="order__label" aria-label="user name">
                             <input type="text" name="order-name" class="order__input input" placeholder="Ваше имя" required>

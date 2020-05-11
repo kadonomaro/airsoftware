@@ -1,37 +1,14 @@
-import Validation from "./Validation";
+import FormValidation from "./FormValidation";
 
 export default function order() {
+    const orderForm = document.querySelectorAll('[name=order]');
 
-    const nameFields = document.querySelectorAll('[name=order-name]');
-    const phoneFields = document.querySelectorAll('[name=order-phone]');
-    const emailFields = document.querySelectorAll('[name=order-email]');
+    console.dir(orderForm);
 
-    const validation = new Validation();
-
-    validation.validate({
-        fields: nameFields,
-        rules: {
-            required: true,
-            maxLength: 50
-        }
+    const formValidation = new FormValidation({
+        forms: orderForm
     });
 
-    validation.validate({
-        fields: phoneFields,
-        rules: {
-            required: true,
-            minLength: 6
-        }
-    });
-
-    validation.validate({
-        fields: emailFields,
-        rules: {
-            required: true,
-            minLength: 3,
-            pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        }
-    });
-
+    formValidation.validate();
 
 }

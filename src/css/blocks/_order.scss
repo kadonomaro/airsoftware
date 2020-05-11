@@ -11,9 +11,16 @@
     font-size: 18px;
   }
   &__label {
+    position: relative;
     display: block;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  &__error {
+    position: absolute;
+    display: block;
+    color: $color-danger;
+    font-size: 12px;
   }
   &__input,
   &__select {

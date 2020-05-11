@@ -69,21 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
             forms: [joinForm]
         });
 
-        formValidation.validate();
+        formValidation.validate(function () {
+            const sender = new FormSender({
+                url: '/php/mail.php',
+                form: joinForm
+            });
 
-        const sender = new FormSender({
-            url: '/php/mail.php',
-            form: joinForm
+            sender.send()
+                .then(() => {
+                    joinForm.reset();
+                    const modal = new Modal({
+                        openButtonSelector: '.js-open-modal'
+                    });
+                    modal.open('thanks-modal');
+                });
         });
 
-        sender.send()
-            .then(() => {
-                joinForm.reset();
-                const modal = new Modal({
-                    openButtonSelector: '.js-open-modal'
-                });
-                modal.open('thanks-modal');
-            });
+
     }
 
 

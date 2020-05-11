@@ -3,11 +3,12 @@ export default class FormValidation {
         this.forms = forms;
     }
 
-    validate() {
+    validate(callback) {
         this.forms.forEach(form => {
             form.addEventListener('submit', (evt) => {
                evt.preventDefault();
-               [...evt.target.elements].forEach(element => {
+               const elements = [...evt.target.elements];
+               elements.forEach(element => {
 
                    if (element.closest('label')) {
                        const errorMessageBlock = element.closest('label').querySelector('.js-validation-error');
@@ -18,6 +19,13 @@ export default class FormValidation {
                    }
 
                });
+
+                let isValid = elements.filter(element => element.validity.valid === true).length;
+
+                if (isValid) {
+                    callback();
+                }
+
             });
         })
     }

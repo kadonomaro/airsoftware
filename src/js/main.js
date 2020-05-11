@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         formValidation.validate(function () {
             const sender = new FormSender({
-                url: '/php/mail.php',
+                url: '/php/join-mail.php',
                 form: joinForm
             });
 

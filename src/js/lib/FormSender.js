@@ -1,20 +1,23 @@
 export default class FormSender {
-    constructor({url, form}) {
+    constructor({url, forms}) {
         this.url = url;
-        this.form = form;
+        this.forms = forms;
     }
 
     send() {
         return new Promise((resolve, reject) => {
-           this.form.addEventListener('submit', (evt) => {
-               evt.preventDefault();
-               fetch(this.url, {
-                   method: 'POST',
-                   body: new FormData(this.form)
-               })
-                   .then((response) => resolve(response))
-                   .catch((err) => reject(err));
-           }, {once: true})
+            this.forms.forEach(form => {
+                form.addEventListener('submit', (evt) => {
+                    evt.preventDefault();
+                    fetch(this.url, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                        .then((response) => resolve(response))
+                        .catch((err) => reject(err));
+                }, {once: true})
+            });
         });
     }
 }
+

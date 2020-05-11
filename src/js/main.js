@@ -9,6 +9,7 @@ import order from "./lib/order";
 import FormSender from "./lib/FormSender";
 import lazyMap from "@/js/lib/lazyMap";
 import magicScroll from "@/js/lib/magicScroll";
+import FormValidation from "@/js/lib/FormValidation";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -63,6 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function emailSend() {
         const joinForm = document.querySelector('.js-join-form');
+
+        const formValidation = new FormValidation({
+            forms: [joinForm]
+        });
+
+        formValidation.validate();
+
         const sender = new FormSender({
             url: '/php/mail.php',
             form: joinForm

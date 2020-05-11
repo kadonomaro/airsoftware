@@ -6,15 +6,15 @@
     </button>
     <span class="modal__title">Будет лучше если перед посещением вы согласуете свой визит</span>
     <div class="order">
-        <form action="" class="order__form">
+        <form action="" class="order__form" name="visit" novalidate>
             <label class="order__label" aria-label="user name">
-                <input type="text" name="visit-name" class="order__input input" placeholder="Ваше имя">
+                <input type="text" name="visit-name" class="order__input input" placeholder="Ваше имя" required>
             </label>
             <label class="order__label" aria-label="user phone">
-                <input type="tel" name="visit-phone" class="order__input input" placeholder="Ваш телефон">
+                <input type="tel" name="visit-phone" class="order__input input" placeholder="Ваш телефон" required>
             </label>
             <label class="order__label" aria-label="visit purpose">
-                <select name="visit-purpose" class="order__select input">
+                <select name="visit-purpose" class="order__select input" required>
                     <option value="">Цель визита</option>
                     <option value="todo">Деловые переговоры</option>
                     <option value="transport-control">Уникальное предложение</option>
@@ -23,14 +23,14 @@
                 </select>
             </label>
             <label class="order__label" aria-label="visit date">
-                <input type="date" name="visit-date" class="order__input input">
+                <input type="date" name="visit-date" class="order__input input" required>
             </label>
             <label class="order__label">
-                <input type="checkbox" name="order-agree" class="checkbox visually-hidden">
+                <input type="checkbox" name="order-agree" class="checkbox visually-hidden" required>
                 <span class="checkbox-custom"></span>
                 <span class="order__policy">Я согласен на <a class="link" href="/policy">обработку персональных данных</a></span>
             </label>
-            <button type="submit" class="order__button button button--disabled" disabled>Записаться</button>
+            <button type="submit" class="order__button button">Записаться</button>
         </form>
     </div>
 </div>

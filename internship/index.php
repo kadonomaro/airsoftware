@@ -192,12 +192,14 @@
                         <li>Ссылки на примеры твоих работ</li>
                     </ul>
                 </div>
-                <form action="" method="post" class="internship-join__form js-join-form">
+                <form action="" method="post" class="internship-join__form js-join-form" name="join-form" novalidate>
                     <label class="internship-join__label" aria-label="user name">
-                        <input class="internship-join__input input" type="text" name="internship-join-name" placeholder="Имя">
+                        <input class="internship-join__input input" type="text" name="internship-join-name" placeholder="Имя" required>
+                        <span class="order__error js-validation-error"></span>
                     </label>
                     <label class="internship-join__label" aria-label="user text">
-                        <textarea class="internship-join__textarea input" name="internship-join-text"></textarea>
+                        <textarea class="internship-join__textarea input" name="internship-join-text" required></textarea>
+                        <span class="order__error js-validation-error"></span>
                     </label>
                     <button type="submit" class="internship-join__button button">Отправить</button>
 

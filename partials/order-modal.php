@@ -8,7 +8,7 @@
     <div class="order">
         <form action="" name="order" class="order__form" novalidate>
             <label class="order__label" aria-label="selected products">
-                <select name="order-product" class="order__select input">
+                <select name="order-product" class="order__select input" required>
                     <option value="">Выберите продукт</option>
                     <option value="address-book">Address Book</option>
                     <option value="todo">Todo Application</option>

@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formValidation.validate(function () {
             const sender = new FormSender({
                 url: '/php/join-mail.php',
-                form: joinForm
+                forms: [joinForm]
             });
 
             sender.send()
@@ -84,8 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     modal.open('thanks-modal');
                 });
         });
-
-
     }
 
 

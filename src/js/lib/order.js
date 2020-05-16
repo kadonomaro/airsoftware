@@ -8,14 +8,12 @@ export default function order() {
         forms: orderForms
     });
 
-    formValidation.validate(function () {
+    formValidation.validate(function (form) {
         const sender = new FormSender({
             url: '',
-            forms: orderForms
+            form: form
         });
-        sender.send()
-            .then(() => {
-                orderForms.forEach(form => form.reset());
-            });
+
+        sender.send().then(() => form.reset());
     });
 }

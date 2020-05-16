@@ -5,11 +5,11 @@ export default class FormValidation {
 
     validate(callback) {
         this.forms.forEach(form => {
-            form.addEventListener('submit', (evt) => {
+            form.addEventListener('submit', evt => {
                evt.preventDefault();
                const elements = [...evt.target.elements];
-               elements.forEach(element => {
 
+               elements.forEach(element => {
                    if (element.closest('label')) {
                        const errorMessageBlock = element.closest('label').querySelector('.js-validation-error');
                        if (errorMessageBlock) {
@@ -17,13 +17,11 @@ export default class FormValidation {
                        }
                        element.validity.valid ? element.classList.remove('input--error') : element.classList.add('input--error');
                    }
-
                });
 
                 let isValid = !elements.filter(element => element.validity.valid === false).length;
-
-                if (isValid && callback) {
-                    callback();
+                if (isValid && typeof callback === 'function') {
+                    callback(evt.target);
                 }
 
             });

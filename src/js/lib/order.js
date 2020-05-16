@@ -10,7 +10,7 @@ export default function order() {
 
     formValidation.validate(function (form) {
         const sender = new FormSender({
-            url: '',
+            url: '/php/order-mail.php',
             form: form
         });
 

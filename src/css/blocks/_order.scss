@@ -18,9 +18,18 @@
   }
   &__error {
     position: absolute;
-    display: block;
-    color: $color-danger;
+    z-index: 99;
+    top: 100%;
+    display: none;
+    width: 100%;
+    padding: 2px 5px;
+    color: #ffffff;
     font-size: 12px;
+    background-color: $color-danger;
+    box-sizing: border-box;
+  }
+  &__error--visible {
+    display: block;
   }
   &__input,
   &__select {

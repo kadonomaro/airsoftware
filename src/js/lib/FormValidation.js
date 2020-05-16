@@ -14,6 +14,9 @@ export default class FormValidation {
                        const errorMessageBlock = element.closest('label').querySelector('.js-validation-error');
                        if (errorMessageBlock) {
                            errorMessageBlock.textContent = element.validationMessage;
+                           errorMessageBlock.textContent ?
+                               errorMessageBlock.classList.add('order__error--visible') :
+                               errorMessageBlock.classList.remove('order__error--visible');
                        }
                        element.validity.valid ? element.classList.remove('input--error') : element.classList.add('input--error');
                    }

@@ -1,4 +1,4 @@
-.order {
+.form {
   &__title {
     display: block;
     margin-bottom: 10px;
@@ -26,6 +26,7 @@
     color: #ffffff;
     font-size: 12px;
     background-color: $color-danger;
+    transform: translateY(-2px);
     box-sizing: border-box;
   }
   &__error--visible {

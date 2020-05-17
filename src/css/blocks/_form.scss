@@ -36,6 +36,13 @@
   &__select {
     width: 100%;
   }
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    font-size: 16px;
+    resize: vertical;
+  }
   &__policy {
     vertical-align: middle;
   }

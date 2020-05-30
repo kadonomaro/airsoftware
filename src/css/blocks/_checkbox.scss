@@ -9,6 +9,10 @@
   }
 }
 
+.checkbox.input--error ~ .checkbox-custom {
+  border-color: $color-danger;
+}
+
 .checkbox-custom {
   position: relative;
   display: inline-block;

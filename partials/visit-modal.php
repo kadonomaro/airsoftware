@@ -18,10 +18,10 @@
             <label class="form__label" aria-label="visit purpose">
                 <select name="visit-purpose" class="form__select input" required>
                     <option value="">Цель визита</option>
-                    <option value="todo">Деловые переговоры</option>
-                    <option value="transport-control">Уникальное предложение</option>
-                    <option value="address-book">Экскурсия</option>
-                    <option value="address-book">Поговорить по душам</option>
+                    <option value="Деловые переговоры">Деловые переговоры</option>
+                    <option value="Уникальное предложение">Уникальное предложение</option>
+                    <option value="Экскурсия">Экскурсия</option>
+                    <option value="Поговорить по душам">Поговорить по душам</option>
                 </select>
                 <span class="form__error js-validation-error"></span>
             </label>

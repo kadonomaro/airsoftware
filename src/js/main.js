@@ -69,7 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
             forms: visitForms
         });
 
-        formValidation.validate();
+        formValidation.validate(function (form) {
+            console.log(form);
+            const sender = new FormSender({
+                url: '/php/visit-mail.php',
+                form: form
+            });
+
+            sender.send().then(() => form.reset());
+        });
     }
 
 

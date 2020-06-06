@@ -9,9 +9,11 @@
         <form actiform name="visit" novalidate>
             <label class="form__label" aria-label="user name">
                 <input type="text" name="visit-name" class="form__input input" placeholder="Ваше имя" required>
+                <span class="form__error js-validation-error"></span>
             </label>
             <label class="form__label" aria-label="user phone">
                 <input type="tel" name="visit-phone" class="form__input input" placeholder="Ваш телефон" required>
+                <span class="form__error js-validation-error"></span>
             </label>
             <label class="form__label" aria-label="visit purpose">
                 <select name="visit-purpose" class="form__select input" required>
@@ -21,9 +23,11 @@
                     <option value="address-book">Экскурсия</option>
                     <option value="address-book">Поговорить по душам</option>
                 </select>
+                <span class="form__error js-validation-error"></span>
             </label>
             <label class="form__label" aria-label="visit date">
                 <input type="date" name="visit-date" class="form__input input" required>
+                <span class="form__error js-validation-error"></span>
             </label>
             <label class="form__label">
                 <input type="checkbox" name="order-agree" class="checkbox visually-hidden" required>

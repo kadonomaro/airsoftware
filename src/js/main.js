@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.body.classList.contains('company-page')) {
         lazyMap('.js-company-map');
         magicScroll();
+        visitEmailSend();
     }
 
     if (document.body.classList.contains('404-page')) {
@@ -59,6 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
             openButtonSelector: '.js-open-modal'
         });
         modal.init();
+    }
+
+
+    function visitEmailSend() {
+        const visitForms = document.querySelectorAll('[name=visit]');
+        const formValidation = new FormValidation({
+            forms: visitForms
+        });
+
+        formValidation.validate();
     }
 
 

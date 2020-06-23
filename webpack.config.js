@@ -6,11 +6,22 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
-    entry: './src/js/main.js',
+    // entry: './src/js/main.js',
+    entry: {
+      main: './src/js/main.js',
+      products: './src/js/pages/products.js',
+      about: './src/js/pages/about.js',
+      internship: './src/js/pages/internship.js',
+      page404: './src/js/pages/page404.js'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist/js'),
-	},
+    },
+    // output: {
+    //     filename: 'bundle.js',
+    //     path: path.resolve(__dirname, 'dist/js'),
+	// },
 	resolve: {
         alias: {
             '@': path.resolve(__dirname, 'src'),

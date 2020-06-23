@@ -446,6 +446,6 @@
         <?php include_once '../partials/order-modal.php'?>
     </div>
 
-    <script src="../dist/js/bundle.js"></script>
+    <script src="../dist/js/products.js"></script>
 </body>
 </html>

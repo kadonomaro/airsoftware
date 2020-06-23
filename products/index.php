@@ -219,24 +219,18 @@
                 <div class="product-overview__screen js-overview-screen">
                     <div class="product-overview__image js-product-overview-target" data-image="1">
                         <picture>
-                            <source type="image/webp" media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-1.webp">
-                            <source media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-1.png">
                             <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-1.webp">
                             <img class="product-overview__image-img" src="/dist/assets/image/product-overview/address-book-1.png" alt="" >
                         </picture>
                     </div>
                     <div class="product-overview__image product-overview__image--hidden js-product-overview-target" data-image="2">
                         <picture>
-                            <source type="image/webp" media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-2.webp">
-                            <source media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-2.png">
                             <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-2.webp">
                             <img class="product-overview__image-img" src="/dist/assets/image/product-overview/address-book-2.png" alt="" >
                         </picture>
                     </div>
                     <div class="product-overview__image product-overview__image--hidden js-product-overview-target" data-image="3">
                         <picture>
-                            <source type="image/webp" media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-3.webp">
-                            <source media="(max-width: 450px)" srcset="/dist/assets/image/product-overview/address-book-3.png">
                             <source type="image/webp" srcset="/dist/assets/image/product-overview/address-book-3.webp">
                             <img class="product-overview__image-img" src="/dist/assets/image/product-overview/address-book-3.png" alt="" >
                         </picture>

@@ -153,16 +153,17 @@
     &__order {
       display: none;
     }
+    &__grid {
+      display: block;
+      height: 100%;
+      background-image: url('/dist/assets/image/product-hero/grid.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
   }
 
   .product-hero-grid {
-    display: block;
-    height: 100%;
-    background-image: url('/dist/assets/image/product-hero/grid.jpg');
-    background-size: cover;
-    background-position: center;
-    &__image {
-      display: none;
-    }
+    display: none;
   }
 }

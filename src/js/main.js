@@ -22,15 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.body.classList.contains('product-page')) {
         scrollObservers();
-        if (window.innerWidth >= 767) {
-            imageHighlight({
-                image: {
-                    selector: '.js-product-hero-image',
-                    highlightClass: 'product-hero-grid__image--highlighted'
-                },
-                delay: 2500
-            });
-        }
+        imageHighlight({
+            image: {
+                parent: '.js-product-hero-grid',
+                highlightClass: 'product-hero-grid__image--highlighted'
+            },
+            delay: 2500
+        });
     }
 
     if (document.body.classList.contains('internship-page')) {

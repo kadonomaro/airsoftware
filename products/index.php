@@ -20,141 +20,141 @@
         </div>
         <div class="product-hero__content">
             <div class="product-hero__grid">
-                <div class="product-hero-grid">
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
+                <div class="product-hero-grid js-product-hero-grid">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/office-1.webp">
                             <img src="/dist/assets/image/product-hero/office-1.jpg" alt="Современный офис" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x1 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x1">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/code-1.webp">
                             <img src="/dist/assets/image/product-hero/code-1.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--1x1 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--1x1">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/code-2.webp">
                             <img src="/dist/assets/image/product-hero/code-2.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x1 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x1">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/code-3.webp">
                             <img src="/dist/assets/image/product-hero/code-3.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--1x1 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--1x1">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/code-4.webp">
                             <img src="/dist/assets/image/product-hero/code-4.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x1 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x1">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/code-5.webp">
                             <img src="/dist/assets/image/product-hero/code-5.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/board-1.webp">
                             <img src="/dist/assets/image/product-hero/board-1.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/board-2.webp">
                             <img src="/dist/assets/image/product-hero/board-2.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/board-3.webp">
                             <img src="/dist/assets/image/product-hero/board-3.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/work-4.webp">
                             <img src="/dist/assets/image/product-hero/work-4.jpg" alt="Рабочее место" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/office-2.webp">
                             <img src="/dist/assets/image/product-hero/office-2.jpg" alt="Современный офис" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x3 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/office-4.webp">
                             <img src="/dist/assets/image/product-hero/office-4.jpg" alt="" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/work-1.webp">
                             <img src="/dist/assets/image/product-hero/work-1.jpg" alt="Рабочее место" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/work-2.webp">
                             <img src="/dist/assets/image/product-hero/work-2.jpg" alt="Рабочее место" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/work-3.webp">
                             <img src="/dist/assets/image/product-hero/work-3.jpg" alt="Рабочее место" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x3 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x3">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/office-3.webp">
                             <img src="/dist/assets/image/product-hero/office-3.jpg" alt="Современный офис" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--3x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--3x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/discussion-1.webp">
                             <img src="/dist/assets/image/product-hero/discussion-1.jpg" alt="Жаркие обсуждения проектов" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/discussion-2.webp">
                             <img src="/dist/assets/image/product-hero/discussion-2.jpg" alt="Жаркие обсуждения проектов" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/discussion-3.webp">
                             <img src="/dist/assets/image/product-hero/discussion-3.jpg" alt="Жаркие обсуждения проектов" class="product-hero-grid__image-img">
                         </picture>
                     </div>
-                    <div class="product-hero-grid__image product-hero-grid__image--2x2 js-product-hero-image">
+                    <div class="product-hero-grid__image product-hero-grid__image--2x2">
                         <picture>
                             <source media="(max-width: 767px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <source type="image/webp" srcset="/dist/assets/image/product-hero/discussion-4.webp">

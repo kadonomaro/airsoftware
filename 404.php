@@ -30,6 +30,6 @@
     </div>
 
 
-    <script src="dist/js/bundle.js"></script>
+    <script src="dist/js/page404.js"></script>
 </body>
 </html>

@@ -121,12 +121,24 @@
 
 @media (max-width: $mobile-large) {
   .internship-team {
+    &__list {
+      max-width: 250px;
+    }
     &__item--first,
     &__item--center-left,
     &__item--center,
     &__item--center-right,
     &__item--last {
       max-height: 300px;
+    }
+  }
+
+  .internship-team-slider {
+    &__arrow {
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

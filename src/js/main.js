@@ -13,12 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     infiniteSlider('.js-clients-slider');
     tabs('.js-tabs');
 
-    modalInit()
+    modalInit();
     navigation();
     order();
-
-
-
 
     function heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
@@ -46,5 +43,4 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: window.innerWidth <= 767 ? 50 : 10
         });
     }
-
 });

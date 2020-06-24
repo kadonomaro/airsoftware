@@ -243,6 +243,6 @@
     </div>
 </div>
 
-<script src="../dist/js/main.js"></script>
+<script src="../dist/js/policy.js"></script>
 </body>
 </html>

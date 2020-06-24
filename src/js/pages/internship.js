@@ -4,6 +4,7 @@ import Modal from "@/js/lib/Modal";
 import { internshipTeamSlider } from "@/js/lib/sliders";
 import navigation from "@/js/lib/navigation";
 import order from "@/js/lib/order";
+import modalInit from "@/js/lib/modalInit";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     joinEmailSend();
     navigation();
     order();
+    modalInit();
 
     function scrollObserver() {
         const items = document.querySelectorAll('.js-internship-item');

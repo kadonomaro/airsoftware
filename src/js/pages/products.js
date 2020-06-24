@@ -1,10 +1,11 @@
-import imageHighlight from "@/js/lib/imageHighlight";
+import imagesHighlight from "@/js/lib/imagesHighlight";
 import navigation from "@/js/lib/navigation";
 import order from "@/js/lib/order";
+import modalInit from "@/js/lib/modalInit";
 
 document.addEventListener('DOMContentLoaded', () => {
-    imageHighlight({
-        image: {
+    imagesHighlight({
+        images: {
             parent: '.js-product-hero-grid',
             highlightClass: 'product-hero-grid__image--highlighted'
         },
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollObservers();
     navigation();
     order();
+    modalInit();
 
     function scrollObservers() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');

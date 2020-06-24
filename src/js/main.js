@@ -1,31 +1,24 @@
 import '@/css/style.scss';
 import Canvas2D from "./lib/Canvas2D";
-import Modal from "./lib/Modal";
 import navigation from "./lib/navigation";
 import { infiniteSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
 import order from "./lib/order";
+import modalInit from "@/js/lib/modalInit";
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
-
     heroCanvasAnimation();
     heroTextAnimation();
     infiniteSlider('.js-clients-slider');
     tabs('.js-tabs');
 
-    modalInit();
+    modalInit()
     navigation();
     order();
 
 
-    function modalInit() {
-        const modal = new Modal({
-            openButtonSelector: '.js-open-modal'
-        });
-        modal.init();
-    }
+
 
     function heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
@@ -49,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 width: 20,
                 height: 20
             },
-            colors: ['#cdcdcd','#b4b4b4', '#9b9b9b', '#828282'],
+            colors: ['#9b9b9b','#828282', '#696969', '#505050'],
             delay: window.innerWidth <= 767 ? 50 : 10
         });
     }

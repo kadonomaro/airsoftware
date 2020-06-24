@@ -1,4 +1,6 @@
 import imageHighlight from "@/js/lib/imageHighlight";
+import navigation from "@/js/lib/navigation";
+import order from "@/js/lib/order";
 
 document.addEventListener('DOMContentLoaded', () => {
     imageHighlight({
@@ -10,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     scrollObservers();
+    navigation();
+    order();
 
     function scrollObservers() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');

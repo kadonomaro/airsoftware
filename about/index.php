@@ -230,6 +230,6 @@
     </div>
 
 
-    <script src="../dist/js/bundle.js"></script>
+    <script src="../dist/js/about.js"></script>
 </body>
 </html>

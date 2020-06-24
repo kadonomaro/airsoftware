@@ -5,27 +5,15 @@ import navigation from "./lib/navigation";
 import { infiniteSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
 import order from "./lib/order";
-import FormSender from "./lib/FormSender";
-import lazyMap from "@/js/lib/lazyMap";
-import magicScroll from "@/js/lib/magicScroll";
-import FormValidation from "@/js/lib/FormValidation";
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    if (document.body.classList.contains('main-page')) {
-        heroCanvasAnimation();
-        heroTextAnimation();
-        infiniteSlider('.js-clients-slider');
-        tabs('.js-tabs');
-    }
 
-
-    if (document.body.classList.contains('company-page')) {
-        lazyMap('.js-company-map');
-        magicScroll();
-        visitEmailSend();
-    }
-
+    heroCanvasAnimation();
+    heroTextAnimation();
+    infiniteSlider('.js-clients-slider');
+    tabs('.js-tabs');
 
     modalInit();
     navigation();
@@ -39,25 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.init();
     }
 
-
-    function visitEmailSend() {
-        const visitForms = document.querySelectorAll('[name=visit]');
-        const formValidation = new FormValidation({
-            forms: visitForms
-        });
-
-        formValidation.validate(function (form) {
-            console.log(form);
-            const sender = new FormSender({
-                url: '/php/visit-mail.php',
-                form: form
-            });
-
-            sender.send().then(() => form.reset());
-        });
-    }
-
-
     function heroTextAnimation() {
         const heroTitle = document.querySelector('.hero__title');
         const heroSubtitle = document.querySelector('.hero__subtitle');
@@ -65,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         heroTitle.classList.add('hero__title--fade-in');
         heroSubtitle.classList.add('hero__subtitle--fade-in');
     }
-
 
     function heroCanvasAnimation() {
         const canvas = new Canvas2D({

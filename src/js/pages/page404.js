@@ -1,8 +1,12 @@
 import Canvas2D from "@/js/lib/Canvas2D";
+import navigation from "@/js/lib/navigation";
+import order from "@/js/lib/order";
 
 document.addEventListener('DOMContentLoaded', () => {
 
     canvasAnimation();
+    navigation();
+    order();
 
     function canvasAnimation() {
         const canvas = new Canvas2D({

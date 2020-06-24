@@ -2,12 +2,16 @@ import FormValidation from "@/js/lib/FormValidation";
 import FormSender from "@/js/lib/FormSender";
 import Modal from "@/js/lib/Modal";
 import { internshipTeamSlider } from "@/js/lib/sliders";
+import navigation from "@/js/lib/navigation";
+import order from "@/js/lib/order";
 
 document.addEventListener('DOMContentLoaded', () => {
 
     scrollObserver();
     internshipTeamSlider('.js-internship-team-slider');
     joinEmailSend();
+    navigation();
+    order();
 
     function scrollObserver() {
         const items = document.querySelectorAll('.js-internship-item');

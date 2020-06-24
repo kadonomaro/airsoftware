@@ -243,6 +243,6 @@
     </div>
 </div>
 
-<script src="../dist/js/bundle.js"></script>
+<script src="../dist/js/main.js"></script>
 </body>
 </html>

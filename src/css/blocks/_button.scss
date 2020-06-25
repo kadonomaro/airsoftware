@@ -9,9 +9,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.1s ease-in, color 0.1s ease-in, border-color 0.1s ease-in;
-  outline: none;
-  &:hover,
-  &:focus {
+  &:hover {
     color: $color-accent;
     background-color: transparent;
     border-color: $color-accent;
@@ -21,8 +19,7 @@
   background-color: $color-input;
   border: 2px solid $color-input;
   cursor: initial;
-  &:hover,
-  &:focus {
+  &:hover {
     color: $color-dark-gray;
     background-color: $color-input;
     border-color: $color-input;

@@ -1,0 +1,46 @@
+.stages {
+  counter-reset: stage;
+  background-color: $color-dark-gray;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__item {
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+.stage {
+  position: relative;
+  padding: 50px 30px 50px 50px;
+  color: #ffffff;
+  background-color: #202020;
+  &::before {
+    content: counter(stage);
+    counter-increment: stage;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 30px;
+    padding: 60px 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20;
+    text-align: center;
+    background-color: $color-accent;
+  }
+  &__title {
+    margin: 20px 0 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: $color-medium-gray;
+  }
+}

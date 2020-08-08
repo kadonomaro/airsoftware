@@ -15,11 +15,14 @@
   }
 }
 
+
 .stage {
   position: relative;
+  height: 100%;
   padding: 50px 30px 50px 50px;
   color: #ffffff;
   background-color: #202020;
+  box-sizing: border-box;
   &::before {
     content: counter(stage);
     counter-increment: stage;
@@ -28,19 +31,20 @@
     right: 45px;
     width: 30px;
     padding: 60px 0 10px;
-    color: #ffffff;
     font-size: 18px;
-    line-height: 20;
+    line-height: 20px;
     text-align: center;
     background-color: $color-accent;
   }
   &__title {
     margin: 20px 0 25px;
+    padding-right: 50px;
     font-size: 20px;
     line-height: 1.5;
     text-transform: uppercase;
   }
   &__text {
     color: $color-medium-gray;
+    line-height: 1.5;
   }
 }

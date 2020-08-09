@@ -1,0 +1,35 @@
+.blog {
+  color: #ffffff;
+  background-color: $color-darkest;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__main {
+    flex-basis: 40%;
+    max-width: 40%;
+    padding: 60px 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  &__side {
+    flex-basis: 60%;
+    max-width: 60%;
+    background-image: url('/dist/assets/image/social-media.jpg');
+  }
+  &__title {
+    margin: 0 0 10px;
+    font-size: 30px;
+  }
+  &__subtitle {
+    display: block;
+    margin-bottom: 30px;
+    color: $color-medium-gray;
+    font-size: 18px;
+  }
+  &__link {
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+}

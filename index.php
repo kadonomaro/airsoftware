@@ -451,6 +451,18 @@
     </section><!-- ./stages -->
 
 
+    <section class="blog">
+            <div class="blog__inner">
+                <div class="blog__main">
+                    <h2 class="blog__title">Index Word</h2>
+                    <span class="blog__subtitle">Очередной ИТ блог обо всем</span>
+                    <a class="button blog__link" href="https://index-word.web.app/" rel="noopener noreferrer" target="_blank">Читать</a>
+                </div>
+                <div class="blog__side"></div>
+            </div><!-- ./blog__inner -->
+    </section><!-- ./blog -->
+
+
     <section class="team section">
         <?php include_once 'php/data/team.php'?>
         <div class="container">

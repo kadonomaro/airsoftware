@@ -7,7 +7,7 @@
     <?php include_once 'partials/favicon.php'?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css?v=1">
     <title>Airsoftware - современные решения для бизнеса</title>
     <meta name="description" content="Компания Airsoftware – это разработчик программного обеспечения для малого и среднего бизнеса.">
 </head>
@@ -432,7 +432,6 @@
     <section class="stages section">
         <?php include_once 'php/data/stages.php'?>
 
-        <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Этапы работы</h2>
                 <span class="section__subtitle">От нуля до результата</span>
@@ -449,7 +448,6 @@
                 <? endforeach;?>
             </div>
 
-        </div><!-- ./container -->
     </section><!-- ./stages -->
 
 

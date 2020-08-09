@@ -461,7 +461,7 @@
 
             <div class="team__inner">
 
-                <? foreach ($team as $department): ?>
+                <? foreach (array_slice($team, 0, 3) as $department): ?>
                     <div class="team__card">
                         <h3 class="team__title"><?=$department["title"]?></h3>
 

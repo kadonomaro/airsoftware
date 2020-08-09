@@ -45,6 +45,7 @@
 
 
     <section class="team section">
+        <?php include_once '../php/data/team.php'?>
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Наша команда</h2>
@@ -52,150 +53,30 @@
             </header>
 
             <div class="team__inner">
-                <div class="team__card">
-                    <h3 class="team__title">Основатели</h3>
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/oleg-komarov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/oleg-komarov.jpg" alt="Олег Комаров">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Олег Комаров</span>
-                            <span class="team-card__role">Основатель, президент</span>
-                        </div>
-                    </article>
 
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/david-denisov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/david-denisov.jpg" alt="Давид Денисов">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Давид Денисов</span>
-                            <span class="team-card__role">Основатель, президент</span>
-                        </div>
-                    </article>
-                </div><!-- /.team__card -->
+                <? foreach ($team as $department): ?>
+                    <div class="team__card">
+                        <h3 class="team__title"><?=$department["title"]?></h3>
 
-                <div class="team__card">
-                    <h3 class="team__title">Директора</h3>
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/joe-noname.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/joe-noname.jpg" alt="Джо Ноунейм">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Джо Ноунейм</span>
-                            <span class="team-card__role">Генеральный директор</span>
-                        </div>
-                    </article>
+                        <? foreach ($department as $member): ?>
+                            <? if(gettype($member) == 'array'): ?>
+                                <article class="team-card">
+                                    <div class="team-card__image">
+                                        <picture>
+                                            <source type="image/webp" srcset="<?=$member["src"]?>.webp">
+                                            <img class="team-card__image-img" src="<?=$member["src"]?>.jpg" alt="<?=$member["name"]?>" >
+                                        </picture>
+                                    </div>
+                                    <div class="team-card__text">
+                                        <span class="team-card__name"><?=$member["name"]?></span>
+                                        <span class="team-card__role"><?=$member["post"]?></span>
+                                    </div>
+                                </article>
+                            <? endif; ?>
+                        <? endforeach; ?>
+                    </div><!-- /.team__card -->
+                <? endforeach; ?>
 
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/anna-orehova.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/anna-orehova.jpg" alt="Анна Орехова">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Анна Орехова</span>
-                            <span class="team-card__role">Финансовый директор</span>
-                        </div>
-                    </article>
-                </div><!-- /.team__card -->
-
-                <div class="team__card">
-                    <h3 class="team__title">Разработчики</h3>
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/maxim-mohov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/maxim-mohov.jpg" alt="Максим Мохов">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Максим Мохов</span>
-                            <span class="team-card__role">Руководитель департамента разработки</span>
-                        </div>
-                    </article>
-
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/anton-ivanov.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/anton-ivanov.jpg" alt="Антон Иванов">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Антон Иванов</span>
-                            <span class="team-card__role">Ведущий инженер</span>
-                        </div>
-                    </article>
-                </div><!-- /.team__card -->
-
-                <div class="team__card">
-                    <h3 class="team__title">Работа с клиентами</h3>
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/alena-kochkina.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/alena-kochkina.jpg" alt="Алена Кочкина">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Алена Кочкина</span>
-                            <span class="team-card__role">Менеджер по работе с клиентами</span>
-                        </div>
-                    </article>
-
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/yulia-german.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/yulia-german.jpg" alt="Юлия Герман">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Юлия Герман</span>
-                            <span class="team-card__role">Младший специалист</span>
-                        </div>
-                    </article>
-                </div><!-- /.team__card -->
-
-                <div class="team__card">
-                    <h3 class="team__title">Маркетинг</h3>
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/john-doe.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/john-doe.jpg" alt="Джон Доу">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Джон Доу</span>
-                            <span class="team-card__role">Руководитель отдела маркетинга</span>
-                        </div>
-                    </article>
-
-                    <article class="team-card">
-                        <div class="team-card__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/team/stanislav-knyazev.webp">
-                                <img class="team-card__image-img" src="/dist/assets/image/team/stanislav-knyazev.jpg" alt="Станислав Князев">
-                            </picture>
-                        </div>
-                        <div class="team-card__text">
-                            <span class="team-card__name">Станислав Князев</span>
-                            <span class="team-card__role">Помощник руководителя отдела маркетинга</span>
-                        </div>
-                    </article>
-                </div><!-- /.team__card -->
             </div><!-- /.team__inner -->
 
             <footer class="team__footer">

@@ -69,6 +69,7 @@
 
 
     <section class="internship-about section">
+        <?php include_once '../php/data/internship.php'?>
         <div class="container">
 
             <header class="section__header">
@@ -77,96 +78,24 @@
             </header>
 
             <div class="internship-about__inner">
-                <div class="internship-about__item js-internship-item">
-                    <div class="internship-about__side">
-                        <div class="internship-about__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/item-1.webp">
-                                <img src="/dist/assets/image/internship/item-1.jpg" alt="Основные направления">
-                            </picture>
+                <? foreach ($internship as $item): ?>
+                    <div class="internship-about__item js-internship-item">
+                        <div class="internship-about__side">
+                            <div class="internship-about__image">
+                                <picture>
+                                    <source type="image/webp" srcset="<?=$item["src"]?>.webp">
+                                    <img src="<?=$item["src"]?>.jpg" alt="<?=$item["title"]?>">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="internship-about__main">
+                            <div class="internship-about__text">
+                                <h3 class="internship-about__title"><?=$item["title"]?></h3>
+                                <?=$item["text"]?>
+                            </div>
                         </div>
                     </div>
-                    <div class="internship-about__main">
-                        <div class="internship-about__text">
-                            <h3 class="internship-about__title">Основные направления</h3>
-                            <p>Ты можешь сам выбрать интересующее тебя направление:</p>
-                            <ul>
-                                <li>Frontend</li>
-                                <li>Backend</li>
-                                <li>UX/UI дизайнер</li>
-                                <li>Тестировщик</li>
-                                <li>Аналитик</li>
-                                <li>Менеджер проектов</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship-about__item js-internship-item">
-                    <div class="internship-about__side">
-                        <div class="internship-about__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/item-2.webp">
-                                <img src="/dist/assets/image/internship/item-2.jpg" alt="Опытные наставники">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="internship-about__main">
-                        <div class="internship-about__text">
-                            <h3 class="internship-about__title">Опытные наставники</h3>
-                            <p>
-                                К каждой группе стажеров будет приставлен свой опытный наставник, который обучил уже
-                                не один десяток человек. Группы делятся по направлениям, но не более 15 человек в каждой.
-                                Таким образом мы гарантируем, что времени наставника хватит на всех.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship-about__item js-internship-item">
-                    <div class="internship-about__side">
-                        <div class="internship-about__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/item-3.webp">
-                                <img src="/dist/assets/image/internship/item-3.jpg" alt="Реальные условия">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="internship-about__main">
-                        <div class="internship-about__text">
-                            <h3 class="internship-about__title">Реальные условия</h3>
-                            <p>
-                                Мы максимально приблизили условия стажировки к реальным. Ты получишь практический опыт
-                                и навыки работы в боевых условиях. Жесткие дедлайны и требовательные заказчики.
-                            </p>
-                            <p>
-                                В первый месяц ты познакомишься с действующей командой разработчиков и своим наставником.
-                                Минимум времени на адаптацию. Поэтому уже должны быть базовые знания по выбранному направлению.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship-about__item js-internship-item">
-                    <div class="internship-about__side">
-                        <div class="internship-about__image">
-                            <picture>
-                                <source type="image/webp" srcset="/dist/assets/image/internship/item-4.webp">
-                                <img src="/dist/assets/image/internship/item-4.jpg" alt="Несколько направлений стажировки">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="internship-about__main">
-                        <div class="internship-about__text">
-                            <h3 class="internship-about__title">Работа в компании</h3>
-                            <p>
-                                По окончанию обучения, все лучшие стажеры будут приняты на работу в нашу компанию.
-                                Уже сейчас у нас работает более 50 бывших учеников. Некоторые из них стали наставниками для
-                                новых стажеров.
-                            </p>
-                            <p>
-                                <b>Успей подать заявку до 28 августа.</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <? endforeach; ?>
             </div>
 
         </div><!-- /.container -->
@@ -207,10 +136,7 @@
                 </div>
             </div>
 
-
-
         </div><!-- /.container -->
-
     </section><!-- /.internship-subscribe -->
 
 

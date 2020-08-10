@@ -87,6 +87,7 @@
         </div><!-- /.container -->
     </section><!-- /.team -->
 
+    <?php include_once '../partials/blog.php'?>
 
     <section class="company-map section">
         <header class="section__header">

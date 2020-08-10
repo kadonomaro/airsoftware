@@ -15,6 +15,9 @@
     border-color: $color-accent;
   }
 }
+.button--small {
+  padding: 5px 20px;
+}
 .button--disabled {
   background-color: $color-input;
   border: 2px solid $color-input;

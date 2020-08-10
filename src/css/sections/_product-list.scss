@@ -13,6 +13,9 @@
 }
 
 .product-list-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 20px;
   color: #ffffff;
   background-color: #202020;
@@ -71,6 +74,7 @@
     }
   }
   &__content {
+    flex-grow: 1;
     color: $color-medium-gray;
   }
   &__footer {

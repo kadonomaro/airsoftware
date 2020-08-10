@@ -1,4 +1,5 @@
 .product-list {
+  background-color: $color-dark-gray;
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -12,8 +13,9 @@
 }
 
 .product-list-item {
-  padding: 10px;
-  color: $color-dark-gray;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #202020;
   box-shadow: 0 7px 15px rgba(#000000, 0.1);
   transition: box-shadow 0.2s ease-in;
   &:hover {
@@ -29,6 +31,7 @@
       top: 50%;
       left: 50%;
       width: 100%;
+      color: $color-medium-gray;
       font-size: 36px;
       text-align: center;
       transform: translate(-50%, -50%);
@@ -66,6 +69,9 @@
       background-color: $color-accent;
       transform: translateY(-50%);
     }
+  }
+  &__content {
+    color: $color-medium-gray;
   }
   &__footer {
     display: flex;

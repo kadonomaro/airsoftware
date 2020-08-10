@@ -351,8 +351,8 @@
     <section class="product-list section">
         <div class="container">
             <header class="section__header">
-                <h2 class="section__title section__title--dark">Более 200 компаний уже сделали выбор</h2>
-                <span class="section__subtitle section__subtitle--dark">Все еще сомневаешься? Пришло время довериться профессионалам</span>
+                <h2 class="section__title">Более 200 компаний уже сделали выбор</h2>
+                <span class="section__subtitle">Все еще сомневаешься? Пришло время довериться профессионалам</span>
             </header>
             <div class="product-list__inner">
                 <div class="product-list__item">

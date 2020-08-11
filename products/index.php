@@ -386,6 +386,33 @@
                     <article class="product-item">
                         <div class="product-item__image">
                             <picture>
+                                <img src="/dist/assets/image/product-list/todo-list-2020.jpg" alt="To-Do List 2020">
+                            </picture>
+                        </div>
+                        <header class="product-item__header">
+                            <span class="product-item__title">To-Do List 2020</span>
+                            <span class="product-item__subtitle">Теперь в обновленном варианте</span>
+                        </header>
+                        <div class="product-item__content">
+                            <ul class="product-item__features-list">
+                                <li class="product-item__features-item">Обновленный красочный интерфейс</li>
+                                <li class="product-item__features-item">Несколько списков на один аккаунт</li>
+                                <li class="product-item__features-item">Выбор активных/завершенных дел</li>
+                                <li class="product-item__features-item">Бесплатн для обладателей базовой версии</li>
+                            </ul>
+                        </div>
+                        <footer class="product-item__footer">
+                            <button class="button product-item__button">Заказать</button>
+                            <a href="https://todo-list-2020-6c5c0.firebaseapp.com/" class="product-item__link link" target="_blank" rel="noreferrer">
+                                Попробовать бесплатно
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="product-list__item">
+                    <article class="product-item">
+                        <div class="product-item__image">
+                            <picture>
                                 <img src="/dist/assets/image/product-list/address-book.png" alt="Address book">
                             </picture>
                         </div>
@@ -412,7 +439,7 @@
                 </div>
                 <div class="product-list__item">
                     <article class="product-item">
-                        <div class="product-item__image product-list-item__image--text" data-text="Уже скоро">
+                        <div class="product-item__image product-item__image--text" data-text="Уже скоро">
                             <picture>
                                 <img src="/dist/assets/image/product-list/transport-control.png" alt="Transport Control">
                             </picture>

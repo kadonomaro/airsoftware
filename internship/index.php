@@ -22,6 +22,7 @@
                 <h1 class="internship-hero__title">Хочешь стать частью команды профессионалов?</h1>
                 <div class="internship-hero__team">
                     <div class="internship-team internship-team-slider">
+                        <?php include_once '../php/data/internship-team.php'?>
 
                         <div class="internship-team-slider__controls">
                             <button class="internship-team-slider__arrow internship-team-slider__arrow--prev js-slider-prev" aria-label="slider prev"></button>
@@ -29,36 +30,14 @@
                         </div>
 
                         <div class="internship-team__list js-internship-team-slider">
-                            <div class="internship-team__item internship-team__item--first">
-                                <picture>
-                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-1.webp">
-                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-1.png" alt="Парень стажер" >
-                                </picture>
-                            </div>
-                            <div class="internship-team__item internship-team__item--center-left">
-                                <picture>
-                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-2.webp">
-                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-2.png" alt="Парень стажер" >
-                                </picture>
-                            </div>
-                            <div class="internship-team__item internship-team__item--center">
-                                <picture>
-                                    <source type="image/webp" srcset="/dist/assets/image/internship/rowan.webp">
-                                    <img class="internship-team__image" src="/dist/assets/image/internship/rowan.png" alt="Стажер Роуэн" >
-                                </picture>
-                            </div>
-                            <div class="internship-team__item internship-team__item--center-right">
-                                <picture>
-                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-3.webp">
-                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-3.png" alt="Девушка стажер" >
-                                </picture>
-                            </div>
-                            <div class="internship-team__item internship-team__item--last">
-                                <picture>
-                                    <source type="image/webp" srcset="/dist/assets/image/internship/intern-4.webp">
-                                    <img class="internship-team__image" src="/dist/assets/image/internship/intern-4.png" alt="Девушка стажер" >
-                                </picture>
-                            </div>
+                            <? foreach ($internship_team as $index => $member): ?>
+                                <div class="internship-team__item <?=$member["class"]?>">
+                                    <picture>
+                                        <source type="image/webp" srcset="<?=$member["src"]?>.webp">
+                                        <img class="internship-team__image" src="<?=$member["src"]?>.png" alt="<?=$member["title"]?>" >
+                                    </picture>
+                                </div>
+                            <? endforeach; ?>
                         </div>
                     </div>
                 </div>

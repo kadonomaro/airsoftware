@@ -211,52 +211,52 @@
                                                 <tr>
                                                     <td>Удобный интерфейс</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Высокая производительность</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Большой встроенный функционал</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Бесплатное использование</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
@@ -284,52 +284,52 @@
                                                 <tr>
                                                     <td>Удобство использования</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Адаптировано под мобильные устройства</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Подробная документация</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Бесплатное использование</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
@@ -357,52 +357,52 @@
                                                 <tr>
                                                     <td>Современный интерфейс</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Интеграция с существующими системами</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Круглосуточная техподдержка</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Доступная цена</td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#141414" d="M7.022 12.046L2.664 8.173 1.336 9.667l5.722 5.087 9.626-9.024-1.368-1.46z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
                                                         </svg>
                                                     </td>
                                                     <td>
-                                                        <svg width="24px" height="24px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                            <path fill="#ff5e7b" d="M10.415 9L15 13.584 13.587 15 9 10.415 4.413 15 3 13.584 7.585 9 3 4.416 4.413 3 9 7.585 13.587 3 15 4.416 10.415 9z"></path>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
                                                         </svg>
                                                     </td>
                                                 </tr>

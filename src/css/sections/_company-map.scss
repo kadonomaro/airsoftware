@@ -9,6 +9,11 @@
     background-position: center;
     border-top: 1px solid $color-medium-gray;
     border-bottom: 1px solid $color-medium-gray;
+    filter: grayscale(1) brightness(0.8);
+    transition: filter 0.2s ease-in;
+    &:hover {
+      filter: none;
+    }
   }
   &__footer {
     text-align: center;

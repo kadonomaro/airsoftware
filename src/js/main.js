@@ -4,7 +4,7 @@ import navigation from "./lib/navigation";
 import { infiniteSlider } from "./lib/sliders";
 import tabs from "./lib/tabs";
 import order from "./lib/order";
-import modalInit from "@/js/lib/modalInit";
+import Modal from "@/js/lib/Modal";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     infiniteSlider('.js-clients-slider');
     tabs('.js-tabs');
 
-    modalInit();
+    const modal = new Modal('.js-open-modal');
     navigation();
     order();
 

@@ -1,8 +1,9 @@
 export default class Modal {
-    constructor({openButtonSelector}) {
-        this.openButton = document.querySelectorAll(openButtonSelector);
+    constructor(buttonSelector) {
+        this.openButton = document.querySelectorAll(buttonSelector);
         this.modalOverlay = document.querySelector('.modal-overlay');
         this.id = null;
+        this.init();
     }
 
     init() {

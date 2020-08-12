@@ -1,9 +1,9 @@
 import navigation from "@/js/lib/navigation";
 import order from "@/js/lib/order";
-import modalInit from "@/js/lib/modalInit";
+import Modal from "@/js/lib/Modal";
 
 document.addEventListener('DOMContentLoaded', () => {
     navigation();
     order();
-    modalInit();
+    const modal = new Modal('.js-open-modal');
 });

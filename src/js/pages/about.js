@@ -4,7 +4,7 @@ import FormValidation from "@/js/lib/FormValidation";
 import FormSender from "@/js/lib/FormSender";
 import navigation from "@/js/lib/navigation";
 import order from "@/js/lib/order";
-import modalInit from "@/js/lib/modalInit";
+import Modal from "@/js/lib/Modal";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     visitEmailSend();
     navigation();
     order();
-    modalInit();
+    const modal = new Modal('.js-open-modal');
 
     function visitEmailSend() {
         const visitForms = document.querySelectorAll('[name=visit]');

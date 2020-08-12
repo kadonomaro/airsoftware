@@ -1,7 +1,7 @@
 import imagesHighlight from "@/js/lib/imagesHighlight";
 import navigation from "@/js/lib/navigation";
 import order from "@/js/lib/order";
-import modalInit from "@/js/lib/modalInit";
+import Modal from "@/js/lib/Modal";
 
 document.addEventListener('DOMContentLoaded', () => {
     imagesHighlight({
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollObservers();
     navigation();
     order();
-    modalInit();
+    const modal = new Modal('.js-open-modal');
 
     function scrollObservers() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');

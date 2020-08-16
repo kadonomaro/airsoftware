@@ -43,6 +43,6 @@
         </nav>
     </div>
     <div class="page-header__order">
-        <button class="button" data-target="order-modal">Присоединиться</button>
+        <button class="button" data-target-modal="order-modal">Присоединиться</button>
     </div>
 </header>

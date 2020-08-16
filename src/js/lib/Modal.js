@@ -7,8 +7,8 @@ export default class Modal {
 
     init() {
         document.addEventListener('click', (event) => {
-            if (event.target.dataset.target) {
-                this.id = event.target.dataset.target;
+            if (event.target.dataset.targetModal) {
+                this.id = event.target.dataset.targetModal;
                 this.open(this.id);
             }
         });

@@ -62,7 +62,7 @@
         </div>
 
         <div class="clients__order">
-            <button class="button" data-target="order-modal">Присоединиться</button>
+            <button class="button" data-target-modal="order-modal">Присоединиться</button>
         </div>
 
     </section><!-- /.clients-->
@@ -419,7 +419,7 @@
 
                 <footer class="products__footer">
                     <div class="products__order">
-                        <button class="button" data-target="order-modal">Присоединиться</button>
+                        <button class="button" data-target-modal="order-modal">Присоединиться</button>
                     </div>
                 </footer>
             </div><!-- /.products__inner-->

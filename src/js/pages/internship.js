@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     joinEmailSend();
     navigation();
     order();
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
 
     function scrollObserver() {
         const items = document.querySelectorAll('.js-internship-item');

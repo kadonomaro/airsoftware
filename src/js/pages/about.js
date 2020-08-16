@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     visitEmailSend();
     navigation();
     order();
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
 
     function visitEmailSend() {
         const visitForms = document.querySelectorAll('[name=visit]');

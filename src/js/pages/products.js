@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollObservers();
     navigation();
     order();
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
 
     function scrollObservers() {
         const triggers = document.querySelectorAll('.js-product-overview-trigger');

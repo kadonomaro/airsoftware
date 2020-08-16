@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvasAnimation();
     navigation();
     order();
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
 
     function canvasAnimation() {
         const canvas = new Canvas2D({

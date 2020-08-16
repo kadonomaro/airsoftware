@@ -5,5 +5,5 @@ import Modal from "@/js/lib/Modal";
 document.addEventListener('DOMContentLoaded', () => {
     navigation();
     order();
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
 });

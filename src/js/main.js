@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     infiniteSlider('.js-clients-slider');
     tabs('.js-tabs');
 
-    const modal = new Modal('.js-open-modal');
+    const modal = new Modal();
     navigation();
     order();
 

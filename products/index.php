@@ -349,118 +349,41 @@
 
 
     <section class="product-list section">
+        <? include_once '../php/data/product-list.php'?>
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Более 200 компаний уже сделали выбор</h2>
                 <span class="section__subtitle">Все еще сомневаешься? Пришло время довериться профессионалам</span>
             </header>
             <div class="product-list__inner">
-                <div class="product-list__item">
-                    <article class="product-item">
-                        <div class="product-item__image">
-                            <picture>
-                                <img src="/dist/assets/image/product-list/todo-app.png" alt="To-do Application">
-                            </picture>
-                        </div>
-                        <header class="product-item__header">
-                            <span class="product-item__title">To-do Application</span>
-                            <span class="product-item__subtitle">Веб-приложение «Список дел»</span>
-                        </header>
-                        <div class="product-item__content">
-                            <ul class="product-item__features-list">
-                                <li class="product-item__features-item">Минималистичный интерфейс</li>
-                                <li class="product-item__features-item">Сохранение данных в браузере</li>
-                                <li class="product-item__features-item">Без регистрации, открыл и работай</li>
-                                <li class="product-item__features-item">Прост в работе</li>
-                            </ul>
-                        </div>
-                        <footer class="product-item__footer">
-                            <button class="button product-item__button">Заказать</button>
-                            <a href="https://kadonomaro.github.io/todo-app/" class="product-item__link link" target="_blank" rel="noreferrer">
-                                Попробовать бесплатно
-                            </a>
-                        </footer>
-                    </article>
-                </div>
-                <div class="product-list__item">
-                    <article class="product-item">
-                        <div class="product-item__image">
-                            <picture>
-                                <img src="/dist/assets/image/product-list/todo-list-2020.jpg" alt="To-Do List 2020">
-                            </picture>
-                        </div>
-                        <header class="product-item__header">
-                            <span class="product-item__title">To-Do List 2020</span>
-                            <span class="product-item__subtitle">Теперь в обновленном варианте</span>
-                        </header>
-                        <div class="product-item__content">
-                            <ul class="product-item__features-list">
-                                <li class="product-item__features-item">Обновленный красочный интерфейс</li>
-                                <li class="product-item__features-item">Несколько списков на один аккаунт</li>
-                                <li class="product-item__features-item">Выбор активных/завершенных дел</li>
-                                <li class="product-item__features-item">Бесплатн для обладателей базовой версии</li>
-                            </ul>
-                        </div>
-                        <footer class="product-item__footer">
-                            <button class="button product-item__button">Заказать</button>
-                            <a href="https://todo-list-2020-6c5c0.firebaseapp.com/" class="product-item__link link" target="_blank" rel="noreferrer">
-                                Попробовать бесплатно
-                            </a>
-                        </footer>
-                    </article>
-                </div>
-                <div class="product-list__item">
-                    <article class="product-item">
-                        <div class="product-item__image">
-                            <picture>
-                                <img src="/dist/assets/image/product-list/address-book.png" alt="Address book">
-                            </picture>
-                        </div>
-                        <header class="product-item__header">
-                            <span class="product-item__title">Address Book</span>
-                            <span class="product-item__subtitle">Веб-приложение для управления контактами</span>
-                        </header>
-                        <div class="product-item__content">
-                            <ul class="product-item__features-list">
-                                <li class="product-item__features-item">Удобный интерфейс</li>
-                                <li class="product-item__features-item">Адаптировано под мобильные устройства</li>
-                                <li class="product-item__features-item">Подробная документация</li>
-                                <li class="product-item__features-item">Легкость в освоении</li>
-                                <li class="product-item__features-item">Высокая скорость работы</li>
-                            </ul>
-                        </div>
-                        <footer class="product-item__footer">
-                            <button class="button product-item__button">Заказать</button>
-                            <a href="https://address-book-2020.web.app/" class="product-item__link link" target="_blank" rel="noreferrer">
-                                Попробовать бесплатно
-                            </a>
-                        </footer>
-                    </article>
-                </div>
-                <div class="product-list__item">
-                    <article class="product-item">
-                        <div class="product-item__image product-item__image--text" data-text="Уже скоро">
-                            <picture>
-                                <img src="/dist/assets/image/product-list/transport-control.png" alt="Transport Control">
-                            </picture>
-                        </div>
-                        <header class="product-item__header">
-                            <span class="product-item__title">Transport Control</span>
-                            <span class="product-item__subtitle">Система для управления транспортным потоком</span>
-                        </header>
-                        <div class="product-item__content">
-                            <ul class="product-item__features-list">
-                                <li class="product-item__features-item">Современный интерфейс</li>
-                                <li class="product-item__features-item">Интеграция с существующими системами</li>
-                                <li class="product-item__features-item">Круглосуточная техподдержка</li>
-                                <li class="product-item__features-item">Доступная цена</li>
-                            </ul>
-                        </div>
-                        <footer class="product-item__footer">
-                            <button class="button button--disabled product-item__button" disabled>Ожидается</button>
-                        </footer>
-                    </article>
-                </div>
+                <? foreach ($product_list as $product): ?>
+                    <div class="product-list__item">
+                        <article class="product-item">
+                            <div class="product-item__image">
+                                <picture>
+                                    <img src="<?= $product["image"] ?>" alt="<?= $product["title"]?>">
+                                </picture>
+                            </div>
+                            <header class="product-item__header">
+                                <span class="product-item__title"><?= $product["title"]?></span>
+                                <span class="product-item__subtitle"><?= $product["subtitle"]?></span>
+                            </header>
+                            <div class="product-item__content">
+                                <ul class="product-item__features-list">
+                                    <? foreach ($product["features"] as $feature): ?>
+                                        <li class="product-item__features-item"><?= $feature?></li>
+                                    <? endforeach; ?>
+                                </ul>
+                            </div>
+                            <footer class="product-item__footer">
+                                <button class="button product-item__button">Заказать</button>
+                                <a href="<?= $product["link"]?>" class="product-item__link link" target="_blank" rel="noreferrer">
+                                    Попробовать бесплатно
+                                </a>
+                            </footer>
+                        </article>
+                    </div>
+                <? endforeach; ?>
             </div>
         </div>
     </section><!-- ./product-list -->

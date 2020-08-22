@@ -41,6 +41,30 @@
             )
         ),
         array(
+            "title" => "Index Word",
+            "subtitle" => "Очередной ИТ блог",
+            "image" => "/dist/assets/image/product-list/index-word.png",
+            "link" => "https://index-word.web.app/",
+            "color" => "#dea600",
+            "features" => array(
+                "Полезная информация",
+                "Дизайн от которого не устают глаза",
+                "Собственная панель администратора"
+            )
+        ),
+        array(
+            "title" => "Photo Finder",
+            "subtitle" => "Поиск тематических изображений",
+            "image" => "/dist/assets/image/product-list/photo-finder.png",
+            "link" => "https://kadonomaro.github.io/photo-finder/",
+            "color" => "#707070",
+            "features" => array(
+                "Простой и понятный интерфейс",
+                "Высокая скорость поиска изображений",
+                "Возможность добавление в избранное"
+            )
+        ),
+        array(
             "title" => "Transport Control",
             "subtitle" => "Система для управления транспортным потоком",
             "image" => "/dist/assets/image/product-list/transport-control.png",

@@ -358,12 +358,13 @@
             <div class="product-list__inner">
                 <? foreach ($product_list as $product): ?>
                     <div class="product-list__item">
-                        <article class="product-item">
-                            <div class="product-item__image">
-                                <picture>
-                                    <img src="<?= $product["image"] ?>" alt="<?= $product["title"]?>">
-                                </picture>
-                            </div>
+                        <a
+                           class="product-item"
+                           href="<?= $product["link"]?>"
+                           target="_blank"
+                           rel="noreferrer"
+                           style="background-color:<?=$product["color"]?>; background-image:url(<?=$product["image"]?>);"
+                        >
                             <header class="product-item__header">
                                 <span class="product-item__title"><?= $product["title"]?></span>
                                 <span class="product-item__subtitle"><?= $product["subtitle"]?></span>
@@ -375,13 +376,7 @@
                                     <? endforeach; ?>
                                 </ul>
                             </div>
-                            <footer class="product-item__footer">
-                                <button class="button product-item__button">Заказать</button>
-                                <a href="<?= $product["link"]?>" class="product-item__link link" target="_blank" rel="noreferrer">
-                                    Попробовать бесплатно
-                                </a>
-                            </footer>
-                        </article>
+                        </a>
                     </div>
                 <? endforeach; ?>
             </div>

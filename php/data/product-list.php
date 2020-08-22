@@ -5,6 +5,7 @@
             "subtitle" => "Веб-приложение «Список дел»",
             "image" => "/dist/assets/image/product-list/todo-app.png",
             "link" => "https://kadonomaro.github.io/todo-app/",
+            "color" => "#093b54",
             "features" => array(
                 "Минималистичный интерфейс",
                 "Сохранение данных в браузере",
@@ -15,8 +16,9 @@
         array(
             "title" => "To-Do List 2020",
             "subtitle" => "Теперь в обновленном варианте",
-            "image" => "/dist/assets/image/product-list/todo-list-2020.jpg",
+            "image" => "/dist/assets/image/product-list/todo-list-2020.png",
             "link" => "https://todo-list-2020-6c5c0.firebaseapp.com/",
+            "color" => "#106a2b",
             "features" => array(
                 "Обновленный красочный интерфейс",
                 "Несколько списков на один аккаунт",
@@ -29,6 +31,7 @@
             "subtitle" => "Веб-приложение для управления контактами",
             "image" => "/dist/assets/image/product-list/address-book.png",
             "link" => "https://address-book-2020.web.app/",
+            "color" => "#2a2a2a",
             "features" => array(
                 "Удобный интерфейс",
                 "Адаптировано под мобильные устройства",
@@ -42,6 +45,7 @@
             "subtitle" => "Система для управления транспортным потоком",
             "image" => "/dist/assets/image/product-list/transport-control.png",
             "link" => "",
+            "color" => "#263fda",
             "features" => array(
                 "Современный интерфейс",
                 "Интеграция с существующими системами",

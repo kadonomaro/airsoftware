@@ -1,6 +1,33 @@
 <?
     $product_list = array(
         array(
+            "title" => "Airganizer",
+            "subtitle" => "Система для управлением личным временем",
+            "image" => "/dist/assets/image/product-list/airganizer.png",
+            "link" => "https://airganizer.web.app/",
+            "color" => "#3baeda",
+            "features" => array(
+                "Современный интерфейс",
+                "Сохранение в локальное хранилище или базу данных",
+                "Круглосуточная техподдержка",
+                "Отсутствие любых платежей"
+            )
+        ),
+        array(
+            "title" => "Address Book",
+            "subtitle" => "Веб-приложение для управления контактами",
+            "image" => "/dist/assets/image/product-list/address-book.png",
+            "link" => "https://address-book-2020.web.app/",
+            "color" => "#2a2a2a",
+            "features" => array(
+                "Удобный интерфейс",
+                "Адаптировано под мобильные устройства",
+                "Подробная документация",
+                "Легкость в освоении",
+                "Высокая скорость работы"
+            )
+        ),
+        array(
             "title" => "To-do Application",
             "subtitle" => "Веб-приложение «Список дел»",
             "image" => "/dist/assets/image/product-list/todo-app.png",
@@ -23,21 +50,7 @@
                 "Обновленный красочный интерфейс",
                 "Несколько списков на один аккаунт",
                 "Выбор активных/завершенных дел",
-                "Бесплатно для обладателей базовой версиие"
-            )
-        ),
-        array(
-            "title" => "Address Book",
-            "subtitle" => "Веб-приложение для управления контактами",
-            "image" => "/dist/assets/image/product-list/address-book.png",
-            "link" => "https://address-book-2020.web.app/",
-            "color" => "#2a2a2a",
-            "features" => array(
-                "Удобный интерфейс",
-                "Адаптировано под мобильные устройства",
-                "Подробная документация",
-                "Легкость в освоении",
-                "Высокая скорость работы"
+                "Бесплатно для обладателей базовой версии"
             )
         ),
         array(
@@ -63,18 +76,5 @@
                 "Высокая скорость поиска изображений",
                 "Возможность добавление в избранное"
             )
-        ),
-        array(
-            "title" => "Transport Control",
-            "subtitle" => "Система для управления транспортным потоком",
-            "image" => "/dist/assets/image/product-list/transport-control.png",
-            "link" => "",
-            "color" => "#263fda",
-            "features" => array(
-                "Современный интерфейс",
-                "Интеграция с существующими системами",
-                "Круглосуточная техподдержка",
-                "Доступная ценаи"
-            )
-        ),
+        )
     );

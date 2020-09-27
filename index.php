@@ -187,7 +187,10 @@
                                     <button class="tabs__button" data-target="2">To-do Application</button>
                                 </li>
                                 <li class="tabs__item">
-                                    <button class="tabs__button" data-target="3">Transport Control</button>
+                                    <button class="tabs__button" data-target="3">Airganizer</button>
+                                </li>
+                                <li class="tabs__item">
+                                    <button class="tabs__button" data-target="4">Photo Finder</button>
                                 </li>
                             </ul>
                         </div>
@@ -342,9 +345,9 @@
                             <div class="tabs__content" data-content="3">
                                 <div class="products-item">
                                 <span class="products-item__title">
-                                    <a class="products-item__link" href="" target="_blank">Transport Control</a>
+                                    <a class="products-item__link" href="https://airganizer.web.app/" target="_blank">Airganizer</a>
                                 </span>
-                                    <span class="products-item__subtitle">Система для управления транспортным потоком</span>
+                                    <span class="products-item__subtitle">Система для управлением личным временем</span>
                                     <div class="products-item__info">
                                         <div class="table-wrapper">
                                             <table class="table">
@@ -368,7 +371,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Интеграция с существующими системами</td>
+                                                    <td>Сохранение в локальное хранилище или базу данных</td>
                                                     <td>
                                                         <svg width="24" height="24">
                                                             <use href="/dist/assets/image/sprite.svg#check"></use>
@@ -394,7 +397,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Доступная цена</td>
+                                                    <td>Отсутствие любых платежей</td>
                                                     <td>
                                                         <svg width="24" height="24">
                                                             <use href="/dist/assets/image/sprite.svg#check"></use>
@@ -412,7 +415,79 @@
                                     </div>
                                 </div>
                             </div><!--tabs__content-->
-
+                            <div class="tabs__content" data-content="4">
+                                <div class="products-item">
+                                <span class="products-item__title">
+                                    <a class="products-item__link" href="https://kadonomaro.github.io/photo-finder/" target="_blank">Photo Finder</a>
+                                </span>
+                                    <span class="products-item__subtitle">Поиск тематических изображений</span>
+                                    <div class="products-item__info">
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Наше приложение</td>
+                                                    <td>Многие другие приложения</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Современный интерфейс</td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Высокая скорость обработки запросов</td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Различные способы поиска(название, тег)</td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Отсутствие любых платежей</td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td>
+                                                        <svg width="24" height="24">
+                                                            <use href="/dist/assets/image/sprite.svg#decline"></use>
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--tabs__content-->
                         </div>
                     </div>
                 </div>

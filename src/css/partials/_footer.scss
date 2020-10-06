@@ -30,7 +30,7 @@
   &__bottom {
     display: flex;
     align-items: center;
-    padding: 5px 0 0;
+    padding: 10px 0;
   }
   &__year {
     margin-right: 25px;
@@ -40,8 +40,6 @@
   }
   &__logo {
     max-width: 70px;
-    padding: 5px;
-    background-color: $color-dark-gray;
   }
 }
 
